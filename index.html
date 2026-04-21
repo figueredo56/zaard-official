@@ -7,7 +7,7 @@
     <style>
         :root {
             --gold: #d4af37;
-            /* IMAGEN DE FONDO ACTUALIZADA (La horizontal espacial nueva) */
+            /* IMAGEN DE FONDO (La horizontal espacial nueva) */
             --bg-image: url('https://gateway.pinata.cloud/ipfs/bafybeid4eh5si4tdy3kpqgtnd4l2z6ehac3rkd4vjmsgdb5gqbs2vcox34');
         }
         body {
@@ -76,15 +76,18 @@
         }
         .arcade-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
             margin-top: 40px;
+            justify-content: center;
         }
         .arcade-gallery img {
             width: 100%;
             border-radius: 12px;
             border: 1px solid rgba(212, 175, 55, 0.2);
             transition: 0.4s;
+            max-width: 300px;
+            margin: 0 auto;
         }
         .arcade-gallery img:hover {
             border-color: var(--gold);
@@ -127,7 +130,6 @@
         <div class="arcade-gallery">
             <img src="https://gateway.pinata.cloud/ipfs/bafybeiefhnawny7nlgixveiia7aaougqxsird6or4nws52vp36ndbfvixa" alt="Diseño Arcade 1">
             <img src="https://gateway.pinata.cloud/ipfs/bafybeift764exak3gtcylewcd5mufkfaxabusywobwg2z5mcfkp7qeaapy" alt="Diseño Arcade 2">
-            <img src="https://gateway.pinata.cloud/ipfs/bafybeih6tajfywto7pghngsh4ndbedymzwxejnjbmghu2xisvl7hjxsizu" alt="Diseño Arcade 3">
         </div>
 
         <footer>
