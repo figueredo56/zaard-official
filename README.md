@@ -14,7 +14,6 @@ Bajo el mando de **Panga**, el protocolo busca redefinir la utilidad de los acti
 ### 🕹️ Ecosistema Visual Arcade
 <p align="center">
   <img src="https://gateway.pinata.cloud/ipfs/bafybeift764exak3gtcylewcd5mufkfaxabusywobwg2z5mcfkp7qeaapy" width="200">
-  <img src="https://gateway.pinata.cloud/ipfs/bafybeih6tajfywto7pghngsh4ndbedymzwxejnjbmghu2xisvl7hjxsizu" width="200">
   <img src="https://gateway.pinata.cloud/ipfs/bafkreicd3i7jagmv5iig5t3nttdqpwmv6xa2e3ahyvtzh7vy2hdglbfvsq" width="200">
 </p>
 
