@@ -5,93 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZAARD INNOVATION - Oficial</title>
     <style>
+        :root {
+            --gold: #d4af37;
+            --dark-bg: #050505;
+        }
         body {
-            background: #0b0d0f;
-            color: white;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--dark-bg);
+            background-image: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+            color: #eee;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
         }
         .container {
-            padding: 40px 20px;
+            padding: 40px 15px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        /* Banner Principal con el primer CID */
+        .hero-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+            margin-bottom: 20px;
+            border: 2px solid var(--gold);
         }
         .gold {
-            color: #d4af37;
+            color: var(--gold);
             text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 0px 0px 10px rgba(212, 175, 55, 0.3);
+            letter-spacing: 5px;
+            text-shadow: 0 0 15px var(--gold);
+            margin: 20px 0;
         }
         .section {
-            border: 1px solid #333;
-            padding: 25px;
-            border-radius: 12px;
-            margin-top: 30px;
-            background: #161a1d;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            background: rgba(20, 20, 20, 0.9);
+            backdrop-filter: blur(5px);
         }
         .btn {
-            background: #d4af37;
-            color: black;
-            padding: 15px 25px;
+            background: linear-gradient(135deg, var(--gold) 0%, #8d6b00 100%);
+            color: #000;
+            padding: 18px 35px;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 50px;
             font-weight: bold;
+            font-size: 1.1em;
             display: inline-block;
-            margin-top: 20px;
             transition: 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
         .btn:hover {
-            background: #f1c40f;
-            box-shadow: 0px 0px 15px #d4af37;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--gold);
+        }
+        /* Galería de imágenes ZAARD (CIDs de Pinata) */
+        .arcade-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+        .arcade-gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #333;
+            transition: 0.3s;
+            filter: grayscale(30%);
+        }
+        .arcade-gallery img:hover {
+            filter: grayscale(0%);
+            border-color: var(--gold);
+            transform: translateY(-5px);
         }
         .links a {
             color: #4facfe;
             text-decoration: none;
             margin: 10px;
-            display: inline-block;
-            font-size: 1.1em;
+            font-weight: bold;
         }
         footer {
-            margin-top: 50px;
-            padding: 20px;
+            padding: 40px;
+            color: #444;
             font-size: 0.8em;
-            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="gold">ZAARD INNOVATION</h1>
-        <p>Innovación Web3 e Inteligencia Artificial | Binance Smart Chain</p>
+        <img src="https://gateway.pinata.cloud/ipfs/bafybeiefhnawny7nlgixveiia7aaougqxsird6or4nws52vp36ndbfvixa" alt="ZAARD Banner" class="hero-img">
         
+        <h1 class="gold">ZAARD INNOVATION</h1>
+        <p>Ecosistema Arcade de Próxima Generación | Web3 & AI</p>
+
         <a href="https://bscscan.com/token/0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb" class="btn">
-            VER TOKEN EN BINANCE (BSC SCAN)
+            EXPLORAR TOKEN ZAARD.2
         </a>
 
         <div class="section">
-            <h3 class="gold">Transparencia del Equipo</h3>
-            <p><strong>Lead Developer:</strong> Panga (ZAARD INNOVATION)</p>
-            <p>Proyecto enfocado en ecosistemas Arcade y utilidad real del token ZAARD.2.</p>
+            <h2 class="gold">ZAARD Arcade Vault</h2>
+            <p>Seguridad y transparencia total mediante contratos inteligentes verificados en BSC.</p>
             <div class="links">
-                <a href="https://app.binance.com/uni-qr/cpro/PANGA">Perfil Verificado en Binance Square</a>
+                <a href="https://app.binance.com/uni-qr/cpro/PANGA">Binance Square</a> | 
+                <a href="https://x.com/ZAARD_666">X (Twitter)</a>
             </div>
         </div>
 
+        <h3 class="gold">Ecosistema Visual</h3>
+        <div class="arcade-gallery">
+            <img src="https://gateway.pinata.cloud/ipfs/bafybeift764exak3gtcylewcd5mufkfaxabusywobwg2z5mcfkp7qeaapy">
+            <img src="https://gateway.pinata.cloud/ipfs/bafybeih6tajfywto7pghngsh4ndbedymzwxejnjbmghu2xisvl7hjxsizu">
+            <img src="https://gateway.pinata.cloud/ipfs/bafkreicd3i7jagmv5iig5t3nttdqpwmv6xa2e3ahyvtzh7vy2hdglbfvsq">
+            <img src="https://gateway.pinata.cloud/ipfs/bafybeihsmtiwinw5w6jcebelg2p6kr64ivuijcmx4dnpuny2m22piqin2y">
+            <img src="https://gateway.pinata.cloud/ipfs/bafybeiarw4qbftgyh2rzjyw56s4cpjxtlptxtwgasgnu7rovqkvmpjgbgy">
+            <img src="https://gateway.pinata.cloud/ipfs/bafybeid4eh5si4tdy3kpqgtnd4l2z6ehac3rkd4vjmsgdb5gqbs2vcox34">
+        </div>
+
         <div class="section">
-            <h3 class="gold">Documentación Oficial</h3>
+            <h3 class="gold">Documentación Técnica</h3>
             <div class="links">
-                <a href="https://github.com/figueredo56/ZAARD_Whitepaper">📖 Whitepaper v1.0</a>
-                <a href="https://github.com/figueredo56/ZAARD_Yellowpaper">📄 Yellowpaper</a>
-                <a href="https://x.com/ZAARD_666">🐦 Twitter Oficial</a>
+                <a href="https://github.com/figueredo56/ZAARD_Whitepaper">Whitepaper v1.0</a>
+                <a href="https://github.com/figueredo56/ZAARD_Yellowpaper">Yellowpaper</a>
             </div>
         </div>
 
         <footer>
-            <p>&copy; 2026 ZAARD INNOVATION Protocol. Todos los derechos reservados.</p>
-            <p>Contacto: tu-correo-aqui@dominio.com</p>
+            &copy; 2026 ZAARD INNOVATION | Powered by Panga
         </footer>
     </div>
 </body>
