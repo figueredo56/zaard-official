@@ -15,7 +15,7 @@
             color: #eee;
             font-family: 'Segoe UI', Roboto, Arial, sans-serif;
             text-align: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), var(--bg-image);
+            background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), var(--bg-image);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -27,7 +27,7 @@
         }
         .hero-img {
             width: 100%;
-            max-width: 400px;
+            max-width: 380px;
             border-radius: 50%;
             box-shadow: 0 0 50px rgba(212, 175, 55, 0.6);
             border: 3px solid var(--gold);
@@ -42,30 +42,49 @@
         .gold {
             color: var(--gold);
             text-transform: uppercase;
-            letter-spacing: 6px;
+            letter-spacing: 5px;
             text-shadow: 0 0 20px var(--gold);
         }
         .section {
             border: 1px solid rgba(212, 175, 55, 0.3);
-            padding: 30px;
-            border-radius: 20px;
+            padding: 35px;
+            border-radius: 25px;
             margin: 30px 0;
-            background: rgba(0, 0, 0, 0.75);
-            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .profile-box {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            text-align: left;
+        }
+        .profile-box img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 15px var(--gold);
         }
         .token-card {
             cursor: pointer;
             transition: 0.4s;
-            max-width: 350px;
-            margin: 0 auto;
+            max-width: 450px;
+            margin: 20px auto;
         }
-        .token-card:hover {
-            transform: scale(1.05);
+        .token-card:hover { transform: scale(1.05); }
+        .token-card img {
+            width: 100%;
+            border-radius: 15px;
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
         }
         .doc-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
             margin-top: 30px;
         }
         .doc-item {
@@ -76,16 +95,16 @@
         .doc-item img {
             width: 100%;
             border-radius: 15px;
-            border: 1px solid var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.4);
         }
         .doc-item:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
             filter: brightness(1.2);
         }
-        .btn-x {
+        .btn-social {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
+            margin: 10px;
+            padding: 12px 30px;
             border: 1px solid var(--gold);
             border-radius: 50px;
             color: var(--gold);
@@ -93,15 +112,13 @@
             font-weight: bold;
             transition: 0.3s;
         }
-        .btn-x:hover {
+        .btn-social:hover {
             background: var(--gold);
             color: black;
+            box-shadow: 0 0 20px var(--gold);
         }
-        footer {
-            padding: 50px;
-            color: #666;
-            font-size: 0.8em;
-        }
+        footer { padding: 60px; color: #555; font-size: 0.85em; }
+        b { color: var(--gold); }
     </style>
 </head>
 <body>
@@ -109,27 +126,36 @@
         <img src="https://gateway.pinata.cloud/ipfs/bafybeiar5txuucke7cracyysp6i4z5bzpvdyogxgkkv23rnxavw6mqm364" class="hero-img">
         
         <h1 class="gold">ZAARD INNOVATION</h1>
+
+        <div class="section">
+            <div class="profile-box">
+                <img src="https://gateway.pinata.cloud/ipfs/bafybeid4eh5si4tdy3kpqgtnd4l2z6ehac3rkd4vjmsgdb5gqbs2vcox34" alt="Panga Developer">
+                <div style="flex: 1; min-width: 280px;">
+                    <h2 class="gold" style="margin-top:0;">The Visionary: Panga</h2>
+                    <p>Como creador y cabeza principal de <b>ZAARD INNOVATION</b>, mi misión es fusionar el desarrollo de software de vanguardia con economías descentralizadas. Bajo el mando de <b>Panga</b>, este protocolo no es solo un activo financiero, sino un ecosistema tecnológico diseñado para la transparencia y el entretenimiento Web3.</p>
+                </div>
+            </div>
+        </div>
         
         <div class="section">
             <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb&binanceChainId=56&chain=bsc" style="text-decoration: none;">
                 <div class="token-card">
-                    <img src="https://gateway.pinata.cloud/ipfs/bafybeih6tajfywto7pghngsh4ndbedymzwxejnjbmghu2xisvl7hjxsizu" style="width:100%; border-radius: 15px; border: 2px solid var(--gold);">
-                    <p class="gold" style="font-size: 1.2em; margin-top: 15px;">Explora el Token ZAARD</p>
+                    <img src="https://gateway.pinata.cloud/ipfs/bafybeibdu7tykrxvafzkivl2x3zoqisiahcawwvvwq773l2l7qg7ypoiqu" alt="Explora ZAARD Token">
+                    <p class="gold" style="font-size: 1.3em; margin-top: 20px; font-weight: bold;">Explora el Token ZAARD en Binance</p>
                 </div>
             </a>
         </div>
 
         <div class="section" style="text-align: justify;">
-            <h2 class="gold" style="text-align: center;">Propuesta de Valor</h2>
-            <p>ZAARD INNOVATION introduce un modelo económico de alta eficiencia diseñado para la sostenibilidad a largo plazo. Nuestra arquitectura implementa un mecanismo <b>deflacionario real</b>, donde el <b>10% del suministro total de fichas ha sido quemado</b> permanentemente, reduciendo la oferta circulante y fortaleciendo el valor del ecosistema.</p>
-            <p>Para garantizar la máxima confianza de nuestra comunidad, la <b>liquidez ha sido bloqueada</b> de forma inmutable, asegurando que el protocolo ZAARD sea un entorno seguro para la innovación, el juego y la inversión dentro de la Binance Smart Chain.</p>
+            <h2 class="gold" style="text-align: center;">Seguridad y Deflación</h2>
+            <p>ZAARD implementa un modelo económico robusto. El <b>10% del suministro (100,000 ZAARD)</b> ha sido quemado para garantizar la escasez. Además, la <b>liquidez está bloqueada</b> para proteger a cada participante de nuestro ecosistema.</p>
         </div>
 
-        <h2 class="gold">Documentación Oficial</h2>
+        <h2 class="gold">Repositorios y Documentación</h2>
         <div class="doc-grid">
             <a href="https://github.com/figueredo56/ZAARD.token" class="doc-item">
                 <img src="https://gateway.pinata.cloud/ipfs/bafybeiefhnawny7nlgixveiia7aaougqxsird6or4nws52vp36ndbfvixa">
-                <p>ZAARD.token GitHub</p>
+                <p>GitHub: ZAARD.token</p>
             </a>
             <a href="https://github.com/figueredo56/ZAARD_Whitepaper" class="doc-item">
                 <img src="https://gateway.pinata.cloud/ipfs/bafybeift764exak3gtcylewcd5mufkfaxabusywobwg2z5mcfkp7qeaapy">
@@ -142,12 +168,12 @@
         </div>
 
         <div class="section">
-            <a href="https://app.binance.com/uni-qr/cpro/PANGA" class="btn-x" style="margin-right: 10px;">Binance Square</a>
-            <a href="https://x.com/ZAARD_666" class="btn-x">X / Twitter Oficial</a>
+            <a href="https://app.binance.com/uni-qr/cpro/PANGA" class="btn-social">Binance Square</a>
+            <a href="https://x.com/ZAARD_666" class="btn-social">𝕏 / Twitter</a>
         </div>
 
         <footer>
-            <p>&copy; 2026 ZAARD INNOVATION | Created by Panga</p>
+            <p>&copy; 2026 ZAARD INNOVATION | Lead Developer: Panga</p>
         </footer>
     </div>
 </body>
