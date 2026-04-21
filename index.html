@@ -7,8 +7,8 @@
     <style>
         :root {
             --gold: #d4af37;
-            /* IMAGEN DE FONDO (La horizontal espacial) */
-            --bg-image: url('https://gateway.pinata.cloud/ipfs/bafybeidtruvvmesv453nctol23nrn2v7sqt4s75vdydzy4doxrqs32x45i');
+            /* IMAGEN DE FONDO ACTUALIZADA (La horizontal espacial nueva) */
+            --bg-image: url('https://gateway.pinata.cloud/ipfs/bafybeid4eh5si4tdy3kpqgtnd4l2z6ehac3rkd4vjmsgdb5gqbs2vcox34');
         }
         body {
             margin: 0;
@@ -16,21 +16,22 @@
             color: #eee;
             font-family: 'Segoe UI', Roboto, Arial, sans-serif;
             text-align: center;
+            /* Capas de fondo: un degradado oscuro sobre la imagen para legibilidad */
             background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--bg-image);
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            background-attachment: fixed; /* Efecto de fondo quieto al bajar */
         }
         .container {
             padding: 40px 15px;
             max-width: 900px;
             margin: 0 auto;
         }
-        /* EL ESCUDO (Imagen Principal) */
+        /* EL ESCUDO PRINCIPAL (Vibra Latina) - Imagen que pediste que estuviera arriba */
         .hero-img {
             width: 100%;
             max-width: 450px;
-            border-radius: 50%; /* Si el escudo es redondo, esto lo resalta */
+            border-radius: 50%; /* Resalta la forma redonda del escudo */
             box-shadow: 0 0 50px rgba(212, 175, 55, 0.6);
             border: 3px solid var(--gold);
             margin-bottom: 20px;
@@ -53,8 +54,8 @@
             padding: 30px;
             border-radius: 20px;
             margin: 30px 0;
-            background: rgba(0, 0, 0, 0.75);
-            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.75); /* Cuadro más oscuro para leer bien */
+            backdrop-filter: blur(10px); /* Efecto cristal esmerilado */
         }
         .btn {
             background: linear-gradient(135deg, var(--gold) 0%, #8d6b00 100%);
@@ -104,7 +105,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="https://gateway.pinata.cloud/ipfs/bafybeihmzzhikxn6f4xctz6betwprnupyq4f6kw3233vwnagcomraiftoy" alt="ZAARD Shield" class="hero-img">
+        <img src="https://gateway.pinata.cloud/ipfs/bafybeiar5txuucke7cracyysp6i4z5bzpvdyogxgkkv23rnxavw6mqm364" alt="ZAARD Shield - Vibra Latina" class="hero-img">
         
         <h1 class="gold">ZAARD INNOVATION</h1>
         <p style="letter-spacing: 2px; color: #bbb;">Protocolo Arcade Web3 • Binance Smart Chain</p>
@@ -124,9 +125,9 @@
 
         <h3 class="gold">Galería del Ecosistema</h3>
         <div class="arcade-gallery">
-            <img src="https://gateway.pinata.cloud/ipfs/bafybeiefhnawny7nlgixveiia7aaougqxsird6or4nws52vp36ndbfvixa">
-            <img src="https://gateway.pinata.cloud/ipfs/bafybeift764exak3gtcylewcd5mufkfaxabusywobwg2z5mcfkp7qeaapy">
-            <img src="https://gateway.pinata.cloud/ipfs/bafybeih6tajfywto7pghngsh4ndbedymzwxejnjbmghu2xisvl7hjxsizu">
+            <img src="https://gateway.pinata.cloud/ipfs/bafybeiefhnawny7nlgixveiia7aaougqxsird6or4nws52vp36ndbfvixa" alt="Diseño Arcade 1">
+            <img src="https://gateway.pinata.cloud/ipfs/bafybeift764exak3gtcylewcd5mufkfaxabusywobwg2z5mcfkp7qeaapy" alt="Diseño Arcade 2">
+            <img src="https://gateway.pinata.cloud/ipfs/bafybeih6tajfywto7pghngsh4ndbedymzwxejnjbmghu2xisvl7hjxsizu" alt="Diseño Arcade 3">
         </div>
 
         <footer>
