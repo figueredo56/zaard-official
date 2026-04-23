@@ -34,6 +34,23 @@ Nuestra plataforma incluye títulos diseñados para la competición y la recompe
 * **Quema Inicial:** 100,000 ZAARD (10%) 🔥
 * **Mecánica:** Protocolo deflacionario con bloqueo de liquidez para la seguridad de la comunidad.
 
+<p align="center">
+  <img src="Gemini_Generated_Image_e47d5ne47d5ne47d.png" alt="ZAARD INNOVATION" width="350">
+</p>
+
+# ZAARD Proyecto Seguro 🛡️
+### Innovación y Seguridad en Blockchain
+
+## 🖼️ Colecciones NFT: ZAARD Collect & Infinito
+
+El ecosistema **ZAARD INNOVATION** expande su utilidad mediante colecciones exclusivas de NFT diseñadas para recompensar a la comunidad y fortalecer el protocolo:
+
+* **ZAARD Collect:** Funciona como la puerta de entrada para los coleccionistas, ofreciendo piezas únicas que capturan la esencia del desarrollo del proyecto y la evolución de nuestra identidad visual.
+* **ZAARD Infinito:** Representa el nivel superior de rareza y beneficio dentro de la red. Estos activos digitales están vinculados a la **BNB Chain** e integrados directamente con el arcade y los sistemas de gobernanza.
+
+Estos NFT no son solo arte digital; otorgan a sus poseedores estatus especial y ventajas competitivas dentro del universo expandido de ZAARD, permitiendo una conexión real entre el mundo del gaming y los activos on-chain.
+
+
 ---
 
 ### 📂 Documentación y Transparencia
