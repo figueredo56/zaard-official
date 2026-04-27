@@ -67,6 +67,10 @@ Para una comprensión profunda de nuestra arquitectura:
 * **Sitio Web:** [ZAARD Official Web](https://figueredo56.github.io/zaard-official/)
 * **Twitter:** [@ZAARD_666](https://x.com/ZAARD_666)
 * **Comunidad:** [Binance Square - Panga](https://app.binance.com/uni-qr/cpro/PANGA)
+## 👤 Founder & Lead Developer
+Desarrollado por **Aracelis (Panga)** - Founder de ZAARD INNOVATION.
+
+[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/zaard-innovation-4a186b406)
 
 ---
 
