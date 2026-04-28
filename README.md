@@ -50,6 +50,19 @@ El ecosistema **ZAARD INNOVATION** expande su utilidad mediante colecciones excl
 
 Estos NFT no son solo arte digital; otorgan a sus poseedores estatus especial y ventajas competitivas dentro del universo expandido de ZAARD, permitiendo una conexión real entre el mundo del gaming y los activos on-chain.
 
+---
+
+## 🛡️ Seguridad y Auditoría Certificada
+
+Para garantizar la confianza de nuestros usuarios e inversores, el protocolo **ZAARD** cuenta con auditoría pública y registros de transparencia inmutable.
+
+| Recurso | Identificador / Enlace |
+| :--- | :--- |
+| **Auditoría Técnica** | [Consultar Reporte ZAARD-Audit](https://github.com/figueredo56/ZAARD-Audit) |
+| **Registro IPFS (CID)** | `bafybeias34hqgdzi2gwglavicqrwa3wohptycbbmqtfibfjndfikuq7qu4` |
+| **Estado del Contrato** | ✅ Verificado y Seguro |
+
+> **Nota de Confianza:** "Generando confianza a través de la transparencia on-chain. Todo el ecosistema ZAARD está respaldado por bloqueos de liquidez verificables y quemas de suministro permanentes."
 
 ---
 
