@@ -1,8 +1,5 @@
 # 🪐 ZAARD INNOVATION Protocol 
 
-<p align="center">
-  <img src="https://gateway.pinata.cloud/ipfs/bafybeihmzzhikxn6f4xctz6betwprnupyq4f6kw3233vwnagcomraiftoy" width="800" alt="ZAARD Banner">
-</p>
 
 ## 🚀 Visión General
 **ZAARD INNOVATION** es un ecosistema descentralizado desarrollado en la **Binance Smart Chain (BSC)** que fusiona la adrenalina de los juegos Arcade clásicos con la potencia de la tecnología Web3 e Inteligencia Artificial.
