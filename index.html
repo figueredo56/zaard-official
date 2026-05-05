@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAARD INNOVATION - Oficial</title>
+    <title>ZAARD & PANGA INNOVATION & EVOLUTION - Oficial</title>
     <style>
         :root {
             --gold: #d4af37;
@@ -28,7 +28,7 @@
         }
         .hero-img {
             width: 100%;
-            max-width: 280px; 
+            max-width: 280px; /* Tamaño reducido para ver más fondo */
             border-radius: 50%;
             box-shadow: 0 0 40px rgba(212, 175, 55, 0.5);
             border: 3px solid var(--gold);
@@ -48,74 +48,108 @@
             background: rgba(0, 0, 0, 0.75);
             backdrop-filter: blur(8px);
         }
+        .grid-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card-link {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        .card-link img {
+            width: 100%;
+            max-width: 180px; /* Imágenes más pequeñas */
+            border-radius: 12px;
+            border: 1px solid var(--gold);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+        .card-link:hover {
+            transform: translateY(-5px);
+            filter: brightness(1.2);
+        }
+        .footer {
+            padding: 40px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        b { color: var(--gold); }
     </style>
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
+        <img src="https://gateway.pinata.cloud/ipfs/bafybeiar5txuucke7cracyysp6i4z5bzpvdyogxgkkv23rnxavw6mqm364" class="hero-img" alt="ZAARD Portada">
+        
+        <h1 class="gold">ZAARD INNOVATION</h1>
 
-<!-- SECCIÓN DE IMAGEN PRINCIPAL Y BOTÓN DE AUDITORÍA DIRECTA -->
-<div class="hero-section" style="text-align: center; padding: 20px;">
-    
-    <!-- Imagen de Portada (Fénix ZAARD) -->
-    <img src="https://gateway.pinata.cloud/ipfs/bafybeihsmtiwinw5w6jcebelg2p6kr64ivuijcmx4dnpuny2m22piqin2y" 
-         alt="ZAARD INNOVATION" 
-         style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 0 30px rgba(212, 175, 55, 0.6); margin-bottom: 25px;">
+        <div class="section">
+            <h2 class="gold">Ecosistema Panga</h2>
+            <p>Bajo el mando de <b>Panga</b>, fusionamos el desarrollo de software con economías descentralizadas para crear un ecosistema tecnológico diseñado para la transparencia y el entretenimiento Web3.</p>
+        </div>
 
-    <!-- Enlace Directo a la Auditoría -->
-    <div style="margin-top: 10px;">
-        <a href="https://gopluslabs.io/token-security/56/0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb" 
-           target="_blank" 
-           style="background: linear-gradient(45deg, #4d4f37, #FFD700); color: black; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); display: inline-block; border: 2px solid #b8860b;">
-           🛡️ VERIFICAR AUDITORÍA EN VIVO (GOPLUS)
-        </a>
-        <p style="color: #FFD700; font-size: 13px; margin-top: 15px; letter-spacing: 1px;">
-            SEGURIDAD VERIFICADA EN LA BLOCKCHAIN POR GOPLUS SECURITY
-        </p>
+        <div class="grid-links">
+            <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb&binanceChainId=56&chain=bsc" class="card-link">
+                <img src="https://gateway.pinata.cloud/ipfs/bafkreicmfsh36ucl2a67j4tlhu46jjstf65wm5sqh7fuls3kqkcw22du5i">
+                <p>ZAARD Token</p>
+            </a>
+            <a href="https://app.binance.com/uni-qr/cpro/PANGA?l=es-LA&r=KAN4LD16&uc=app_square_share_link&us=copylink" class="card-link">
+                <img src="https://gateway.pinata.cloud/ipfs/bafybeihhcm3svofo3qcsxk5xhha4hei253ptm6fqapmesmyqjeo7v6q3ka">
+                <p>Perfil PANGA</p>
+            </a>
+            <a href="https://app.binance.com/uni-qr/cpro/PANGAA?l=es-LA&r=X2FGI9PG&uc=app_square_share_link&us=copylink" class="card-link">
+                <img src="https://gateway.pinata.cloud/ipfs/bafybeihsmtiwinw5w6jcebelg2p6kr64ivuijcmx4dnpuny2m22piqin2y">
+                <p>Ecosistema</p>
+            </a>
+        </div>
+
+        <div class="section">
+            <h2 class="gold">Seguridad y Deflación</h2>
+            <p>ZAARD implementa un modelo económico robusto con <b>100,000 tokens quemados</b> y liquidez bloqueada para proteger a la comunidad.</p>
+        </div>
+
+        <h2 class="gold">Documentación y Código</h2>
+        <div class="grid-links">
+            <a href="https://github.com/figueredo56/ZAARD.token" class="card-link">
+                <img src="https://gateway.pinata.cloud/ipfs/bafybeiatobxingmk2mplgicvuw5fcap3zvh3ydgd5hhgplqbnjodpqjd5y">
+                <p>GitHub Token</p>
+            </a>
+            <a href="https://github.com/figueredo56/ZAARD_Whitepaper" class="card-link">
+                <img src="https://gateway.pinata.cloud/ipfs/bafybeiamiml56qbkvzscndzemdkvlrljgw2rcj6e3yjkmfwh5yanf564yq">
+                <p>Whitepaper</p>
+            </a>
+            <a href="https://github.com/figueredo56/zaard-yellowpaper" class="card-link">
+                <img src="https://gateway.pinata.cloud/ipfs/bafybeieflsx7s7aoiseqmvlsapri4ofd66xdf55qr5wss5qdl6juikemti">
+                <p>Yellowpaper</p>
+            </a>
+        </div>
+
+        <h2 class="gold">Comunidad y Auditoría</h2>
+        <div class="grid-links">
+            <a href="https://x.com/ZAARD_666" class="card-link">
+                <img src="https://gateway.pinata.cloud/ipfs/bafybeict4wv2ldlr44cp4odbbf7qn6tmngjq2pxfk3remd4pq43vef7mau">
+                <p>Twitter</p>
+            </a>
+            <a href="https://discord.gg/TgrSDhYjx" class="card-link">
+                <img src="https://gateway.pinata.cloud/ipfs/bafybeihhcm3svofo3qcsxk5xhha4hei253ptm6fqapmesmyqjeo7v6q3ka">
+                <p>Discord</p>
+            </a>
+            <a href="https://mudra.website" class="card-link">
+                <img src="https://gateway.pinata.cloud/ipfs/bafybeig4kmpnxsdjkjwb5oqvtbz53tfllkszpxtwk5zpupkqoanzdumxqq">
+                <p>Mudra (Liquidez)</p>
+            </a>
+            <a href="https://bscscan.com" class="card-link">
+                <img src="https://gateway.pinata.cloud/ipfs/bafybeibdu7tykrxvafzkivl2x3zoqisiahcawwvvwq773l2l7qg7ypoiqu">
+                <p>BscScan</p>
+            </a>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 ZAARD INNOVATION | Lead Developer: Panga</p>
+        </footer>
     </div>
-</div>
-
-<!-- SECCIÓN NUEVA: TOKEN PANGA -->
-<div class="section">
-    <div style="max-width: 400px; margin: 0 auto; text-align: center;">
-        <a href="https://github.com/figueredo56/PANGA_TOKEN-" target="_blank" style="text-decoration: none;">
-            <p style="color: #eee; font-family: monospace; font-size: 12px; margin-bottom: 10px; word-break: break-all;">
-                <span class="gold">CID:</span> bafybeihqftstfjm3i32e3xm54xo52h6tpldlmfkwc2z6tx5qthbonyboue
-            </p>
-            
-            <div style="font-size: 40px; margin-bottom: 10px;">🚀</div>
-            
-            <p class="gold" style="font-size: 16px; font-weight: bold; margin: 0;">
-                VISITAR TOKEN PANGA
-            </p>
-            <p style="color: #aaa; font-size: 12px; margin-top: 5px;">
-                Explora el ecosistema y el motor de trade del Protocolo PANGA.
-            </p>
-        </a>
-    </div>
-</div>
-
-<!-- SECCIÓN AUDITORÍA ZAARD -->
-<div class="section">
-    <div style="max-width: 400px; margin: 0 auto; text-align: center;">
-        <a href="https://github.com/figueredo56/ZAARD-Audit" target="_blank" style="text-decoration: none;">
-            <p style="color: #eee; font-family: monospace; font-size: 12px; margin-bottom: 10px; word-break: break-all;">
-                <span class="gold">CID:</span> bafybeias34hqgdzi2gwglavicqrwa3wohptycbbmqtfibfjndfikuq7qu4
-            </p>
-            
-            <div style="font-size: 40px; margin-bottom: 10px;">🛡️</div>
-            
-            <p class="gold" style="font-size: 16px; font-weight: bold; margin: 0;">
-                Auditoría del TOKEN ZAARD
-            </p>
-            <p style="color: #aaa; font-size: 12px; margin-top: 5px;">
-                Generando confianza a través de la transparencia on-chain.
-            </p>
-        </a>
-    </div>
-</div>
-
-</div>
 
 </body>
 </html>
