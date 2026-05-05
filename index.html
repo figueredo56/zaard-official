@@ -8,7 +8,8 @@
         :root {
             --gold: #d4af37;
             --emerald: #50c878;
-            --bg-image: url('https://gateway.pinata.cloud/ipfs/bafybeihsmtiwinw5w6jcebelg2p6kr64ivuijcmx4dnpuny2m22piqin2y');
+            /* NUEVO CID DE PORTADA */
+            --bg-image: url('https://gateway.pinata.cloud/ipfs/bafybeigcq6o2axe2fcz3jk4timmuq2xkow5kdgd5msasbnyzaup4lmjui4');
         }
         body {
             margin: 0;
@@ -16,110 +17,104 @@
             color: #eee;
             font-family: 'Segoe UI', Roboto, Arial, sans-serif;
             text-align: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), var(--bg-image);
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), var(--bg-image);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
         .container {
-            padding: 40px 15px;
-            max-width: 900px;
+            padding: 30px 15px;
+            max-width: 600px; /* Ajustado para mejor vista en móvil como en tu captura */
             margin: 0 auto;
-        }
-        .gold {
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
         }
         
         .brand-header {
-            margin-bottom: 30px;
-            padding-top: 10px;
+            margin-bottom: 25px;
         }
         .main-title {
-            font-size: clamp(2.2rem, 7vw, 3.8rem);
+            font-size: 2.5rem;
             margin: 0;
             font-weight: 800;
-            background: linear-gradient(to bottom, #fff7d6 0%, #d4af37 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.3));
+            color: var(--gold);
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
         }
         .sub-title {
             font-size: 0.9rem;
-            letter-spacing: 5px;
+            letter-spacing: 4px;
             color: #aaa;
             margin-top: 5px;
             text-transform: uppercase;
         }
 
         .hero-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+            width: 100%;
+            max-width: 450px;
+            border-radius: 25px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
             margin-bottom: 25px;
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            border: 2px solid rgba(212, 175, 55, 0.3);
         }
 
         .section {
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            padding: 30px 20px;
-            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px 20px;
+            border-radius: 28px;
             margin: 20px 0;
-            background: rgba(10, 10, 10, 0.85);
-            backdrop-filter: blur(12px);
-            transition: 0.3s ease;
-        }
-        .section:hover {
-            border-color: var(--gold);
-            transform: translateY(-5px);
-        }
-
-        .audit-btn {
-            background: linear-gradient(45deg, #222, #d4af37);
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 15px;
-            display: inline-block;
-            border: 1px solid var(--gold);
-            transition: 0.3s;
-        }
-        .audit-btn:hover {
-            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
-        }
-
-        .cid-text {
-            color: #eee;
-            font-family: monospace;
-            font-size: 10px;
-            margin-bottom: 12px;
-            word-break: break-all;
-            opacity: 0.6;
-        }
-
-        .desc-text {
-            color: #ccc;
-            line-height: 1.6;
-            font-size: 15px;
-            margin: 15px 0;
+            background: rgba(15, 15, 15, 0.85); /* Fondo sólido pero elegante */
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         .tagline {
             display: inline-block;
-            padding: 4px 12px;
-            border-radius: 4px;
-            font-size: 11px;
+            padding: 5px 15px;
+            border-radius: 8px;
+            font-size: 12px;
             font-weight: bold;
-            margin-bottom: 10px;
-            text-transform: uppercase;
+            margin-bottom: 15px;
+            border: 1px solid currentColor;
         }
-        .tag-hold { background: rgba(212, 175, 55, 0.15); color: var(--gold); border: 1px solid var(--gold); }
-        .tag-trade { background: rgba(80, 200, 120, 0.1); color: var(--emerald); border: 1px solid var(--emerald); }
+        .tag-hold { color: var(--gold); }
+        .tag-trade { color: var(--emerald); }
+
+        .gold-text { color: var(--gold); text-transform: uppercase; letter-spacing: 2px; }
+        .emerald-text { color: var(--emerald); text-transform: uppercase; letter-spacing: 2px; }
+
+        .desc-text {
+            color: #ddd;
+            line-height: 1.6;
+            font-size: 15px;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            width: 80%;
+            margin: 20px auto 0;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .btn-zaard {
+            background: linear-gradient(45deg, #d4af37, #8a6d3b);
+            color: black;
+        }
+        .btn-panga {
+            background: linear-gradient(45deg, #50c878, #2e7d32);
+            color: white;
+        }
+
+        .cid-small {
+            font-family: monospace;
+            font-size: 9px;
+            color: #666;
+            margin-top: 10px;
+            word-break: break-all;
+        }
     </style>
 </head>
 <body>
@@ -131,44 +126,40 @@
         <div class="sub-title">INNOVACIÓN & EVOLUCIÓN</div>
     </header>
 
+    <!-- PORTADA CON NUEVO CID -->
     <div class="hero-section">
-        <img src="https://gateway.pinata.cloud/ipfs/bafybeihsmtiwinw5w6jcebelg2p6kr64ivuijcmx4dnpuny2m22piqin2y" 
-             alt="ZAARD INNOVATION" class="hero-img">
+        <img src="https://gateway.pinata.cloud/ipfs/bafybeigcq6o2axe2fcz3jk4timmuq2xkow5kdgd5msasbnyzaup4lmjui4" 
+             alt="ZAARD & PANGA" class="hero-img">
     </div>
 
-    <!-- SECCIÓN ZAARD -->
+    <!-- ZAARD SECTION -->
     <div class="section">
-        <span class="tagline tag-hold">Patrimonio & Hold</span>
-        <h2 class="gold" style="margin: 10px 0;">ZAARD INNOVATION</h2>
+        <div class="tagline tag-hold">PATRIMONIO & HOLD</div>
+        <h2 class="gold-text">ZAARD INNOVATION</h2>
         <p class="desc-text">
-            El pilar sólido del ecosistema. Diseñado para hacer **Hold** a largo plazo, integrando un mundo de **NFTs** y **Juegos Arcade** que recompensan tu lealtad.
+            El pilar del ecosistema. Creado para hacer **Hold** a largo plazo mientras disfrutas de **NFTs** y **Juegos Arcade** que recompensan tu lealtad. Seguridad total para tu patrimonio.
         </p>
-        <a href="https://gopluslabs.io/token-security/56/0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb" target="_blank" class="audit-btn">
+        <a href="https://gopluslabs.io/token-security/56/0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb" target="_blank" class="btn btn-zaard">
             🛡️ SEGURIDAD ZAARD
         </a>
     </div>
 
-    <!-- SECCIÓN PANGA: NUEVO LINK Y CID -->
+    <!-- PANGA SECTION -->
     <div class="section">
-        <span class="tagline tag-trade">Acción & Ganancia</span>
-        <h2 style="color: var(--emerald); text-transform: uppercase; letter-spacing: 3px; margin: 10px 0;">PROTOCOLO PANGA</h2>
-        
-        <!-- CID solicitado -->
-        <p class="cid-text">
-            <span style="color: var(--emerald);">CID:</span> bafybeics6e3bnadl3zeomdcank4jvj6aofmfruwpd5mqbd74pw4odreyfy
-        </p>
-
+        <div class="tagline tag-trade">ACCIÓN & GANANCIA</div>
+        <h2 class="emerald-text">PROTOCOLO PANGA</h2>
         <p class="desc-text">
-            La evolución del Trading. **PANGA** es el motor dinámico creado para comprar barato, vender caro y sacar ganancias constantes. Seguridad y liquidez en movimiento.
+            La evolución del Trading. **PANGA** es el motor dinámico hecho para comprar barato, vender caro y sacar ganancias constantes. Seguridad y liquidez en movimiento.
         </p>
-
-        <!-- Link al repositorio solicitado -->
-        <a href="https://github.com/figueredo56/PANGA_TOKEN-" target="_blank" style="background: linear-gradient(45deg, #111, #50c878); border-color: var(--emerald);" class="audit-btn">
+        <a href="https://github.com/figueredo56/PANGA_TOKEN-" target="_blank" class="btn btn-panga">
             ⚡ REPOSITORIO PANGA
         </a>
+        <div class="cid-small">
+            CID: bafybeics6e3bnadl3zeomdcank4jvj6aofmfruwpd5mqbd74pw4odreyfy
+        </div>
     </div>
 
-    <footer style="margin-top: 40px; opacity: 0.5; font-size: 11px; letter-spacing: 2px;">
+    <footer style="margin-top: 40px; opacity: 0.4; font-size: 10px;">
         TRANSPARENCIA TOTAL • BLOCKCHAIN VERIFIED • 2026
     </footer>
 
