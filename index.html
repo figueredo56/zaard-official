@@ -8,120 +8,100 @@
         :root {
             --gold: #d4af37;
             --emerald: #50c878;
-            /* Portada principal solicitada */
-            --bg-main: url('https://gateway.pinata.cloud/ipfs/bafybeigcq6o2axe2fcz3jk4timmuq2xkow5kdgd5msasbnyzaup4lmjui4');
+            --bg-image: url('https://gateway.pinata.cloud/ipfs/bafybeihsmtiwinw5w6jcebelg2p6kr64ivuijcmx4dnpuny2m22piqin2y');
         }
         body {
             margin: 0;
             padding: 0;
-            color: #ffffff;
-            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-            background: #000;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 20px;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)), var(--bg-main);
+            color: #eee;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), var(--bg-image);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            min-height: 100vh;
         }
-
-        /* --- CABECERA --- */
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-top: 20px;
+        .container {
+            padding: 40px 15px;
+            max-width: 900px;
+            margin: 0 auto;
         }
-        .header h1 {
-            font-size: 2.2rem;
-            margin: 0;
+        .gold {
             color: var(--gold);
             text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            letter-spacing: 4px;
+            text-shadow: 0 0 15px var(--gold);
         }
-        .header p {
-            font-size: 0.8rem;
-            letter-spacing: 5px;
-            color: #888;
+        
+        .brand-header {
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+        .main-title {
+            font-size: clamp(2.5rem, 8vw, 3.8rem);
+            margin: 0;
+            font-weight: 800;
+            background: linear-gradient(to bottom, #fff7d6 0%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
+        }
+        .sub-title {
+            font-size: 1rem;
+            letter-spacing: 6px;
+            color: #aaa;
+            margin-top: 10px;
             text-transform: uppercase;
+            font-weight: 300;
         }
 
-        /* --- TARJETAS PROFESIONALES --- */
-        .card {
-            background: rgba(20, 20, 20, 0.9);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 25px;
-            padding: 25px;
+        .hero-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
             margin-bottom: 25px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
         }
 
-        .card-img-link {
-            display: block;
-            width: 100%;
-            height: 180px;
-            border-radius: 15px;
-            margin-bottom: 15px;
-            background-size: cover;
-            background-position: center;
-            border: 2px solid var(--gold);
-            transition: transform 0.3s;
-            position: relative;
-            overflow: hidden;
+        .section {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 25px;
+            border-radius: 20px;
+            margin: 25px 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(8px);
+            transition: transform 0.3s ease;
         }
-        .card-img-link:active { transform: scale(0.95); }
-
-        /* Estilos específicos por sección */
-        .img-zaard { background-image: var(--bg-main); }
-        .img-panga { background-image: url('https://gateway.pinata.cloud/ipfs/bafybeihsmtiwinw5w6jcebelg2p6kr64ivuijcmx4dnpuny2m22piqin2y'); border-color: var(--emerald); }
-
-        .tag {
-            font-size: 10px;
-            font-weight: bold;
-            padding: 5px 12px;
-            border-radius: 5px;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-        .tag-zaard { background: var(--gold); color: #000; }
-        .tag-panga { background: var(--emerald); color: #000; }
-
-        .title { font-size: 1.4rem; margin: 10px 0; font-weight: bold; }
-        .zaard-title { color: var(--gold); }
-        .panga-title { color: var(--emerald); }
-
-        .description {
-            font-size: 14px;
-            color: #bbb;
-            margin-bottom: 20px;
+        .section:hover {
+            border-color: var(--gold);
         }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            border-radius: 50px;
+        .audit-btn {
+            background: linear-gradient(45deg, #4d4f37, #FFD700);
+            color: black;
+            padding: 15px 30px;
             text-decoration: none;
+            border-radius: 50px;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            display: inline-block;
+            border: 2px solid #b8860b;
             transition: 0.3s;
         }
-        .btn-gold { border: 1px solid var(--gold); color: var(--gold); }
-        .btn-emerald { border: 1px solid var(--emerald); color: var(--emerald); }
-        .btn:hover { background: rgba(255,255,255,0.05); }
+        .audit-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--gold);
+        }
 
-        .cid-label {
+        .cid-text {
+            color: #eee;
             font-family: monospace;
-            font-size: 9px;
-            color: #555;
-            margin-top: 15px;
+            font-size: 11px;
+            margin-bottom: 10px;
             word-break: break-all;
+            opacity: 0.7;
         }
     </style>
 </head>
@@ -129,41 +109,63 @@
 
 <div class="container">
     
-    <header class="header">
-        <h1>ZAARD & PANGA</h1>
-        <p>Innovación & Evolución</p>
+    <!-- PORTADA PRINCIPAL -->
+    <header class="brand-header">
+        <h1 class="main-title">ZAARD & PANGA</h1>
+        <div class="sub-title">INNOVACIÓN & EVOLUCIÓN</div>
     </header>
 
-    <!-- BLOQUE ZAARD -->
-    <div class="card">
-        <span class="tag tag-zaard">Patrimonio & Hold</span>
-        <!-- La imagen ahora es el link -->
-        <a href="https://gopluslabs.io/token-security/56/0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb" class="card-img-link img-zaard"></a>
-        
-        <h2 class="title zaard-title">ZAARD INNOVATION</h2>
-        <p class="description">
-            El pilar sólido del ecosistema. Diseñado para holders de largo plazo. Integra un ecosistema de <strong>NFTs y Juegos Arcade</strong> donde tu lealtad se convierte en valor constante.
-        </p>
-        <a href="https://gopluslabs.io/token-security/56/0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb" class="btn btn-gold">VER AUDITORÍA GOPLUS 🛡️</a>
+    <!-- SECCIÓN HERO -->
+    <div class="hero-section">
+        <img src="https://gateway.pinata.cloud/ipfs/bafybeihsmtiwinw5w6jcebelg2p6kr64ivuijcmx4dnpuny2m22piqin2y" 
+             alt="ZAARD INNOVATION" 
+             class="hero-img">
+
+        <div style="margin-top: 10px;">
+            <a href="https://gopluslabs.io/token-security/56/0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb" 
+               target="_blank" 
+               class="audit-btn">
+               🛡️ VERIFICAR AUDITORÍA EN VIVO (GOPLUS)
+            </a>
+        </div>
     </div>
 
-    <!-- BLOQUE PANGA -->
-    <div class="card">
-        <span class="tag tag-panga">Acción & Ganancia</span>
-        <!-- La imagen ahora es el link -->
-        <a href="https://github.com/figueredo56/PANGA_TOKEN-" class="card-img-link img-panga"></a>
-        
-        <h2 class="title panga-title">PROTOCOLO PANGA</h2>
-        <p class="description">
-            El motor del trading. <strong>PANGA</strong> es la herramienta de evolución creada para el trade dinámico: compra estratégicamente y vende para asegurar ganancias reales. Seguridad y liquidez en movimiento.
-        </p>
-        <a href="https://github.com/figueredo56/PANGA_TOKEN-" class="btn btn-emerald">REPOSITORIO GITHUB ⚡</a>
-        <div class="cid-label">CID: bafybeics6e3bnadl3zeomdcank4jvj6aofmfruwpd5mqbd74pw4odreyfy</div>
+    <!-- NUEVA SECCIÓN: ECOSISTEMA PANGA -->
+    <div class="section">
+        <div style="max-width: 500px; margin: 0 auto;">
+            <a href="https://bscscan.com/address/0xef516ded4cca45207d21056faa1910c2930c96b5" target="_blank" style="text-decoration: none;">
+                <p class="cid-text">
+                    <span class="gold">CID:</span> bafybeihsmtiwinw5w6jcebelg2p6kr64ivuijcmx4dnpuny2m22piqin2y
+                </p>
+                
+                <div style="font-size: 40px; margin-bottom: 10px;">⚡</div>
+                
+                <p class="gold" style="font-size: 20px; font-weight: bold; margin: 0;">
+                    EXPLORA EL ECOSISTEMA PANGA
+                </p>
+                <p style="color: #aaa; font-size: 13px; margin-top: 8px;">
+                    Acceso directo al protocolo y contratos inteligentes.
+                </p>
+            </a>
+        </div>
     </div>
 
-    <footer style="text-align: center; padding: 20px; opacity: 0.4; font-size: 10px;">
-        TRANSPARENCIA TOTAL • BLOCKCHAIN VERIFIED • 2026
-    </footer>
+    <!-- SECCIÓN DE AUDITORÍA GITHUB -->
+    <div class="section">
+        <div style="max-width: 500px; margin: 0 auto;">
+            <a href="https://github.com/figueredo56/ZAARD-Audit" target="_blank" style="text-decoration: none;">
+                <p class="cid-text">
+                    <span class="gold">CID:</span> bafybeias34hqgdzi2gwglavicqrwa3wohptycbbmqtfibfjndfikuq7qu4
+                </p>
+                <p class="gold" style="font-size: 16px; font-weight: bold; margin: 0;">
+                    TRANSPARENCIA ON-CHAIN
+                </p>
+                <p style="color: #aaa; font-size: 12px; margin-top: 5px;">
+                    Repositorios oficiales y auditorías de seguridad.
+                </p>
+            </a>
+        </div>
+    </div>
 
 </div>
 
