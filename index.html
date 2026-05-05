@@ -8,111 +8,119 @@
         :root {
             --gold: #d4af37;
             --emerald: #50c878;
-            /* NUEVO CID DE PORTADA */
-            --bg-image: url('https://gateway.pinata.cloud/ipfs/bafybeigcq6o2axe2fcz3jk4timmuq2xkow5kdgd5msasbnyzaup4lmjui4');
+            /* Portada principal solicitada */
+            --bg-main: url('https://gateway.pinata.cloud/ipfs/bafybeigcq6o2axe2fcz3jk4timmuq2xkow5kdgd5msasbnyzaup4lmjui4');
         }
         body {
             margin: 0;
             padding: 0;
-            color: #eee;
-            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), var(--bg-image);
+            color: #ffffff;
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: #000;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)), var(--bg-main);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            min-height: 100vh;
         }
-        .container {
-            padding: 30px 15px;
-            max-width: 600px; /* Ajustado para mejor vista en móvil como en tu captura */
-            margin: 0 auto;
+
+        /* --- CABECERA --- */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-top: 20px;
         }
-        
-        .brand-header {
-            margin-bottom: 25px;
-        }
-        .main-title {
-            font-size: 2.5rem;
+        .header h1 {
+            font-size: 2.2rem;
             margin: 0;
-            font-weight: 800;
             color: var(--gold);
-            text-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
         }
-        .sub-title {
-            font-size: 0.9rem;
-            letter-spacing: 4px;
-            color: #aaa;
-            margin-top: 5px;
+        .header p {
+            font-size: 0.8rem;
+            letter-spacing: 5px;
+            color: #888;
             text-transform: uppercase;
         }
 
-        .hero-img {
-            width: 100%;
-            max-width: 450px;
+        /* --- TARJETAS PROFESIONALES --- */
+        .card {
+            background: rgba(20, 20, 20, 0.9);
+            border: 1px solid rgba(255,255,255,0.1);
             border-radius: 25px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+            padding: 25px;
             margin-bottom: 25px;
-            border: 2px solid rgba(212, 175, 55, 0.3);
-        }
-
-        .section {
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 25px 20px;
-            border-radius: 28px;
-            margin: 20px 0;
-            background: rgba(15, 15, 15, 0.85); /* Fondo sólido pero elegante */
-            backdrop-filter: blur(10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        .tagline {
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 8px;
-            font-size: 12px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            border: 1px solid currentColor;
-        }
-        .tag-hold { color: var(--gold); }
-        .tag-trade { color: var(--emerald); }
-
-        .gold-text { color: var(--gold); text-transform: uppercase; letter-spacing: 2px; }
-        .emerald-text { color: var(--emerald); text-transform: uppercase; letter-spacing: 2px; }
-
-        .desc-text {
-            color: #ddd;
-            line-height: 1.6;
-            font-size: 15px;
-            margin: 15px 0;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
             text-align: center;
         }
 
-        .btn {
+        .card-img-link {
             display: block;
-            width: 80%;
-            margin: 20px auto 0;
-            padding: 15px;
-            text-decoration: none;
-            border-radius: 50px;
+            width: 100%;
+            height: 180px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid var(--gold);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .card-img-link:active { transform: scale(0.95); }
+
+        /* Estilos específicos por sección */
+        .img-zaard { background-image: var(--bg-main); }
+        .img-panga { background-image: url('https://gateway.pinata.cloud/ipfs/bafybeihsmtiwinw5w6jcebelg2p6kr64ivuijcmx4dnpuny2m22piqin2y'); border-color: var(--emerald); }
+
+        .tag {
+            font-size: 10px;
             font-weight: bold;
-            font-size: 16px;
-            transition: 0.3s;
+            padding: 5px 12px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
         }
-        .btn-zaard {
-            background: linear-gradient(45deg, #d4af37, #8a6d3b);
-            color: black;
-        }
-        .btn-panga {
-            background: linear-gradient(45deg, #50c878, #2e7d32);
-            color: white;
+        .tag-zaard { background: var(--gold); color: #000; }
+        .tag-panga { background: var(--emerald); color: #000; }
+
+        .title { font-size: 1.4rem; margin: 10px 0; font-weight: bold; }
+        .zaard-title { color: var(--gold); }
+        .panga-title { color: var(--emerald); }
+
+        .description {
+            font-size: 14px;
+            color: #bbb;
+            margin-bottom: 20px;
         }
 
-        .cid-small {
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .btn-gold { border: 1px solid var(--gold); color: var(--gold); }
+        .btn-emerald { border: 1px solid var(--emerald); color: var(--emerald); }
+        .btn:hover { background: rgba(255,255,255,0.05); }
+
+        .cid-label {
             font-family: monospace;
             font-size: 9px;
-            color: #666;
-            margin-top: 10px;
+            color: #555;
+            margin-top: 15px;
             word-break: break-all;
         }
     </style>
@@ -121,45 +129,39 @@
 
 <div class="container">
     
-    <header class="brand-header">
-        <h1 class="main-title">ZAARD & PANGA</h1>
-        <div class="sub-title">INNOVACIÓN & EVOLUCIÓN</div>
+    <header class="header">
+        <h1>ZAARD & PANGA</h1>
+        <p>Innovación & Evolución</p>
     </header>
 
-    <!-- PORTADA CON NUEVO CID -->
-    <div class="hero-section">
-        <img src="https://gateway.pinata.cloud/ipfs/bafybeigcq6o2axe2fcz3jk4timmuq2xkow5kdgd5msasbnyzaup4lmjui4" 
-             alt="ZAARD & PANGA" class="hero-img">
-    </div>
-
-    <!-- ZAARD SECTION -->
-    <div class="section">
-        <div class="tagline tag-hold">PATRIMONIO & HOLD</div>
-        <h2 class="gold-text">ZAARD INNOVATION</h2>
-        <p class="desc-text">
-            El pilar del ecosistema. Creado para hacer **Hold** a largo plazo mientras disfrutas de **NFTs** y **Juegos Arcade** que recompensan tu lealtad. Seguridad total para tu patrimonio.
+    <!-- BLOQUE ZAARD -->
+    <div class="card">
+        <span class="tag tag-zaard">Patrimonio & Hold</span>
+        <!-- La imagen ahora es el link -->
+        <a href="https://gopluslabs.io/token-security/56/0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb" class="card-img-link img-zaard"></a>
+        
+        <h2 class="title zaard-title">ZAARD INNOVATION</h2>
+        <p class="description">
+            El pilar sólido del ecosistema. Diseñado para holders de largo plazo. Integra un ecosistema de <strong>NFTs y Juegos Arcade</strong> donde tu lealtad se convierte en valor constante.
         </p>
-        <a href="https://gopluslabs.io/token-security/56/0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb" target="_blank" class="btn btn-zaard">
-            🛡️ SEGURIDAD ZAARD
-        </a>
+        <a href="https://gopluslabs.io/token-security/56/0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb" class="btn btn-gold">VER AUDITORÍA GOPLUS 🛡️</a>
     </div>
 
-    <!-- PANGA SECTION -->
-    <div class="section">
-        <div class="tagline tag-trade">ACCIÓN & GANANCIA</div>
-        <h2 class="emerald-text">PROTOCOLO PANGA</h2>
-        <p class="desc-text">
-            La evolución del Trading. **PANGA** es el motor dinámico hecho para comprar barato, vender caro y sacar ganancias constantes. Seguridad y liquidez en movimiento.
+    <!-- BLOQUE PANGA -->
+    <div class="card">
+        <span class="tag tag-panga">Acción & Ganancia</span>
+        <!-- La imagen ahora es el link -->
+        <a href="https://github.com/figueredo56/PANGA_TOKEN-" class="card-img-link img-panga"></a>
+        
+        <h2 class="title panga-title">PROTOCOLO PANGA</h2>
+        <p class="description">
+            El motor del trading. <strong>PANGA</strong> es la herramienta de evolución creada para el trade dinámico: compra estratégicamente y vende para asegurar ganancias reales. Seguridad y liquidez en movimiento.
         </p>
-        <a href="https://github.com/figueredo56/PANGA_TOKEN-" target="_blank" class="btn btn-panga">
-            ⚡ REPOSITORIO PANGA
-        </a>
-        <div class="cid-small">
-            CID: bafybeics6e3bnadl3zeomdcank4jvj6aofmfruwpd5mqbd74pw4odreyfy
-        </div>
+        <a href="https://github.com/figueredo56/PANGA_TOKEN-" class="btn btn-emerald">REPOSITORIO GITHUB ⚡</a>
+        <div class="cid-label">CID: bafybeics6e3bnadl3zeomdcank4jvj6aofmfruwpd5mqbd74pw4odreyfy</div>
     </div>
 
-    <footer style="margin-top: 40px; opacity: 0.4; font-size: 10px;">
+    <footer style="text-align: center; padding: 20px; opacity: 0.4; font-size: 10px;">
         TRANSPARENCIA TOTAL • BLOCKCHAIN VERIFIED • 2026
     </footer>
 
