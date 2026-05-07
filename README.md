@@ -4,8 +4,9 @@
 ---
 
 <p align="center">
-  <img src="https://gateway.pinata.cloud/ipfs/bafybeihh5vdn2sgydgkgtrseljowddoquqiok3pqw2polljjb3vwjpde7i" width="600" alt="ZAARD & PANGA ECOSYSTEM">
+  <img src="https://raw.githubusercontent.com/figueredo56/ZAARD-Alerta-Explicada/refs/heads/main/CC_20260430_215529.png" alt="ZAARD Alerta" width="100%">
 </p>
+
 
 ## 🚀 EL PROTOCOLO PANGA: PODER DE TRADEO
 El **TOKEN PANGA** no es una moneda más; es la infraestructura de un ecosistema **Web3 Arcade** de alto rendimiento. Diseñado bajo el estándar BEP-20 de la **Binance Smart Chain (BSC)**, integra IA para maximizar la utilidad del activo.
