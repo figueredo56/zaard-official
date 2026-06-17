@@ -12,9 +12,9 @@
 El **TOKEN PANGA** no es una moneda más; es la infraestructura de un ecosistema **Web3 Arcade** de alto rendimiento. Diseñado bajo el estándar BEP-20 de la **Binance Smart Chain (BSC)**, integra IA para maximizar la utilidad del activo.
 
 ### 💎 TOKENOMICS ELITE
-* **TOKEN:** PANGA (ZAARD.2)
+* **TOKEN:** PANGA (ZARD)
 * **ESTRATEGIA:** Deflación Agresiva mediante Quema y Reflexión.
-* **UTILIDAD:** Acceso a ZAARD Arcade, Gobernanza y Recompensas por Tradeo.
+* **UTILIDAD:** Acceso a ZARD Arcade, Gobernanza y Recompensas por Tradeo.
 * **🔥 HITOS DE QUEMA:** Se han eliminado permanentemente **100,000 FICHAS (10% del total)**. Menos oferta, más valor.
 
 ---
