@@ -25,7 +25,7 @@ En **ZAARD INNOVATION**, la confianza es matemática. Aquí están las pruebas p
 | EVENTO CRÍTICO | ESTADO | CERTIFICADO |
 | :--- | :---: | :--- |
 | **QUEMA DE SUMINISTRO (10%)** | 🔥 **ÉXITO** | [TX HASH: 0x9a9e...272](https://bscscan.com/tx/0x9a9e55763920a9d007e71a5c85cbb9f4c5c23ade96f484d1e473eddd205bf272) |
-| **BLOQUEO DE LIQUIDEZ** | 🔒 **99.50%** | [VER EN MUDRA MANAGER](https://mudra.website/?certificate=true&type=0&lp=0xd9e66399a7017c6fb5b624d491bb96a4a736d2bb) |
+| **BLOQUEO DE LIQUIDEZ** | 🔒 **99.50%** | [VER EN PINK LOCK MANAGER](https://m?certificate=true&type=0&p=0x3468ea4e6ce13ec4c7f8651f7efc6aa6046f4d65) |
 | **CONTRATO INTELIGENTE** | ✅ **VERIFICADO** | [EXPLORAR EN BSCSCAN](https://bscscan.com/address/0xef516ded4cca45207d21056faa1910c2930c96b5) |
 | **AUDITORÍA TÉCNICA** | 🛡️ **PÚBLICA** | [REPOSITORIO ZAARD-AUDIT](https://github.com/figueredo56/ZAARD-Audit) |
 
@@ -80,7 +80,7 @@ Desarrollado por **Aracelis (Panga)** - Founder de ZAARD INNOVATION.
 > This repository is for code review and transparent verification. Interacting with smart contracts involves risk. Ensure you are using the officially verified website and channels. This code is not an invitation to invest.
 
 - **Red:** BNB Smart Chain (BSC)
-- **Contrato:** `0xd9e66399a7017c6Fb5b624D491Bb96a4a736D2Bb`
+- **Contrato:** `0x3468ea4e6ce13ec4c7f8651f7efc6aa6046f4d65`
 
 ---
 © 2026 **ZAARD INNOVATION** | **Lead Dev: Panga** | *Exponential Ascent & Verified Security*
