@@ -1,3 +1,6 @@
+![logo Black](https://raw.githubusercontent.com/figueredo56/ZARD.token/ab5ba9b45b8275e1547c026be754e77828a073a0/228-sin-t%C3%ADtulo_20260824215207%20(1).svg)
+  
+
 # 🦅 ZAARD INNOVATION | THE PANGA PROTOCOL 🐲
 > **"LA EVOLUCIÓN NO SE PIDE, SE PROGRAMA."**
 
