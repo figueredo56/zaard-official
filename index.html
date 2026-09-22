@@ -135,46 +135,54 @@
     <p> ZARRD in AVE </p>
 </a>
 
-
-         <!-- ========================================== -->
-<!-- BLOQUE ZAARD BANNER TELEGRAM COMPACTO     -->
 <!-- ========================================== -->
-<div id="zaard-telegram-banner" class="w-full my-6 flex justify-center px-4">
+<!-- BLOQUE ZAARD BANNER TELEGRAM AJUSTADO      -->
+<!-- ========================================== -->
+<div id="zaard-telegram-banner" class="w-full my-6 flex justify-center md:justify-end px-4">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   
   <style>
     .zaard-card {
       background: linear-gradient(145deg, #0b0f19, #030712);
       border: 1px solid rgba(0, 242, 254, 0.3);
-      box-shadow: 0 0 20px rgba(0, 242, 254, 0.15);
-      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0, 242, 254, 0.18);
+      border-radius: 18px;
       font-family: 'Inter', sans-serif;
       color: #ffffff;
-      padding: 16px;
-      max-width: 420px;
+      padding: 20px;
+      /* Tamaño ligeramente mayor pero controlado */
+      max-width: 560px;
       width: 100%;
       text-align: center;
       position: relative;
       overflow: hidden;
+      /* Desplazamiento sutil hacia la derecha en pantallas grandes */
+      margin-right: 0;
+    }
+
+    @media (min-width: 768px) {
+      .zaard-card {
+        margin-right: 5%; /* Lo mueve hacia la derecha sin desalinear el sitio */
+      }
     }
 
     /* Efecto de titileo / brillo sutil y elegante */
     @keyframes sutilTitileo {
       0%, 100% {
-        box-shadow: 0 0 10px rgba(0, 242, 254, 0.3), 0 0 20px rgba(255, 140, 0, 0.15);
+        box-shadow: 0 0 12px rgba(0, 242, 254, 0.3), 0 0 22px rgba(255, 140, 0, 0.15);
         filter: brightness(1);
       }
       50% {
-        box-shadow: 0 0 20px rgba(0, 242, 254, 0.7), 0 0 35px rgba(255, 140, 0, 0.4);
+        box-shadow: 0 0 25px rgba(0, 242, 254, 0.8), 0 0 40px rgba(255, 140, 0, 0.45);
         filter: brightness(1.08);
       }
     }
 
     .zaard-banner-img {
       width: 100%;
-      max-height: 220px;
+      max-height: 310px;
       object-fit: cover;
-      border-radius: 12px;
+      border-radius: 14px;
       animation: sutilTitileo 2.5s ease-in-out infinite;
       transition: transform 0.3s ease;
       display: block;
@@ -187,31 +195,31 @@
     .zaard-banner-title {
       font-family: 'Orbitron', sans-serif;
       font-weight: 800;
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       letter-spacing: 0.5px;
       background: linear-gradient(90deg, #00f2fe, #ffaa00);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
   </style>
 
   <div class="zaard-card">
-    <!-- Mensaje genial y claro -->
+    <!-- Mensaje claro -->
     <h3 class="zaard-banner-title">ZAARD FINANCE</h3>
-    <p class="text-gray-300 text-xs mb-3 font-medium">
+    <p class="text-gray-300 text-xs sm:text-sm mb-4 font-medium">
       Únete a nuestra comunidad oficial y descubre la libertad descentralizada.
     </p>
 
-    <!-- Imagen interactiva con tamaño controlado y efecto de titileo -->
+    <!-- Imagen interactiva con tamaño equilibrado y efecto de titileo -->
     <a href="https://t.me/+ghp_RbrbjT40ZThh" target="_blank" rel="noopener noreferrer" class="block relative group">
       <img src="https://raw.githubusercontent.com/figueredo56/zaard-official/a281bdaff2bb860405fc9e32569bb7c59f9cd02d/284%20sin%20t%C3%ADtulo_20260922141126_1.png" 
            alt="Comunidad ZAARD Telegram" 
            class="zaard-banner-img border border-cyan-500/40">
       
-      <!-- Pequeño aviso al pasar el mouse -->
+      <!-- Aviso al pasar el mouse -->
       <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
-        <span class="bg-cyan-500 text-gray-950 font-orbitron font-bold text-xs px-3 py-1 rounded-full shadow-lg">
+        <span class="bg-cyan-500 text-gray-950 font-orbitron font-bold text-sm px-4 py-2 rounded-full shadow-lg">
           CLICK PARA UNIRTE 🚀
         </span>
       </div>
@@ -219,6 +227,7 @@
   </div>
 </div>
 <!-- ========================================== -->
+         
 
             <a href="https://www.geckoterminal.com/bsc/pools/0x046dd1d5c62a6dffafaa4886b3004fed7d409dd3" target="_blank" rel="noopener noreferrer">
     <img src="https://gateway.pinata.cloud/ipfs/bafybeic4dxsjfth6n6qiq5trrdcvr4an4rupkti5qaqldcqogbuwwm3wfy" alt="Ver en GeckoTerminal" style="max-width: 100%; margin-top: 8px;" />
@@ -316,40 +325,6 @@
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.89.03-.25.38-.51 1.08-.78 4.23-1.84 7.05-3.04 8.46-3.62 4.03-1.68 4.87-1.97 5.42-1.98.12 0 .39.03.56.17.15.12.19.28.21.4.02.11.03.35.01.54z"/>
                 </svg>
-                Únete al Telegram Oficial
-              </a>
-              <span class="text-xs text-gray-400">Acceso libre a la comunidad global</span>
-            </div>
-          </div>
-
-          <!-- Columna con la Imagen Oficial -->
-          <div class="lg:col-span-5 flex justify-center">
-            <div class="relative w-full max-w-sm">
-              <!-- Marco decorativo cibernético -->
-              <div class="absolute -inset-1 bg-gradient-to-r from-zaardCyan to-zaardBlue rounded-2xl blur-lg opacity-40 animate-pulse"></div>
-              
-              <div class="relative bg-zaardDark/90 border border-zaardCyan/40 rounded-2xl p-3 shadow-2xl animate-float">
-                <img src="https://raw.githubusercontent.com/figueredo56/zaard-official/a281bdaff2bb860405fc9e32569bb7c59f9cd02d/284%20sin%20t%C3%ADtulo_20260922141126_1.png" 
-                     alt="ZAARD Ecosistema" 
-                     class="w-full h-auto rounded-xl object-cover border border-white/10">
-                
-                <!-- Badge inferior flotante -->
-                <div class="mt-3 px-3 py-2 bg-black/60 backdrop-blur-md rounded-lg border border-zaardCyan/20 flex items-center justify-between text-xs">
-                  <span class="text-gray-400 font-mono">ESTADO:</span>
-                  <span class="text-zaardCyan font-orbitron font-bold flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-zaardCyan"></span> ACTIVO & SEGURO
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-<!-- FIN DEL BLOQUE -->
 
          
 <div>
