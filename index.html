@@ -138,54 +138,50 @@
 </a>
 
 <!-- ========================================== -->
-<!-- BLOQUE ZAARD BANNER TELEGRAM AJUSTADO      -->
+<!-- BLOQUE ZAARD COMUNIDAD Y REDES OFICIALES   -->
 <!-- ========================================== -->
-<div id="zaard-telegram-banner" class="w-full my-6 flex justify-center md:justify-end px-4">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<div id="zaard-community-section" class="w-full my-8 px-4 flex flex-col items-center md:items-end">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <style>
-    .zaard-card {
-      background: linear-gradient(145deg, #0b0f19, #030712);
-      border: 1px solid rgba(0, 242, 254, 0.3);
-      box-shadow: 0 0 25px rgba(0, 242, 254, 0.18);
-      border-radius: 18px;
+    .zaard-master-card {
+      background: linear-gradient(145deg, rgba(11, 15, 25, 0.95), rgba(3, 7, 18, 0.98));
+      border: 1px solid rgba(168, 85, 247, 0.35);
+      box-shadow: 0 0 35px rgba(168, 85, 247, 0.18), inset 0 0 15px rgba(0, 242, 254, 0.05);
+      border-radius: 22px;
       font-family: 'Inter', sans-serif;
       color: #ffffff;
-      padding: 20px;
-      /* Tamaño ligeramente mayor pero controlado */
-      max-width: 560px;
+      padding: 24px;
+      max-width: 580px;
       width: 100%;
-      text-align: center;
       position: relative;
       overflow: hidden;
-      /* Desplazamiento sutil hacia la derecha en pantallas grandes */
-      margin-right: 0;
     }
 
     @media (min-width: 768px) {
-      .zaard-card {
-        margin-right: 5%; /* Lo mueve hacia la derecha sin desalinear el sitio */
+      .zaard-master-card {
+        margin-right: 4%; /* Desplazamiento sutil hacia la derecha en escritorio */
       }
     }
 
-    /* Efecto de titileo / brillo sutil y elegante */
-    @keyframes sutilTitileo {
+    /* Titileo con tonos Morados y Azules */
+    @keyframes titileoMoradoAzul {
       0%, 100% {
-        box-shadow: 0 0 12px rgba(0, 242, 254, 0.3), 0 0 22px rgba(255, 140, 0, 0.15);
+        box-shadow: 0 0 15px rgba(0, 242, 254, 0.3), 0 0 25px rgba(168, 85, 247, 0.3);
         filter: brightness(1);
       }
       50% {
-        box-shadow: 0 0 25px rgba(0, 242, 254, 0.8), 0 0 40px rgba(255, 140, 0, 0.45);
-        filter: brightness(1.08);
+        box-shadow: 0 0 30px rgba(0, 242, 254, 0.7), 0 0 55px rgba(168, 85, 247, 0.8);
+        filter: brightness(1.1);
       }
     }
 
     .zaard-banner-img {
       width: 100%;
-      max-height: 310px;
+      max-height: 290px;
       object-fit: cover;
       border-radius: 14px;
-      animation: sutilTitileo 2.5s ease-in-out infinite;
+      animation: titileoMoradoAzul 2.5s ease-in-out infinite;
       transition: transform 0.3s ease;
       display: block;
     }
@@ -194,38 +190,139 @@
       transform: scale(1.015);
     }
 
-    .zaard-banner-title {
+    .zaard-title-main {
       font-family: 'Orbitron', sans-serif;
-      font-weight: 800;
-      font-size: 1.25rem;
-      letter-spacing: 0.5px;
-      background: linear-gradient(90deg, #00f2fe, #ffaa00);
+      font-weight: 900;
+      font-size: 1.3rem;
+      background: linear-gradient(90deg, #00f2fe, #a855f7);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 6px;
+    }
+
+    /* Botones de Redes Sociales Técnicos y Bellos */
+    .zaard-social-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .zaard-social-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .zaard-social-btn:hover {
+      background: rgba(168, 85, 247, 0.12);
+      border-color: rgba(0, 242, 254, 0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(0, 242, 254, 0.2);
+    }
+
+    .zaard-social-icon {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      fill: #00f2fe;
+    }
+
+    .zaard-social-info h4 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0;
+    }
+
+    .zaard-social-info span {
+      font-size: 0.7rem;
+      color: #94a3b8;
     }
   </style>
 
-  <div class="zaard-card">
-    <!-- Mensaje claro -->
-    <h3 class="zaard-banner-title">ZAARD FINANCE</h3>
-    <p class="text-gray-300 text-xs sm:text-sm mb-4 font-medium">
-      Únete a nuestra comunidad oficial y descubre la libertad descentralizada.
-    </p>
+  <div class="zaard-master-card">
+    
+    <!-- ENCABEZADO Y TELEGRAM -->
+    <div class="text-center mb-5">
+      <h3 class="zaard-title-main mb-1">ZAARD & PANGA</h3>
+      <p class="text-gray-300 text-xs sm:text-sm font-medium mb-4">
+        Canal de Telegram Oficial. Únete para recibir actualizaciones en tiempo real y soporte directo de la comunidad.
+      </p>
 
-    <!-- Imagen interactiva con tamaño equilibrado y efecto de titileo -->
-    <a href="https://t.me/+ghp_RbrbjT40ZThh" target="_blank" rel="noopener noreferrer" class="block relative group">
-      <img src="https://raw.githubusercontent.com/figueredo56/zaard-official/a281bdaff2bb860405fc9e32569bb7c59f9cd02d/284%20sin%20t%C3%ADtulo_20260922141126_1.png" 
-           alt="Comunidad ZAARD Telegram" 
-           class="zaard-banner-img border border-cyan-500/40">
-      
-      <!-- Aviso al pasar el mouse -->
-      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
-        <span class="bg-cyan-500 text-gray-950 font-orbitron font-bold text-sm px-4 py-2 rounded-full shadow-lg">
-          CLICK PARA UNIRTE 🚀
-        </span>
+      <!-- Imagen interactiva con link de Telegram -->
+      <a href="https://t.me/+Cjo5z_yXcdwzYjM5" target="_blank" rel="noopener noreferrer" class="block relative group">
+        <img src="https://raw.githubusercontent.com/figueredo56/zaard-official/a281bdaff2bb860405fc9e32569bb7c59f9cd02d/284%20sin%20t%C3%ADtulo_20260922141126_1.png" 
+             alt="Comunidad ZAARD Telegram" 
+             class="zaard-banner-img border border-purple-500/40">
+        
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
+          <span class="bg-gradient-to-r from-cyan-400 to-purple-500 text-gray-950 font-orbitron font-bold text-sm px-4 py-2 rounded-full shadow-lg">
+            CLICK PARA UNIRTE 🚀
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <!-- SECCIÓN DE CONFIANZA TÉCNICA - REDES OFICIALES -->
+    <div class="pt-4 border-t border-white/10">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="font-orbitron text-xs font-bold uppercase tracking-wider text-cyan-400">Canales Oficiales Verificados</h4>
+        <span class="text-[10px] bg-cyan-950/80 text-cyan-300 border border-cyan-500/30 px-2 py-0.5 rounded-full font-mono">SEGURIDAD WEB3</span>
       </div>
-    </a>
+      <p class="text-gray-400 text-xs mb-4 leading-relaxed">
+        Consulta exclusivamente nuestros canales oficiales para evitar estafas. Transparencia y descentralización garantizada.
+      </p>
+
+      <!-- Cuadrícula de Redes -->
+      <div class="zaard-social-grid">
+        
+        <!-- Twitter / X -->
+        <a href="https://x.com/ZAARD_ALX" target="_blank" rel="noopener noreferrer" class="zaard-social-btn">
+          <svg class="zaard-social-icon" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <div class="zaard-social-info">
+            <h4>Twitter / X</h4>
+            <span>@ZAARD_ALX</span>
+          </div>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/zaard-inovation-45284a408?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="zaard-social-btn">
+          <svg class="zaard-social-icon" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          <div class="zaard-social-info">
+            <h4>LinkedIn</h4>
+            <span>Perfil Oficial</span>
+          </div>
+        </a>
+
+        <!-- Reddit -->
+        <a href="https://www.reddit.com/u/Old-Operation6245/s/bB5dWEDjO5" target="_blank" rel="noopener noreferrer" class="zaard-social-btn">
+          <svg class="zaard-social-icon" viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.221.686-.356 1.096-.356.997 0 1.808.811 1.808 1.808 0 .684-.39 1.276-.957 1.579.034.227.054.457.054.69 0 3.51-4.032 6.357-9.013 6.357-4.981 0-9.013-2.847-9.013-6.357 0-.233.02-.463.054-.69a1.815 1.815 0 0 1-.957-1.579c0-.997.811-1.808 1.808-1.808.41 0 .788.135 1.096.356 1.194-.856 2.85-1.418 4.674-1.488l.758-3.556 2.946.621c.14-.383.513-.66 0.957-.66zm-7.51 7.152c-.89 0-1.611.721-1.611 1.611 0 .89.721 1.611 1.611 1.611.89 0 1.611-.721 1.611-1.611 0-.89-.721-1.611-1.611-1.611zm6.98 0c-.89 0-1.611.721-1.611 1.611 0 .89.721 1.611 1.611 1.611.89 0 1.611-.721 1.611-1.611 0-.89-.721-1.611-1.611-1.611zm-5.46 3.61c-.506.506-1.326.506-1.832 0-.195-.195-.195-.512 0-.707.195-.195.512-.195.707 0 .114.114.3.114.414 0 .114-.114.3-.114.414 0 .195.195.195.512 0 .707z"/></svg>
+          <div class="zaard-social-info">
+            <h4>Reddit</h4>
+            <span>Comunidad Oficial</span>
+          </div>
+        </a>
+
+        <!-- Discord -->
+        <a href="https://discord.gg/GGbzY9FR2" target="_blank" rel="noopener noreferrer" class="zaard-social-btn">
+          <svg class="zaard-social-icon" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.011c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <div class="zaard-social-info">
+            <h4>Discord</h4>
+            <span>Servidor Oficial</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
   </div>
 </div>
 <!-- ========================================== -->
