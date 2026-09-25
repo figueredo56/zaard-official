@@ -350,7 +350,130 @@
 </div>
 <!-- ========================================== -->
 
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- TÍTULO DE LA PÁGINA -->
+    <title>ZAARD & INNOVATION & EVOLUTION - Oficial</title>
+
+    <!-- ========================================== -->
+    <!-- ETIQUETAS DE VISTA PREVIA (SOCIAL SHARE)    -->
+    <!-- ========================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ZAARD & PANGA - Ecosistema Web3">
+    <meta property="og:description" content="Canal de Telegram oficial, DApps verificadas, Creation Finance y Wallet segura.">
+    <meta property="og:image" content="https://photos.pinksale.finance/file/pinksale-logo-upload/1790265552390-0f039d18ee1d653bf30587b1e0baca3a.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZAARD & PANGA - Ecosistema Web3">
+    <meta name="twitter:description" content="Canal de Telegram oficial, DApps verificadas, Creation Finance y Wallet segura.">
+    <meta name="twitter:image" content="https://photos.pinksale.finance/file/pinksale-logo-upload/1790265552390-0f039d18ee1d653bf30587b1e0baca3a.png">
+
+    <style>
+        :root {
+            --gold: #d4af37;
+            --bg-image: url('https://gateway.pinata.cloud/ipfs/bafybeifsmtiwinw5w6jcebelg2p6kr64ivuijcmx4adnpuny2m22piqin2y');
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            color: #eee;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--bg-image);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            padding: 40px 15px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .section {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 25px;
+            border-radius: 20px;
+            margin: 25px 0;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(12px);
+        }
+        .gold {
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 0 0 15px var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- LOGO OFICIAL VISIBLE EN LA WEB -->
+        <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790265552390-0f039d18ee1d653bf30587b1e0baca3a.png" width="150px" style="border-radius: 50%; border: 2px solid var(--gold); box-shadow: 0 0 20px rgba(212, 175, 55, 0.5); margin-bottom: 20px;" alt="ZAARD Logo">
+        
+        <h1 class="gold">ZAARD & PANGA</h1>
+        <p>Ecosistema Web3, Innovación Descentralizada y Seguridad Verificada.</p>
+
+        <!-- SECCIÓN DE AUDITORÍA DE SEGURIDAD EN VIVO -->
+        <div class="section" style="text-align: left;">
+            <h3 style="color: var(--gold); text-align: center; margin-bottom: 15px;">🛡️ Estado de Seguridad del Contrato</h3>
+            <p style="font-size: 0.85em; text-align: center; color: #bbb; margin-bottom: 20px;">
+                Contrato: <code style="color: #00f2fe; word-break: break-all;">0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38</code>
+            </p>
+            
+            <div id="zaard-security-box" style="background: rgba(0, 0, 0, 0.6); border: 1px solid rgba(0, 242, 254, 0.3); padding: 20px; border-radius: 12px;">
+                <p style="text-align: center; color: #fff;">🔄 Verificando contrato en tiempo real...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT DE VERIFICACIÓN GOPLUS -->
+    <script>
+    async function verificarSeguridadContrato() {
+        const contrato = "0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38";
+        const chainId = "56"; // BSC
+        const contenedor = document.getElementById("zaard-security-box");
+
+        try {
+            const respuesta = await fetch(`https://api.gopluslabs.io/api/v1/token_security/${chainId}?contract_addresses=${contrato}`);
+            const datos = await respuesta.json();
+            
+            if (datos.result && datos.result[contrato.toLowerCase()]) {
+                const info = datos.result[contrato.toLowerCase()];
+                const esHoneypot = info.is_honeypot === "1" ? "⚠️ Alerta" : "✅ Seguro (No Honeypot)";
+                const buyTax = info.buy_tax ? (parseFloat(info.buy_tax) * 100) + "%" : "0%";
+                const sellTax = info.sell_tax ? (parseFloat(info.sell_tax) * 100) + "%" : "0%";
+                const isOpenSource = info.is_open_source === "1" ? "✅ Verificado" : "⚠️ No Verificado";
+
+                contenedor.innerHTML = `
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; font-size: 0.9em;">
+                        <div><strong>Código:</strong><br><span style="color: #4ade80;">${isOpenSource}</span></div>
+                        <div><strong>Estado:</strong><br><span style="color: #4ade80;">${esHoneypot}</span></div>
+                        <div><strong>Impuesto Compra:</strong><br><span style="color: #38bdf8;">${buyTax}</span></div>
+                        <div><strong>Impuesto Venta:</strong><br><span style="color: #38bdf8;">${sellTax}</span></div>
+                    </div>
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.75em; color: #10b981;">🟢 Monitoreado por GoPlus Security.</p>
+                `;
+            } else {
+                contenedor.innerHTML = `<p style="text-align: center; color: #facc15;">ℹ️ Contrato registrado en la red correctamente.</p>`;
+            }
+        } catch (error) {
+            contenedor.innerHTML = `<p style="text-align: center; color: #ef4444;">❌ Error al consultar el estado del contrato.</p>`;
+        }
+    }
+
+    window.onload = function() {
+        verificarSeguridadContrato();
+    };
+    </script>
+
+</body>
+</html>
 
             <a href="https://www.geckoterminal.com/bsc/pools/0x046dd1d5c62a6dffafaa4886b3004fed7d409dd3" target="_blank" rel="noopener noreferrer">
     <img src="https://gateway.pinata.cloud/ipfs/bafybeic4dxsjfth6n6qiq5trrdcvr4an4rupkti5qaqldcqogbuwwm3wfy" alt="Ver en GeckoTerminal" style="max-width: 100%; margin-top: 8px;" />
