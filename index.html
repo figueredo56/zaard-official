@@ -202,12 +202,115 @@
     <p style="margin-top: 8px; font-size: 1em; font-weight: bold; color: #fff;">ZARD Token</p>
 </a>
 
- 
+ <style>
+  .crypto-ave-section {
+    background: #0f051d;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 25px rgba(147, 51, 234, 0.3);
+  }
 
-            <a href="https://avebusiness.xyz/?id=6a98adb945ea858201dee314" class="card-link" target="_blank">
-    <img src="https://gateway.pinata.cloud/ipfs/bafybeieiiuojv6snmh2vchhigyoq7s5vcdvel66ih5tacnhp6ceaveg3um" alt="Zaard Token Binance">
-    <p> ZARD in AVE </p>
-</a>
+  .crypto-ave-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    text-align: justify;
+  }
+
+  .crypto-ave-description strong {
+    color: #c084fc;
+  }
+
+  /* Contenedor flexible para poner las tarjetas una al lado de la otra */
+  .crypto-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Marco con parpadeo/animación en tonos morado y azul */
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1a103c;
+    border-radius: 14px;
+    padding: 15px;
+    width: 160px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 2px solid #8b5cf6;
+    box-shadow: 0 0 10px #8b5cf6, inset 0 0 5px #3b82f6;
+    animation: neonPulse 2.5s infinite alternate;
+    transition: transform 0.3s ease;
+  }
+
+  .card-link:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+    box-shadow: 0 0 20px #3b82f6, 0 0 30px #8b5cf6;
+  }
+
+  .card-link img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #c084fc;
+  }
+
+  .card-link p {
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+
+  /* Animación de palpitación de luces moradas y azules */
+  @keyframes neonPulse {
+    0% {
+      border-color: #8b5cf6;
+      box-shadow: 0 0 8px #8b5cf6, inset 0 0 4px #3b82f6;
+    }
+    50% {
+      border-color: #3b82f6;
+      box-shadow: 0 0 18px #3b82f6, inset 0 0 8px #8b5cf6;
+    }
+    100% {
+      border-color: #c084fc;
+      box-shadow: 0 0 8px #c084fc, inset 0 0 4px #3b82f6;
+    }
+  }
+</style>
+
+<div class="crypto-ave-section">
+  <div class="crypto-ave-description">
+    <p>
+      Las plataformas de indexación y analítica descentralizada como <strong>Ave.ai</strong> actúan como pasarelas de alta precisión para el rastreo en tiempo real de activos digitales en la blockchain. A través de estos agregadores de liquidez, los usuarios y traders pueden consultar métricas on-chain avanzadas, volúmenes de transacciones y cotizaciones exactas de los tokens de utilidad del ecosistema, facilitando el acceso directo a los pares de intercambio y la verificación técnica de los contratos inteligentes.
+    </p>
+  </div>
+
+  <div class="crypto-cards-container">
+    <!-- Botón ZARD -->
+    <a href="https://avebusiness.xyz/?id=6a98adb945ea858201dee314" class="card-link" target="_blank">
+      <img src="https://gateway.pinata.cloud/ipfs/bafybeieiiuojv6snmh2vchhigyoq7s5vcdvel66ih5tacnhp6ceaveg3um" alt="Zaard Token Binance">
+      <p>ZARD in AVE</p>
+    </a>
+
+    <!-- Botón PANGA -->
+    <a href="https://avebusiness.xyz/?id=6ab891bf1fd959e91644c604" class="card-link" target="_blank">
+      <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790479013205-2ff98ff15ca6b0219482be04e56e9ba2.png" alt="Panga Token AVE">
+      <p>PANGA in AVE</p>
+    </a>
+  </div>
+</div>
 
 <!-- ========================================== -->
 <!-- BLOQUE ZAARD COMUNIDAD Y REDES OFICIALES   -->
