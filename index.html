@@ -752,24 +752,28 @@
 
             </div>
 
-        <!-- ACCESOS DIRECTOS OFICIALES -->
+
+    <!-- ACCESOS DIRECTOS OFICIALES -->
 <div class="section">
     <h2>🚀 Accesos Directos al Ecosistema</h2>
     <p>Explora cada uno de los componentes principales haciendo clic en las tarjetas de acceso rápido:</p>
     
-    <!-- PORTADA ROTATIVA (SLIDER DE 3 IMÁGENES CADA 3 SEGUNDOS) -->
+    <!-- PORTADA ROTATIVA (SLIDER DE 5 IMÁGENES CADA 3 SEGUNDOS) -->
     <div class="hero-slider" id="heroSlider">
         <div class="slide-item active">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790290122445-0077664fb41e21b3aec6f1685fd6ec56.png" alt="Binance Web3 Preview">
-            <div class="slide-caption">Binance Web3 Ecosistema</div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791237266938-b0be482314969ac93740fee157e3f8b2.png" alt="Ecosistema ZARD 1">
         </div>
         <div class="slide-item">
-            <img src="https://raw.githubusercontent.com/figueredo56/zaard-innovation-dapp/refs/heads/main/CC_20260527_151822.png" alt="Creation Finance Preview">
-            <div class="slide-caption">DApp Creation Finance</div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791237242242-9f4719a87dbefc924e4ebb18f94dd41d.png" alt="Ecosistema ZARD 2">
         </div>
         <div class="slide-item">
-            <img src="https://raw.githubusercontent.com/figueredo56/zaard-innovation-dapp/refs/heads/main/215%20sin%20t%C3%ADtulo_20260802201954.png" alt="ZAARD Wallet Preview">
-            <div class="slide-caption">ZAARD Wallet Oficial</div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791237230240-420b57bc5d77e38996d507c8523df2cb.png" alt="Ecosistema ZARD 3">
+        </div>
+        <div class="slide-item">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791237216250-0a393b4d5862804ec10c66d5403aad75.png" alt="Ecosistema ZARD 4">
+        </div>
+        <div class="slide-item">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791228314127-a4d6873c2eb5099c9cbcde2494426878.png" alt="Ecosistema ZARD 5">
         </div>
     </div>
 
@@ -805,12 +809,15 @@
     .hero-slider {
         position: relative;
         width: 100%;
-        height: 220px;
+        height: 240px;
         border-radius: 10px;
         overflow: hidden;
         margin-bottom: 25px;
         border: 2px solid rgba(0, 255, 204, 0.3);
-        background: #000;
+        background: #0b0f19; /* Fondo oscuro armónico */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .slide-item {
         position: absolute;
@@ -820,22 +827,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 10px;
     }
     .slide-item.active {
         opacity: 1;
         z-index: 2;
     }
     .slide-item img {
-        width: 100%; height: 100%; object-fit: cover;
-    }
-    .slide-caption {
-        position: absolute; bottom: 0; left: 0; right: 0;
-        background: rgba(11, 15, 25, 0.8);
-        color: var(--primary-color, #00ffcc);
-        padding: 8px;
-        font-size: 0.9rem;
-        font-weight: bold;
-        border-top: 1px solid rgba(0, 255, 204, 0.2);
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Mantiene la proporción completa de la imagen sin recortarla */
     }
     .grid-links {
         display: grid;
