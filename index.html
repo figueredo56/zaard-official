@@ -827,13 +827,13 @@
     setInterval(nextSlide, 3000);
 </script>
 
-        <!-- AUDITORÍA DE SEGURIDAD GOPLUS LABS -->
+<!-- AUDITORÍA DE SEGURIDAD GOPLUS LABS -->
 <div class="section">
     <h2>🛡️ Verificación de Seguridad GoPlus Labs</h2>
     <p>Tecnología avanzada de análisis y auditoría inteligente de contratos inteligentes en la red BNB Smart Chain.</p>
     
-    <!-- PORTADA ROTATIVA (SLIDER DE 3 IMÁGENES CADA 3 SEGUNDOS) -->
-    <div class="hero-slider" id="goplusSlider">
+    <!-- PORTADA ROTATIVA CUADRADA (SLIDER DE 3 IMÁGENES CADA 3 SEGUNDOS) -->
+    <div class="hero-slider-square" id="goplusSlider">
         <div class="slide-item active">
             <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248576294-4fa81ef6fd7b01699c7792b11854ede8.png" alt="GoPlus Security 1">
         </div>
@@ -866,13 +866,14 @@
 </div>
 
 <style>
-    .hero-slider {
+    .hero-slider-square {
         position: relative;
         width: 100%;
-        height: 240px;
-        border-radius: 10px;
+        max-width: 320px; /* Tamaño cuadrado adaptable y compacto */
+        aspect-ratio: 1 / 1; /* FUERZA A QUE SEA 100% CUADRADO */
+        margin: 0 auto 20px auto;
+        border-radius: 12px;
         overflow: hidden;
-        margin-bottom: 20px;
         border: 2px solid rgba(0, 255, 204, 0.3);
         background: #0b0f19;
         display: flex;
@@ -887,7 +888,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        padding: 12px;
+        box-sizing: border-box;
     }
     .slide-item.active {
         opacity: 1;
@@ -896,7 +898,7 @@
     .slide-item img {
         max-width: 100%;
         max-height: 100%;
-        object-fit: contain;
+        object-fit: contain; /* Mantiene la imagen completa sin recortarla */
     }
     .security-badge-box {
         background: rgba(0, 255, 204, 0.05);
