@@ -827,6 +827,156 @@
     setInterval(nextSlide, 3000);
 </script>
 
+        <!-- AUDITORÍA DE SEGURIDAD GOPLUS LABS -->
+<div class="section">
+    <h2>🛡️ Verificación de Seguridad GoPlus Labs</h2>
+    <p>Tecnología avanzada de análisis y auditoría inteligente de contratos inteligentes en la red BNB Smart Chain.</p>
+    
+    <!-- PORTADA ROTATIVA (SLIDER DE 3 IMÁGENES CADA 3 SEGUNDOS) -->
+    <div class="hero-slider" id="goplusSlider">
+        <div class="slide-item active">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248576294-4fa81ef6fd7b01699c7792b11854ede8.png" alt="GoPlus Security 1">
+        </div>
+        <div class="slide-item">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248640711-469bcf5a76adaf386470e8b0dbbbe030.png" alt="GoPlus Security 2">
+        </div>
+        <div class="slide-item">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248681417-56c377de956c1c3a7b33918e7ed78ba7.png" alt="GoPlus Security 3">
+        </div>
+    </div>
+
+    <!-- MENSAJE TÉCNICO DE SEGURIDAD -->
+    <div class="security-badge-box">
+        <div class="tech-status">
+            <span class="pulse-dot"></span> 
+            <strong>Token Auditado & Verificado:</strong> Estándar OpenZeppelin optimizado bajo protocolos de seguridad multicapa. Sin funciones maliciosas (Mint/Proxy oculto restringido) y liquidez blindada.
+        </div>
+    </div>
+
+    <!-- ENLACE DIRECTO A GOPLUS LABS -->
+    <div class="grid-links">
+        <a href="https://console.gopluslabs.io/token-security/56/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" class="card-link full-width">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248576294-4fa81ef6fd7b01699c7792b11854ede8.png" alt="GoPlus Labs">
+            <div>
+                <span>Ver Reporte Oficial en GoPlus Labs</span>
+                <small>Auditoría en tiempo real (Chain ID: 56)</small>
+            </div>
+        </a>
+    </div>
+</div>
+
+<style>
+    .hero-slider {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border: 2px solid rgba(0, 255, 204, 0.3);
+        background: #0b0f19;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slide-item {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .slide-item.active {
+        opacity: 1;
+        z-index: 2;
+    }
+    .slide-item img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+    .security-badge-box {
+        background: rgba(0, 255, 204, 0.05);
+        border: 1px dashed rgba(0, 255, 204, 0.3);
+        border-radius: 8px;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .tech-status {
+        font-size: 0.85rem;
+        color: var(--text-color, #ffffff);
+        line-height: 1.4;
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .pulse-dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #00ffcc;
+        border-radius: 50%;
+        margin-top: 5px;
+        box-shadow: 0 0 8px #00ffcc;
+        animation: pulse 1.5s infinite;
+        flex-shrink: 0;
+    }
+    @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        50% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 12px #00ffcc; }
+        100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .grid-links {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-link.full-width {
+        width: 100%;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(0, 255, 204, 0.3);
+        border-radius: 8px;
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        color: var(--text-color, #ffffff);
+        transition: all 0.3s ease;
+    }
+    .card-link.full-width:hover {
+        border-color: var(--primary-color, #00ffcc);
+        transform: translateY(-2px);
+        background: rgba(0, 255, 204, 0.08);
+        box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+    }
+    .card-link img {
+        width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1px solid var(--primary-color, #00ffcc); flex-shrink: 0;
+    }
+    .card-link div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .card-link span { font-size: 0.95rem; font-weight: 700; color: var(--primary-color, #00ffcc); }
+    .card-link small { font-size: 0.75rem; color: #94a3b8; margin-top: 2px; }
+</style>
+
+<script>
+    const goplusSlides = document.querySelectorAll('#goplusSlider .slide-item');
+    let goplusCurrent = 0;
+    function nextGoplusSlide() {
+        goplusSlides[goplusCurrent].classList.remove('active');
+        goplusCurrent = (goplusCurrent + 1) % goplusSlides.length;
+        goplusSlides[goplusCurrent].classList.add('active');
+    }
+    setInterval(nextGoplusSlide, 3000);
+</script>
+
     <!-- ======================================================= -->
 <!-- BLOQUE: INTERCAMBIO DIRECTO - PANCAKESWAP (BNB A ZARD)  -->
 <!-- ======================================================= -->
