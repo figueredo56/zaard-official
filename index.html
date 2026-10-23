@@ -264,16 +264,132 @@
 </head>
 <body>
 
-    <!-- PANTALLA DE BIENVENIDA ÉPICA (Automática a los 3 segundos o con clic) -->
-    <div id="splashScreen">
-        <div class="splash-content">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790285851823-4955b8f5511ea8235af22dfb82371c91.png" alt="ZARD Welcome" class="splash-img">
-            <h1>ZAARD INNOVATION</h1>
-            <div class="splash-badge">ECOSISTEMA WEB3 & DEFI</div>
-            <p>Bienvenido al portal oficial. Accede a las herramientas descentralizadas, contratos inteligentes verificados y gestión de activos respaldados por <strong>ZAARD INNOVATION</strong>.</p>
-            <button class="splash-enter-btn" onclick="enterEcosystem()">Entrar al Ecosistema</button>
+<!-- PANTALLA DE BIENVENIDA -->
+<div id="splashScreen">
+    <style>
+    #splashScreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(rgba(5, 7, 15, 0.85), rgba(5, 7, 15, 0.85)), url('https://photos.pinksale.finance/file/pinksale-logo-upload/1790375348672-4de629a77b910ca4b3f245dda1b233f0.png') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999;
+        transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+
+    .splash-stage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        max-width: 600px;
+        position: relative;
+    }
+
+    .splash-floating-logo {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        margin-bottom: 25px;
+        filter: drop-shadow(0 0 20px #00f2fe) drop-shadow(0 0 40px #9b51e5);
+        animation: floatGlowAndBlink 3s ease-in-out infinite;
+    }
+
+    @keyframes floatGlowAndBlink {
+        0% {
+            transform: translateY(0px) scale(1);
+            filter: drop-shadow(0 0 15px #00f2fe) drop-shadow(0 0 30px #9b51e5);
+            opacity: 0.85;
+        }
+        50% {
+            transform: translateY(-12px) scale(1.05);
+            filter: drop-shadow(0 0 35px #00f2fe) drop-shadow(0 0 65px #9b51e5);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(0px) scale(1);
+            filter: drop-shadow(0 0 15px #00f2fe) drop-shadow(0 0 30px #9b51e5);
+            opacity: 0.85;
+        }
+    }
+
+    .splash-stage h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: #ffffff;
+        margin-bottom: 12px;
+        text-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
+        letter-spacing: 1px;
+    }
+
+    .splash-stage p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        color: #cbd5e1;
+        line-height: 1.5;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .splash-skip-btn {
+        position: absolute;
+        top: -40px;
+        right: -20px;
+        background: rgba(15, 20, 40, 0.8);
+        border: 1px solid rgba(0, 255, 255, 0.5);
+        color: #00ffff;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        cursor: pointer;
+        backdrop-filter: blur(6px);
+        transition: all 0.3s ease;
+    }
+
+    .splash-skip-btn:hover {
+        background: rgba(0, 255, 255, 0.25);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+        color: #ffffff;
+    }
+    </style>
+
+    <div class="splash-stage">
+        <button class="splash-skip-btn" onclick="enterEcosystem()">Saltar ➔</button>
+        <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790285851823-4955b8f5511ea8235af22dfb82371c91.png" alt="ZAARD Logo" class="splash-floating-logo">
+        <h1>ZAARD INNOVATION</h1>
+        <p>Bienvenido al ecosistema descentralizado, donde te tecnología y el poder del fénix se unen para crear la evolución de la Web3.</p>
+    </div>
+
+    <script>
+    function enterEcosystem() {
+        const splash = document.getElementById('splashScreen');
+        if (splash) {
+            splash.style.opacity = '0';
+            splash.style.visibility = 'hidden';
+            setTimeout(() => splash.remove(), 800);
+        }
+    }
+
+    setTimeout(function() {
+        enterEcosystem();
+    }, 4000);
+    </script>
+</div>
+    
+        
+        <!-- Barra de carga automática -->
+        <div class="splash-progress-container">
+            <div class="splash-progress-bar"></div>
         </div>
     </div>
+</div>  
 
     <div class="container">
         <!-- CABECERA Y LOGO -->
@@ -292,21 +408,91 @@
             <h2>⚡ Núcleo Tecnológico & Contrato Oficial</h2>
             <p>
                 El ecosistema opera bajo el contrato inteligente optimizado en la Binance Smart Chain (BSC): <br>
-                <code>0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38</code>. <br><br>
+                <code>ZARD  0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38</code>. <br><br>
+                <code>PANGA 0x6a7cc7d5749e028c8f78f29c1d6ac8eda0eefad2</code>. <br><br>
                 Diseñado bajo estrictos estándares criptográficos, <strong>ZARD</strong> garantiza la máxima transparencia, liquidez bloqueada y rendimiento inquebrantable en todas sus aplicaciones descentralizadas.
             </p>
         </div>
 
-        <!-- VIDEO / MULTIMEDIA INFORMATIVA -->
+    <!-- VIDEO / MULTIMEDIA INFORMATIVA (VERTICALES ARRIBA Y CUADRADO ABAJO) -->
         <div class="section" style="text-align: center;">
-            <h2>🎬 Presentación en Video</h2>
-            <p style="text-align: center; margin-bottom: 15px;">Visualiza los aspectos clave de nuestra arquitectura financiera y desarrollo on-chain.</p>
-            <div style="width: 100%; max-width: 340px; height: 190px; border: 2px solid var(--neon-blue); border-radius: 12px; overflow: hidden; margin: 0 auto; box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);">
-                <iframe src="https://www.youtube.com/embed/3ZLhfmZWLXk" style="width:100%; height:100%; border:none;" allowfullscreen></iframe>
+            <h2>🎬 Presentación en Video y Música</h2>
+            <p style="text-align: center; margin-bottom: 25px;">Visualiza los aspectos clave de nuestra arquitectura financiera y el contenido oficial.</p>
+            
+            <!-- FILA SUPERIOR: Los dos videos de arriba en formato vertical -->
+            <div style="display: flex; justify-content: center; align-items: center; gap: 25px; flex-wrap: wrap; margin-bottom: 30px;">
+                
+                <!-- VIDEO 1 (Arriba Izquierda - Vertical) -->
+                <div style="width: 100%; max-width: 220px; height: 390px; border: 2px solid var(--neon-blue); border-radius: 14px; overflow: hidden; box-shadow: 0 0 25px rgba(0, 242, 254, 0.35); background: #000;">
+                    <iframe src="https://www.youtube.com/embed/3ZLhfmZWLXk" style="width:100%; height:100%; border:none;" allowfullscreen></iframe>
+                </div>
+
+                <!-- VIDEO 2 (Arriba Derecha - Vertical) -->
+                <div style="width: 100%; max-width: 220px; height: 390px; border: 2px solid var(--neon-blue); border-radius: 14px; overflow: hidden; box-shadow: 0 0 25px rgba(0, 242, 254, 0.35); background: #000;">
+                    <iframe src="https://www.youtube.com/embed/daRUEariyUI" style="width:100%; height:100%; border:none;" allowfullscreen></iframe>
+                </div>
+
             </div>
+
+         <!-- FILA INFERIOR: El tercer video musical (Contenedor Cuadrado Centrado) -->
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+        <div style="width: 100%; max-width: 300px; height: 300px; border: 2px solid var(--neon-blue); border-radius: 16px; overflow: hidden; box-shadow: 0 0 25px rgba(0, 242, 254, 0.4); background: #000;">
+            <iframe src="https://www.youtube.com/embed/pIJr9SdYPRA" style="width:100%; height:100%; border:none;" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- FILA INFERIOR: El cuarto video musical (Contenedor Cuadrado Centrado) -->
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <div style="width: 100%; max-width: 300px; height: 300px; border: 2px solid var(--neon-blue); border-radius: 16px; overflow: hidden; box-shadow: 0 0 25px rgba(0, 242, 254, 0.4); background: #000;">
+            <iframe src="https://www.youtube.com/embed/Lsz7LTeyAdQ" style="width:100%; height:100%; border:none;" allowfullscreen></iframe>
+        </div>
+    </div>
+
+  </div>
+
+      <!-- SECCIÓN TARJETAS DE TOKENS ZARD Y PANGA -->
+    <div class="tokens-section" style="text-align: center; margin: 30px auto; max-width: 800px;">
+      <p style="font-family: 'Orbitron', sans-serif; font-size: 1.2rem; font-weight: bold; background: linear-gradient(90deg, #00ff88, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 12px rgba(0, 255, 136, 0.4); margin-bottom: 25px; text-transform: uppercase;">
+        La evolución de la Web3
+      </p>
+
+      <div style="display: flex; justify-content: center; align-items: center; gap: 25px; flex-wrap: wrap;">
+        
+        <!-- TARJETA ZARD -->
+        <div style="display: flex; flex-direction: column; align-items: center; background: rgba(15, 15, 26, 0.6); border: 1px solid rgba(0, 212, 255, 0.3); padding: 20px; border-radius: 16px; backdrop-filter: blur(8px); min-width: 160px;">
+          <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38&binanceChainId=56&chain=bsc" target="_blank">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791940828941-906fd2a3d85625f79d066e5b033f6011.png" alt="ZARD" class="glowing-coin" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; animation: floatCoin 3s ease-in-out infinite, glowPulse 2.5s infinite alternate; cursor: pointer;">
+          </a>
+          <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38&binanceChainId=56&chain=bsc" target="_blank" style="display: inline-block; padding: 10px 20px; font-family: 'Orbitron', sans-serif; font-size: 0.85rem; font-weight: bold; color: #fff; text-decoration: none; background: linear-gradient(135deg, #7b2cbf, #0077b6); border-radius: 25px; box-shadow: 0 0 10px rgba(123, 44, 191, 0.5); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;">
+            IR A ZAARD
+          </a>
         </div>
 
-        
+        <!-- TARJETA PANGA -->
+        <div style="display: flex; flex-direction: column; align-items: center; background: rgba(15, 15, 26, 0.6); border: 1px solid rgba(138, 43, 226, 0.3); padding: 20px; border-radius: 16px; backdrop-filter: blur(8px); min-width: 160px;">
+          <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x6a7cc7d5749e028c8f78f29c1d6ac8eda0eefad2&binanceChainId=56&chain=bsc" target="_blank">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790484633328-559fdd3c13098c92f8a665ac39a838c2.png" alt="PANGA" class="glowing-coin" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; animation: floatCoin 3s ease-in-out infinite, glowPulse 2.5s infinite alternate; cursor: pointer;">
+          </a>
+          <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x6a7cc7d5749e028c8f78f29c1d6ac8eda0eefad2&binanceChainId=56&chain=bsc" target="_blank" style="display: inline-block; padding: 10px 20px; font-family: 'Orbitron', sans-serif; font-size: 0.85rem; font-weight: bold; color: #fff; text-decoration: none; background: linear-gradient(135deg, #7b2cbf, #0077b6); border-radius: 25px; box-shadow: 0 0 10px rgba(123, 44, 191, 0.5); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;">
+            IR A PANGA
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ESTILOS DE ANIMACIONES (Animaciones de flotado y titileo morado/azul) -->
+    <style>
+      @keyframes floatCoin {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes glowPulse {
+        0% { box-shadow: 0 0 12px #8a2be2, 0 0 25px #8a2be2; }
+        50% { box-shadow: 0 0 6px #00d2ff, 0 0 12px #00d2ff; }
+        100% { box-shadow: 0 0 20px #00d2ff, 0 0 35px #00d2ff; }
+      }
+    </style>  
 
     <div class="crypto-ave-section" style="text-align: center;">
     <!-- Encabezado del Bloque -->
@@ -334,6 +520,17 @@
         </a>
     </div>
 
+   <!-- Contenedor de la Insignia Interactiva de PANGA -->
+    <div style="margin-bottom: 25px;">
+        <a href="https://avebusiness.xyz/?id=6ad549a93cf5505e09c03526" target="_blank" style="display: inline-block; transition: transform 0.3s ease, filter 0.3s ease;">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1792090537125-559fdd3c13098c92f8a665ac39a838c2.png" 
+                 alt="PANGA Ave.ai Verified Badge" 
+                 style="max-width: 180px; width: 100%; height: auto; border-radius: 12px; border: 2px solid rgba(0, 255, 204, 0.5); box-shadow: 0 0 20px rgba(0,255,204,0.3); filter: drop-shadow(0 0 8px rgba(0,255,204,0.4));"
+                 onmouseover="this.style.transform='scale(1.05)'; this.style.filter='drop-shadow(0 0 12px rgba(0,255,204,0.8))';" 
+                 onmouseout="this.style.transform='scale(1)'; this.style.filter='drop-shadow(0 0 8px rgba(0,255,204,0.4))';">
+        </a>
+    </div>
+        
     <!-- Texto descriptivo y llamada a la acción -->
     <p style="font-family: 'Orbitron', sans-serif; font-size: 0.95em; line-height: 1.6; max-width: 650px; margin: 20px auto; padding: 0 15px;">
         <span style="color: #60a5fa; text-shadow: 0 0 8px rgba(96,165,250,0.4);">
@@ -356,7 +553,98 @@
     </div>
     </div>
 
+  <!-- ======================================================= -->
+<!-- BLOQUE: AUDITORÍA Y SEGURIDAD - TOKEN SNIFFER (PANGA)    -->
+<!-- ======================================================= -->
+<div class="section" style="position: relative; overflow: hidden; border: 2px solid #10b981; box-shadow: 0 0 35px rgba(16, 185, 129, 0.35); background: linear-gradient(135deg, rgba(15,15,15,0.95), rgba(10,30,20,0.9)); padding: 30px; border-radius: 16px; margin-bottom: 40px; text-align: center;">
     
+    <!-- Encabezado del Bloque -->
+    <h2 style="font-family: 'Orbitron', sans-serif; color: #34d399; font-size: 1.7em; margin-bottom: 8px; text-shadow: 0 0 12px rgba(52,211,153,0.6);">
+        🛡️ AUDITORÍA DE SEGURIDAD TOKEN SNIFFER (PANGA)
+    </h2>
+    <p style="color: #94a3b8; font-size: 0.95em; max-width: 600px; margin: 0 auto 25px auto; line-height: 1.5;">
+        Verificación de contrato inteligente, análisis de código y seguridad en tiempo real para <span style="color: #34d399; font-weight: bold;">PANGA</span> en <span style="color: #34d399; font-weight: bold;">TokenSniffer</span>.
+    </p>
+
+    <!-- Contenedor con el Slider de las 2 Imágenes de PANGA -->
+    <div style="margin-bottom: 25px; display: flex; justify-content: center;">
+        <a href="https://tokensniffer.com/token/bsc/0x6a7cc7d5749e028c8f78f29c1d6ac8eda0eefad2" target="_blank" style="display: inline-block;">
+            <div class="panga-sniffer-slider-wrapper">
+                <!-- Imagen 1 PANGA (Activa por defecto) -->
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1792092181956-370bc19583b97585a7e9cffa48b116cf.png" 
+                     alt="PANGA TokenSniffer 1" 
+                     class="panga-sniffer-img-slide active">
+                <!-- Imagen 2 PANGA -->
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1792092202625-a5dfca3efb2efbba7a1d1f11d29c7d36.png" 
+                     alt="PANGA TokenSniffer 2" 
+                     class="panga-sniffer-img-slide">
+            </div>
+        </a>
+    </div>
+
+    <!-- Botón de Enlace Directo a PANGA -->
+    <div>
+        <a href="https://tokensniffer.com/token/bsc/0x6a7cc7d5749e028c8f78f29c1d6ac8eda0eefad2" 
+           target="_blank" 
+           class="card-link"
+           style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, rgba(16,185,129,0.2), rgba(0,255,204,0.1)); border: 2px solid #10b981; border-radius: 10px; color: #34d399; font-family: 'Orbitron', sans-serif; font-size: 0.9em; font-weight: bold; text-decoration: none; box-shadow: 0 0 20px rgba(16,185,129,0.25); transition: all 0.3s ease;">
+            🔍 VERIFICAR PANGA EN TOKEN SNIFFER ↗
+        </a>
+    </div>
+
+</div>
+
+<!-- Estilos y Script para la transición de imágenes de PANGA -->
+<style>
+    .panga-sniffer-slider-wrapper {
+        position: relative;
+        width: 170px;
+        height: 170px;
+        margin: 0 auto;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 2px solid rgba(16, 185, 129, 0.6);
+        box-shadow: 0 0 25px rgba(16,185,129,0.4);
+        background: rgba(0,0,0,0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .panga-sniffer-slider-wrapper:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 35px rgba(16,185,129,0.8);
+    }
+
+    .panga-sniffer-img-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+
+    .panga-sniffer-img-slide.active {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+</style>
+
+<script>
+    // Script de alternancia de imágenes de PANGA cada 2.5 segundos
+    (function() {
+        const pangaSlides = document.querySelectorAll('.panga-sniffer-img-slide');
+        if (pangaSlides.length > 1) {
+            let currentIndex = 0;
+            setInterval(() => {
+                pangaSlides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % pangaSlides.length;
+                pangaSlides[currentIndex].classList.add('active');
+            }, 2500);
+        }
+    })();
+</script>  
 
    <!-- ======================================================= -->
 <!-- BLOQUE: AUDITORÍA Y SEGURIDAD - TOKEN SNIFFER           -->
@@ -469,7 +757,7 @@
 
     <!-- Encabezado del Mensaje -->
     <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 900; color: #d4af37; font-size: 2.5em; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 15px; text-shadow: 0 0 15px rgba(212,175,55,0.8);">
-        🛡️ PANGA TOKEN: LA ÉLITE DE LA SEGURIDAD BLOCKCHAIN 🛡️
+        🛡️ ZAARD LA ÉLITE DE LA SEGURIDAD BLOCKCHAIN 🛡️
     </h1>
     <h3 style="font-family: 'Roboto', sans-serif; color: #eaecef; font-size: 1.3em; font-weight: 300; margin-bottom: 30px; letter-spacing: 1px;">
         Una Experiencia DeFi de Alta Gama
@@ -495,7 +783,7 @@
 
     <!-- Llamada a la Acción -->
     <div style="margin-top: 30px;">
-        <a href="ENLACE_A_TOKEN_SNIFFER" 
+        <a href="https://app.binance.com/uni-qr/cpro/PANGA?l=es-LA&r=KAN4LD16&uc=app_square_share_link&us=copylink" 
            target="_blank"
            class="panga-action-btn"
            style="display: inline-block; 
@@ -511,7 +799,7 @@
                   letter-spacing: 2px; 
                   box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
                   transition: all 0.3s ease;">
-            🔍 VERIFICAR SEGURIDAD EN TOKEN SNIFFER
+            🔍 ZAARD & PANGA
         </a>
     </div>
 </div>
@@ -528,6 +816,148 @@
         transform: translateY(-3px);
     }
 </style>
+
+        <!-- ======================================================== -->
+<!-- BLOQUE WEB3: ZAARD_ALX - ZAARD INNOVATION XENOCRYPT      -->
+<!-- ======================================================== -->
+<div class="zaard-web3-container" style="position: relative; overflow: hidden; background: linear-gradient(135deg, #050b14 0%, #0a192f 50%, #02060d 100%); border: 2px solid #00f0ff; border-radius: 16px; box-shadow: 0 0 40px rgba(0, 240, 255, 0.25), inset 0 0 20px rgba(0, 240, 255, 0.1); padding: 30px; font-family: 'Rajdhani', 'Montserrat', sans-serif; color: #e2e8f0; margin: 20px 0;">
+
+    <!-- Efecto de Línea Láser Escáner de Fondo -->
+    <div class="scanner-line" style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, #00f0ff, transparent); animation: scanLaser 4s ease-in-out infinite; pointer-events: none; z-index: 1;"></div>
+
+    <!-- Encabezado del Perfil Web3 -->
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0, 240, 255, 0.3); padding-bottom: 15px; margin-bottom: 25px; position: relative; z-index: 2;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 45px; height: 45px; background: rgba(0, 240, 255, 0.1); border: 1px solid #00f0ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);">
+                <span style="font-family: 'Orbitron', sans-serif; font-weight: 700; color: #00f0ff; font-size: 1.2rem;">Z</span>
+            </div>
+            <div>
+                <h2 style="font-family: 'Orbitron', sans-serif; color: #ffffff; font-size: 1.5rem; font-weight: 700; margin: 0; letter-spacing: 1px; text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);">ZAARD_ALX</h2>
+                <p style="color: #00f0ff; font-size: 0.85rem; margin: 0; font-family: 'Orbitron', sans-serif; letter-spacing: 2px;">ZAARD INNOVATION</p>
+            </div>
+        </div>
+        <div style="background: rgba(0, 240, 255, 0.15); border: 1px solid #00f0ff; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-family: 'Orbitron', sans-serif; color: #00f0ff; display: flex; align-items: center; gap: 6px; box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);">
+            <span style="width: 8px; height: 8px; background: #00f0ff; border-radius: 50%; display: inline-block; box-shadow: 0 0 8px #00f0ff;"></span>
+            VERIFIED CREATOR
+        </div>
+    </div>
+
+    <!-- Cuerpo Técnico Principal -->
+    <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 25px; align-items: center; position: relative; z-index: 2;" class="zaard-grid-layout">
+        
+        <!-- Carrusel Tecnológico de Imágenes Pinksale -->
+        <div style="position: relative; width: 100%; height: 280px; background: rgba(2, 6, 13, 0.8); border: 1px solid rgba(0, 240, 255, 0.4); border-radius: 12px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 0 25px rgba(0, 240, 255, 0.15);">
+            
+            <!-- Contenedor de Diapositivas -->
+            <div class="zaard-slider-wrapper" style="width: 100%; height: 100%; position: relative;">
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248681417-56c377de956c1c3a7b33918e7ed78ba7.png" class="zaard-slide active" alt="ZAARD Pinksale Asset 1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 20px; opacity: 1; transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;">
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790285457237-9ad671ea756d64c75327e237813ee288.png" class="zaard-slide" alt="ZAARD Pinksale Asset 2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 20px; opacity: 0; transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;">
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790285851823-4955b8f5511ea8235af22dfb82371c91.png" class="zaard-slide" alt="ZAARD Pinksale Asset 3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 20px; opacity: 0; transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;">
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790286389131-9ffaade2f1b5bc4c51858adc8fdf4bd4.png" class="zaard-slide" alt="ZAARD Pinksale Asset 4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 20px; opacity: 0; transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;">
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790290143709-10b712b064b3dca0c1a6417000db08e3.png" class="zaard-slide" alt="ZAARD Pinksale Asset 5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 20px; opacity: 0; transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;">
+            </div>
+
+            <!-- Indicadores de Slides -->
+            <div style="position: absolute; bottom: 10px; display: flex; gap: 6px; z-index: 5;" class="zaard-dots">
+                <span class="dot active" onclick="currentSlide(0)" style="width: 8px; height: 8px; border-radius: 50%; background: #00f0ff; cursor: pointer; box-shadow: 0 0 5px #00f0ff; transition: 0.3s;"></span>
+                <span class="dot" onclick="currentSlide(1)" style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: 0.3s;"></span>
+                <span class="dot" onclick="currentSlide(2)" style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: 0.3s;"></span>
+                <span class="dot" onclick="currentSlide(3)" style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: 0.3s;"></span>
+                <span class="dot" onclick="currentSlide(4)" style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: 0.3s;"></span>
+            </div>
+        </div>
+
+        <!-- Información Maestra y Técnica -->
+        <div>
+            <h3 style="font-family: 'Orbitron', sans-serif; color: #00f0ff; font-size: 1.35rem; font-weight: 700; margin: 0 0 8px 0; text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);">
+                ZAARD INNOVATION XENOCRYPT
+            </h3>
+            <div style="font-family: 'Orbitron', sans-serif; color: #ff007a; font-size: 0.95rem; font-weight: 600; margin-bottom: 15px; letter-spacing: 1px; text-shadow: 0 0 8px rgba(255, 0, 122, 0.4);">
+                CREADOR Y DESPLOGUER AUTÓNOMO
+            </div>
+            
+            <p style="font-size: 1rem; line-height: 1.6; color: #cbd5e1; margin-bottom: 15px;">
+                <strong style="color: #00f0ff; font-family: 'Orbitron', sans-serif; font-size: 1.05rem; display: block; margin-bottom: 5px;">POSEEDOR DEL PODER PANGA</strong>
+                Arquitecto Maestro de Ecosistemas Web3 Descentralizados y Pionero en la Innovación de Blockchain. Fundador y máximo líder de <strong style="color: #ffffff;">ZAARD INNOVATION</strong>, supervisando directamente: <strong style="color: #00f0ff;">ZAARD FINANCE</strong> (Token Launchpad), NFT Studios, Gaming Ecosistema & Blockchain Traker para la creación autónoma de tokens.
+            </p>
+
+            <div style="display: flex; gap: 15px; font-size: 0.85rem; color: #94a3b8; font-family: 'Orbitron', sans-serif; background: rgba(0, 240, 255, 0.05); padding: 10px; border-radius: 8px; border: 1px solid rgba(0, 240, 255, 0.2);">
+                <div>⚡ UID: <span style="color: #ffffff;">#ZRD-001</span></div>
+                <div>🛡️ Status: <span style="color: #00f0ff;">Autonomous Core</span></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ======================================================== -->
+<!-- ESTILOS Y SCRIPT DE ANIMACIÓN Y AUTOMATIZACIÓN           -->
+<!-- ======================================================== -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@500;600;700&display=swap');
+
+    @keyframes scanLaser {
+        0% { top: 0%; opacity: 0.8; }
+        50% { top: 100%; opacity: 0.3; }
+        100% { top: 0%; opacity: 0.8; }
+    }
+
+    .zaard-slide {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    .zaard-slide.active {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .dot.active {
+        background: #00f0ff !important;
+        box-shadow: 0 0 8px #00f0ff !important;
+        transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+        .zaard-grid-layout {
+            grid-template-columns: 1fr !important;
+        }
+    }
+</style>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.zaard-slide');
+    const dots = document.querySelectorAll('.dot');
+    let slideInterval;
+
+    function showSlide(n) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slideIndex = (n + slides.length) % slides.length;
+        
+        slides[slideIndex].classList.add('active');
+        dots[slideIndex].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(slideIndex + 1);
+    }
+
+    function currentSlide(n) {
+        showSlide(n);
+        resetInterval();
+    }
+
+    function resetInterval() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 3000); // Cambia cada 3 segundos con efecto maravilloso
+    }
+
+    // Iniciar auto-slider
+    slideInterval = setInterval(nextSlide, 3000);
+</script>
 
     <!-- ======================================================= -->
 <!-- BLOQUE 2: MONITOREO EN DIRECTO - DEXVIEW                -->
@@ -621,6 +1051,170 @@
         }
     });
 </script>
+
+     <!-- AUDITORÍA DE SEGURIDAD GOPLUS LABS -->
+<div class="section">
+    <h2>🛡️ Verificación de Seguridad GoPlus Labs</h2>
+    <p>Tecnología avanzada de análisis y auditoría inteligente de contratos inteligentes en la red BNB Smart Chain.</p>
+    
+    <!-- PORTADA ROTATIVA CUADRADA (SLIDER DE 3 IMÁGENES CADA 3 SEGUNDOS) -->
+    <div class="hero-slider-square" id="goplusSlider">
+        <div class="slide-item active">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248576294-4fa81ef6fd7b01699c7792b11854ede8.png" alt="GoPlus Security 1">
+        </div>
+        <div class="slide-item">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248640711-469bcf5a76adaf386470e8b0dbbbe030.png" alt="GoPlus Security 2">
+        </div>
+        <div class="slide-item">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248681417-56c377de956c1c3a7b33918e7ed78ba7.png" alt="GoPlus Security 3">
+        </div>
+    </div>
+
+    <!-- MENSAJE TÉCNICO DE SEGURIDAD -->
+    <div class="security-badge-box">
+        <div class="tech-status">
+            <span class="pulse-dot"></span> 
+            <strong>Token Auditado & Verificado:</strong> Estándar OpenZeppelin optimizado bajo protocolos de seguridad multicapa. Sin funciones maliciosas (Mint/Proxy oculto restringido) y liquidez blindada.
+        </div>
+    </div>
+
+      <!-- ENLACE DIRECTO A GOPLUS LABS -->
+    <div class="grid-links">
+        <a href="https://console.gopluslabs.io/token-security/56/0x6a7cc7d5749e028c8f78f29c1d6ac8eda0eefad2" target="_blank" class="card-link full-width">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790484633328-559fdd3c13098c92f8a665ac39a838c2.png" alt="GoPlus Labs">
+            <div>
+                <span>Ver Reporte Oficial en GoPlus Labs</span>
+                <small>Auditoría en tiempo real (Chain ID: 56)</small>
+            </div>
+        </a>
+    </div>
+
+    <!-- ENLACE DIRECTO A GOPLUS LABS -->
+    <div class="grid-links">
+        <a href="https://console.gopluslabs.io/token-security/56/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" class="card-link full-width">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791940828941-906fd2a3d85625f79d066e5b033f6011.png" alt="GoPlus Labs">
+            <div>
+                <span>Ver Reporte Oficial en GoPlus Labs</span>
+                <small>Auditoría en tiempo real (Chain ID: 56)</small>
+            </div>
+        </a>
+    </div>
+</div>
+
+<style>
+    .hero-slider-square {
+        position: relative;
+        width: 100%;
+        max-width: 320px; /* Tamaño cuadrado adaptable y compacto */
+        aspect-ratio: 1 / 1; /* FUERZA A QUE SEA 100% CUADRADO */
+        margin: 0 auto 20px auto;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 2px solid rgba(0, 255, 204, 0.3);
+        background: #0b0f19;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slide-item {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+    .slide-item.active {
+        opacity: 1;
+        z-index: 2;
+    }
+    .slide-item img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Mantiene la imagen completa sin recortarla */
+    }
+    .security-badge-box {
+        background: rgba(0, 255, 204, 0.05);
+        border: 1px dashed rgba(0, 255, 204, 0.3);
+        border-radius: 8px;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .tech-status {
+        font-size: 0.85rem;
+        color: var(--text-color, #ffffff);
+        line-height: 1.4;
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .pulse-dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #00ffcc;
+        border-radius: 50%;
+        margin-top: 5px;
+        box-shadow: 0 0 8px #00ffcc;
+        animation: pulse 1.5s infinite;
+        flex-shrink: 0;
+    }
+    @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        50% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 12px #00ffcc; }
+        100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .grid-links {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-link.full-width {
+        width: 100%;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(0, 255, 204, 0.3);
+        border-radius: 8px;
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        color: var(--text-color, #ffffff);
+        transition: all 0.3s ease;
+    }
+    .card-link.full-width:hover {
+        border-color: var(--primary-color, #00ffcc);
+        transform: translateY(-2px);
+        background: rgba(0, 255, 204, 0.08);
+        box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+    }
+    .card-link img {
+        width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1px solid var(--primary-color, #00ffcc); flex-shrink: 0;
+    }
+    .card-link div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .card-link span { font-size: 0.95rem; font-weight: 700; color: var(--primary-color, #00ffcc); }
+    .card-link small { font-size: 0.75rem; color: #94a3b8; margin-top: 2px; }
+</style>
+
+<script>
+    const goplusSlides = document.querySelectorAll('#goplusSlider .slide-item');
+    let goplusCurrent = 0;
+    function nextGoplusSlide() {
+        goplusSlides[goplusCurrent].classList.remove('active');
+        goplusCurrent = (goplusCurrent + 1) % goplusSlides.length;
+        goplusSlides[goplusCurrent].classList.add('active');
+    }
+    setInterval(nextGoplusSlide, 3000);
+</script>   
+        
 
              <!-- ======================================================= -->
              <!-- BLOQUE MAESTRO: DEXTOOLS + EVOLUCIÓN TÉCNICA Y ECOSYSTEM -->
@@ -825,158 +1419,6 @@
         slides[currentSlide].classList.add('active');
     }
     setInterval(nextSlide, 3000);
-</script>
-
-<!-- AUDITORÍA DE SEGURIDAD GOPLUS LABS -->
-<div class="section">
-    <h2>🛡️ Verificación de Seguridad GoPlus Labs</h2>
-    <p>Tecnología avanzada de análisis y auditoría inteligente de contratos inteligentes en la red BNB Smart Chain.</p>
-    
-    <!-- PORTADA ROTATIVA CUADRADA (SLIDER DE 3 IMÁGENES CADA 3 SEGUNDOS) -->
-    <div class="hero-slider-square" id="goplusSlider">
-        <div class="slide-item active">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248576294-4fa81ef6fd7b01699c7792b11854ede8.png" alt="GoPlus Security 1">
-        </div>
-        <div class="slide-item">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248640711-469bcf5a76adaf386470e8b0dbbbe030.png" alt="GoPlus Security 2">
-        </div>
-        <div class="slide-item">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248681417-56c377de956c1c3a7b33918e7ed78ba7.png" alt="GoPlus Security 3">
-        </div>
-    </div>
-
-    <!-- MENSAJE TÉCNICO DE SEGURIDAD -->
-    <div class="security-badge-box">
-        <div class="tech-status">
-            <span class="pulse-dot"></span> 
-            <strong>Token Auditado & Verificado:</strong> Estándar OpenZeppelin optimizado bajo protocolos de seguridad multicapa. Sin funciones maliciosas (Mint/Proxy oculto restringido) y liquidez blindada.
-        </div>
-    </div>
-
-    <!-- ENLACE DIRECTO A GOPLUS LABS -->
-    <div class="grid-links">
-        <a href="https://console.gopluslabs.io/token-security/56/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" class="card-link full-width">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791248576294-4fa81ef6fd7b01699c7792b11854ede8.png" alt="GoPlus Labs">
-            <div>
-                <span>Ver Reporte Oficial en GoPlus Labs</span>
-                <small>Auditoría en tiempo real (Chain ID: 56)</small>
-            </div>
-        </a>
-    </div>
-</div>
-
-<style>
-    .hero-slider-square {
-        position: relative;
-        width: 100%;
-        max-width: 320px; /* Tamaño cuadrado adaptable y compacto */
-        aspect-ratio: 1 / 1; /* FUERZA A QUE SEA 100% CUADRADO */
-        margin: 0 auto 20px auto;
-        border-radius: 12px;
-        overflow: hidden;
-        border: 2px solid rgba(0, 255, 204, 0.3);
-        background: #0b0f19;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .slide-item {
-        position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 12px;
-        box-sizing: border-box;
-    }
-    .slide-item.active {
-        opacity: 1;
-        z-index: 2;
-    }
-    .slide-item img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain; /* Mantiene la imagen completa sin recortarla */
-    }
-    .security-badge-box {
-        background: rgba(0, 255, 204, 0.05);
-        border: 1px dashed rgba(0, 255, 204, 0.3);
-        border-radius: 8px;
-        padding: 12px 15px;
-        margin-bottom: 15px;
-        text-align: left;
-    }
-    .tech-status {
-        font-size: 0.85rem;
-        color: var(--text-color, #ffffff);
-        line-height: 1.4;
-        display: flex;
-        align-items: flex-start;
-        gap: 8px;
-    }
-    .pulse-dot {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background-color: #00ffcc;
-        border-radius: 50%;
-        margin-top: 5px;
-        box-shadow: 0 0 8px #00ffcc;
-        animation: pulse 1.5s infinite;
-        flex-shrink: 0;
-    }
-    @keyframes pulse {
-        0% { transform: scale(0.95); opacity: 0.8; }
-        50% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 12px #00ffcc; }
-        100% { transform: scale(0.95); opacity: 0.8; }
-    }
-    .grid-links {
-        display: flex;
-        flex-direction: column;
-    }
-    .card-link.full-width {
-        width: 100%;
-        box-sizing: border-box;
-        background: rgba(0, 0, 0, 0.4);
-        border: 1px solid rgba(0, 255, 204, 0.3);
-        border-radius: 8px;
-        padding: 12px 15px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        text-decoration: none;
-        color: var(--text-color, #ffffff);
-        transition: all 0.3s ease;
-    }
-    .card-link.full-width:hover {
-        border-color: var(--primary-color, #00ffcc);
-        transform: translateY(-2px);
-        background: rgba(0, 255, 204, 0.08);
-        box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
-    }
-    .card-link img {
-        width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1px solid var(--primary-color, #00ffcc); flex-shrink: 0;
-    }
-    .card-link div {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-    .card-link span { font-size: 0.95rem; font-weight: 700; color: var(--primary-color, #00ffcc); }
-    .card-link small { font-size: 0.75rem; color: #94a3b8; margin-top: 2px; }
-</style>
-
-<script>
-    const goplusSlides = document.querySelectorAll('#goplusSlider .slide-item');
-    let goplusCurrent = 0;
-    function nextGoplusSlide() {
-        goplusSlides[goplusCurrent].classList.remove('active');
-        goplusCurrent = (goplusCurrent + 1) % goplusSlides.length;
-        goplusSlides[goplusCurrent].classList.add('active');
-    }
-    setInterval(nextGoplusSlide, 3000);
 </script>
 
     <!-- ======================================================= -->
