@@ -959,6 +959,36 @@
     slideInterval = setInterval(nextSlide, 3000);
 </script>
 
+ <!-- ======================================================= -->
+<!-- BLOQUE 3: EL ECOSISTEMA UNIFICADO ZARD & PANGA          -->
+<!-- ======================================================= -->
+<div class="section" style="position: relative; overflow: hidden; border: 2px solid #00ffcc; box-shadow: 0 0 35px rgba(0, 255, 204, 0.25); background: linear-gradient(135deg, rgba(10,20,35,0.95), rgba(15,15,15,0.9)); padding: 30px; border-radius: 16px; margin-bottom: 40px; text-align: center;">
+    
+    <!-- Encabezado -->
+    <h2 style="font-family: 'Orbitron', sans-serif; color: #00ffcc; font-size: 1.6em; margin-bottom: 12px; text-shadow: 0 0 10px rgba(0,255,204,0.4);">
+        ✨ LA FUERZA UNIDA: ZARD & PANGA
+    </h2>
+
+    <!-- Imagen Destacada del Ecosistema -->
+    <div style="margin: 20px auto; display: flex; justify-content: center;">
+        <div style="max-width: 220px; border-radius: 14px; overflow: hidden; border: 2px solid rgba(0, 255, 204, 0.5); box-shadow: 0 0 25px rgba(0, 255, 204, 0.3); background: rgba(0,0,0,0.4); padding: 5px;">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1792787906588-c7149b542005e60ff1e93e93bc1607f0.png" 
+                 alt="ZARD & PANGA Ecosystem" 
+                 style="width: 100%; height: auto; border-radius: 10px; display: block; object-fit: cover;">
+        </div>
+    </div>
+
+    <!-- Texto Explicativo -->
+    <p style="color: #cbd5e1; font-size: 0.98em; max-width: 680px; margin: 0 auto 20px auto; line-height: 1.6;">
+        Dentro de <span style="color: #00ffcc; font-weight: bold;">ZAARD INNOVATION</span>, los tokens <span style="color: #60a5fa; font-weight: bold;">ZARD</span> y <span style="color: #60a5fa; font-weight: bold;">PANGA</span> no operan de forma aislada: forman un <span style="color: #00ffcc; font-weight: bold;">ecosistema dinámico y unificado</span> donde ambos trabajan en perfecta sintonía para potenciar la liquidez, la utilidad y la fuerza del proyecto.
+    </p>
+
+    <p style="color: #94a3b8; font-size: 0.92em; max-width: 650px; margin: 0 auto; line-height: 1.5;">
+        Cada activo cuenta con <strong>verificaciones exhaustivas en blockchain</strong> y total transparencia en sus contratos y pools de DexView. Todos los enlaces de seguimiento, auditorías y accesos oficiales se encuentran 100% activos para garantizar una experiencia segura, sólida y de alta confianza para toda la comunidad. 🚀
+    </p>
+
+</div>
+
     <!-- ======================================================= -->
 <!-- BLOQUE 2: MONITOREO EN DIRECTO - DEXVIEW                -->
 <!-- ======================================================= -->
@@ -991,6 +1021,99 @@
     <!-- Botón de Enlace Directo -->
     <div>
         <a href="https://www.dexview.com/bsc/0x973ba2C1dCCD0820F1e026d6B1f01c55c4085d38" 
+           target="_blank" 
+           class="card-link"
+           style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(0,255,204,0.1)); border: 2px solid #3b82f6; border-radius: 10px; color: #60a5fa; font-family: 'Orbitron', sans-serif; font-size: 0.9em; font-weight: bold; text-decoration: none; box-shadow: 0 0 15px rgba(59,130,246,0.25); transition: all 0.3s ease;">
+            📈 VER MERCADO EN DEXVIEW ↗
+        </a>
+    </div>
+
+</div>
+
+<!-- Estilos y Script específicos para el efecto visual de DexView -->
+<style>
+    .dexview-slider-wrapper {
+        position: relative;
+        width: 170px;
+        height: 170px;
+        margin: 0 auto;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 2px solid rgba(59, 130, 246, 0.6);
+        box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
+        background: rgba(0,0,0,0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .dexview-slider-wrapper:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 35px rgba(59, 130, 246, 0.8);
+    }
+
+    .dexview-img-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+
+    .dexview-img-slide.active {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+</style>
+
+<script>
+    // Rotación automática de las dos imágenes de DexView exactamente cada 2 segundos
+    document.addEventListener("DOMContentLoaded", function() {
+        const dexviewImages = document.querySelectorAll('.dexview-img-slide');
+        if(dexviewImages.length >= 2) {
+            let dexIndex = 0;
+            setInterval(() => {
+                dexviewImages[dexIndex].classList.remove('active');
+                dexIndex = (dexIndex + 1) % dexviewImages.length;
+                dexviewImages[dexIndex].classList.add('active');
+            }, 2000); // 2000 ms = 2 segundos
+        }
+    });
+</script>
+
+   <!-- ======================================================= -->
+<!-- BLOQUE 2: MONITOREO EN DIRECTO - DEXVIEW                -->
+<!-- ======================================================= -->
+<div class="section" style="position: relative; overflow: hidden; border: 2px solid #3b82f6; box-shadow: 0 0 35px rgba(59, 130, 246, 0.3); background: linear-gradient(135deg, rgba(15,15,15,0.95), rgba(10,20,35,0.9)); padding: 30px; border-radius: 16px; margin-bottom: 40px; text-align: center;">
+    
+    <!-- Encabezado del Bloque -->
+    <h2 style="font-family: 'Orbitron', sans-serif; color: #60a5fa; font-size: 1.7em; margin-bottom: 8px; text-shadow: 0 0 10px rgba(96,165,250,0.5);">
+        📊 GRÁFICO Y MERCADO EN DEXVIEW
+    </h2>
+    <p style="color: #94a3b8; font-size: 0.95em; max-width: 600px; margin: 0 auto 25px auto; line-height: 1.5;">
+        Sigue la cotización en tiempo real, el volumen de operaciones y la liquidez oficial del token en <span style="color: #60a5fa; font-weight: bold;">DexView</span>.
+    </p>
+
+    <!-- Contenedor con el Slider de las 2 Imágenes que alternan cada 2 segundos -->
+    <div style="margin-bottom: 25px; display: flex; justify-content: center;">
+        <a href="https://www.dexview.com/bsc/0x6a7cC7d5749E028C8f78f29C1d6aC8EdA0EefAd2" target="_blank" style="display: inline-block;">
+            <div class="dexview-slider-wrapper">
+                <!-- Imagen 1 (Activa por defecto) -->
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1792787595908-7813fbe0af75f68a2aea48ebb70d5f98.png" 
+                     alt="ZARD & PANGA DexView 1" 
+                     class="dexview-img-slide active">
+                <!-- Imagen 2 -->
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1792787614084-ac5dfcf499f4cbe7c3365055f6e34db2.png" 
+                     alt="ZARD & PANGA DexView 2" 
+                     class="dexview-img-slide">
+            </div>
+        </a>
+    </div>
+
+    <!-- Botón de Enlace Directo -->
+    <div>
+        <a href="https://www.dexview.com/bsc/0x6a7cC7d5749E028C8f78f29C1d6aC8EdA0EefAd2" 
            target="_blank" 
            class="card-link"
            style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(0,255,204,0.1)); border: 2px solid #3b82f6; border-radius: 10px; color: #60a5fa; font-family: 'Orbitron', sans-serif; font-size: 0.9em; font-weight: bold; text-decoration: none; box-shadow: 0 0 15px rgba(59,130,246,0.25); transition: all 0.3s ease;">
@@ -1328,7 +1451,15 @@
     <!-- TARJETAS DE ACCESO RÁPIDO -->
     <div class="grid-links">
         <!-- Binance Web3 -->
-        <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x472d59538effe1c85382e3e62e1b2ec995d382ef&binanceChainId=56&chain=bsc" target="_blank" class="card-link">
+        <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38&binanceChainId=56&chain=bsc" target="_blank" class="card-link">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790290122445-0077664fb41e21b3aec6f1685fd6ec56.png" alt="Binance Web3">
+            <span>Binance Web3</span>
+        </a>
+
+      <!-- TARJETAS DE ACCESO RÁPIDO -->
+    <div class="grid-links">
+        <!-- Binance Web3 -->
+        <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x6a7cc7d5749e028c8f78f29c1d6ac8eda0eefad2&binanceChainId=56&chain=bsc" target="_blank" class="card-link">
             <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790290122445-0077664fb41e21b3aec6f1685fd6ec56.png" alt="Binance Web3">
             <span>Binance Web3</span>
         </a>
