@@ -1,28 +1,5 @@
 ![logo Black](https://raw.githubusercontent.com/figueredo56/ZARD.token/ab5ba9b45b8275e1547c026be754e77828a073a0/228-sin-t%C3%ADtulo_20260824215207%20(1).svg)
-  
 
-# 🦅 ZAARD INNOVATION | THE PANGA PROTOCOL 🐲
-> **"LA EVOLUCIÓN NO SE PIDE, SE PROGRAMA."**
-
----
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/figueredo56/ZAARD-Alerta-Explicada/refs/heads/main/CC_20260430_215529.png" alt="ZAARD Alerta" width="100%">
-</p>
-<div align="center">
-
-# 🌌 ZAARD & PANGA — ECOSISTEMA WEB3 GLOBAL 🌌
-
-<p align="center">
-  <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790265552390-0f039d18ee1d653bf30587b1e0baca3a.png" width="230px" alt="ZAARD Logo" style="border-radius: 50%; box-shadow: 0 0 30px rgba(0, 242, 254, 0.6);" />
-</p>
-
-### *Inteligencia Artificial, DApps Descentralizadas, NFTs, Wallet y Gobernanza Total*
-
-[![Status Web3](https://img.shields.io/badge/Ecosistema-100%25%20Verificado-success?style=for-the-badge&logo=chainlink)](https://github.com/figueredo56/zaard-official)
-[![Comunidad Telegram](https://img.shields.io/badge/Telegram-Oficial-blueviolet?style=for-the-badge&logo=telegram)](https://t.me/+Cjo5z_yXcdwzYjM5)
-[![Seguridad](https://img.shields.io/badge/Seguridad-Antiestafas-cyan?style=for-the-badge&logo=shield)]()
-[![NFT Status](https://img.shields.io/badge/NFTs-Activos_%26_Evolutivos-purple?style=for-the-badge&logo=opensea)]()
 
 ---
 
@@ -99,7 +76,9 @@ Desarrollado por **Aracelis (Panga)** - Founder de ZAARD INNOVATION.
 > This repository is for code review and transparent verification. Interacting with smart contracts involves risk. Ensure you are using the officially verified website and channels. This code is not an invitation to invest.
 
 - **Red:** BNB Smart Chain (BSC)
-- **Contrato:** `0x3468ea4e6ce13ec4c7f8651f7efc6aa6046f4d65`
-
+- **Contrato:** `0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38`
+- **Contrato:** `0x4a6c3ea9e7132ad217c31f8252119f08c801366e`
+- **Contrato:** `0x073c12c7072676c9a1afd83c07e470aa7d81aeb3`
+- **Contrato:** `0x5a1de9974c1279fbe989ce32899a1f4ece3fc53d`
 ---
 © 2026 **ZAARD INNOVATION** | **Lead Dev: Panga** | *Exponential Ascent & Verified Security*
