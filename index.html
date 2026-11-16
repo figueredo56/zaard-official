@@ -1502,7 +1502,236 @@
       }
     </style>  
 
+<!-- ======================================================= -->
+<!-- SEPARADOR FLOTANTE CON RAYOS Y CHISPAS (LISTO PARA PEGAR) -->
+<!-- ======================================================= -->
+<div class="zaard-floating-divider">
+    <div class="zfd-energy-beam"></div>
+    <div class="zfd-sparks-field">
+        <span class="zfd-spark s1"></span>
+        <span class="zfd-spark s2"></span>
+        <span class="zfd-spark s3"></span>
+        <span class="zfd-spark s4"></span>
+        <span class="zfd-spark s5"></span>
+        <span class="zfd-spark s6"></span>
+        <span class="zfd-spark s7"></span>
+        <span class="zfd-spark s8"></span>
+    </div>
+    <div class="zfd-emblem-core">
+        <div class="zfd-lightning-ring"></div>
+        <div class="zfd-lightning-ring-outer"></div>
+        <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794808968190-a28e53b200afbc6335bfa84503c3504b.png" alt="Separador ZAARD">
+    </div>
+</div>
 
+<style>
+    /* Contenedor completamente transparente, sin fondos ni bordes */
+    .zaard-floating-divider {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        margin: 25px 0;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        pointer-events: none;
+    }
+
+    /* Haz de rayo horizontal flotante */
+    .zfd-energy-beam {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, 
+            transparent 0%, 
+            rgba(0, 255, 204, 0.2) 12%,
+            #00ffcc 28%, 
+            #ffffff 50%, 
+            #f3ba2f 72%, 
+            rgba(243, 186, 47, 0.2) 88%,
+            transparent 100%);
+        box-shadow: 
+            0 0 12px #00ffcc,
+            0 0 25px #f3ba2f,
+            0 0 40px rgba(255, 255, 255, 0.85);
+        animation: zfdLightningSurge 2.2s infinite ease-in-out;
+    }
+
+    /* Descarga eléctrica secundaria */
+    .zfd-energy-beam::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 10%;
+        width: 80%;
+        height: 7px;
+        background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 16px,
+            rgba(0, 255, 204, 0.9) 18px,
+            rgba(243, 186, 47, 0.9) 20px
+        );
+        filter: blur(2px);
+        animation: zfdArcFlicker 0.16s infinite alternate;
+    }
+
+    /* Núcleo flotante sin cuadro alrededor */
+    .zfd-emblem-core {
+        position: relative;
+        z-index: 3;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0 0 16px rgba(0, 255, 204, 0.75)) drop-shadow(0 0 26px rgba(243, 186, 47, 0.65));
+        animation: zfdCoreFloat 3.2s infinite ease-in-out;
+    }
+
+    /* Imagen limpia flotando en el aire */
+    .zfd-emblem-core img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Anillo interno de rayos */
+    .zfd-lightning-ring {
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        border: 2px dashed #00ffcc;
+        border-top-color: #f3ba2f;
+        border-bottom-color: #ffffff;
+        box-shadow: 0 0 15px rgba(0, 255, 204, 0.8), inset 0 0 10px rgba(243, 186, 47, 0.6);
+        animation: zfdSpinRight 4s linear infinite;
+        z-index: 1;
+    }
+
+    /* Segundo halo eléctrico girando en sentido contrario */
+    .zfd-lightning-ring-outer {
+        position: absolute;
+        inset: -13px;
+        border-radius: 50%;
+        border: 1.5px dotted rgba(243, 186, 47, 0.85);
+        border-left-color: #00ffcc;
+        border-right-color: transparent;
+        animation: zfdSpinLeft 6s linear infinite;
+        z-index: 1;
+    }
+
+    /* Campo de chispas */
+    .zfd-sparks-field {
+        position: absolute;
+        width: 260px;
+        height: 120px;
+        z-index: 4;
+    }
+
+    .zfd-spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: 0 0 8px #00ffcc, 0 0 14px #f3ba2f;
+        opacity: 0;
+    }
+
+    .zfd-spark.s1 { animation: zfdSpark1 1.5s infinite ease-out; background: #00ffcc; }
+    .zfd-spark.s2 { animation: zfdSpark2 1.8s infinite ease-out 0.25s; background: #f3ba2f; }
+    .zfd-spark.s3 { animation: zfdSpark3 1.4s infinite ease-out 0.5s; background: #ffffff; }
+    .zfd-spark.s4 { animation: zfdSpark4 2.0s infinite ease-out 0.15s; background: #00ffcc; }
+    .zfd-spark.s5 { animation: zfdSpark5 1.6s infinite ease-out 0.7s; background: #f3ba2f; }
+    .zfd-spark.s6 { animation: zfdSpark6 1.5s infinite ease-out 0.4s; background: #ffffff; }
+    .zfd-spark.s7 { animation: zfdSpark7 1.9s infinite ease-out 0.9s; background: #00ffcc; }
+    .zfd-spark.s8 { animation: zfdSpark8 1.7s infinite ease-out 0.6s; background: #f3ba2f; }
+
+    /* Animaciones */
+    @keyframes zfdSpinRight {
+        0% { transform: rotate(0deg) scale(1); }
+        50% { transform: rotate(180deg) scale(1.05); }
+        100% { transform: rotate(360deg) scale(1); }
+    }
+
+    @keyframes zfdSpinLeft {
+        0% { transform: rotate(360deg) scale(1.03); }
+        50% { transform: rotate(180deg) scale(0.98); }
+        100% { transform: rotate(0deg) scale(1.03); }
+    }
+
+    @keyframes zfdLightningSurge {
+        0%, 100% { opacity: 0.65; transform: scaleX(0.96); }
+        48% { opacity: 1; transform: scaleX(1); }
+        50% { opacity: 0.25; }
+        52% { opacity: 1; filter: brightness(1.7); }
+    }
+
+    @keyframes zfdArcFlicker {
+        0% { opacity: 0.2; transform: translateY(-1.5px); }
+        100% { opacity: 0.95; transform: translateY(1.5px); }
+    }
+
+    @keyframes zfdCoreFloat {
+        0%, 100% { transform: translateY(0px) scale(1); }
+        50% { transform: translateY(-5px) scale(1.04); }
+    }
+
+    @keyframes zfdSpark1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-95px, -38px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(100px, -32px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-80px, 40px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark4 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(88px, 38px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark5 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(-48px, -48px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark6 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(52px, 46px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark7 {
+        0% { transform: translate(0, 0) scale(0.9); opacity: 1; }
+        100% { transform: translate(-115px, 6px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark8 {
+        0% { transform: translate(0, 0) scale(0.9); opacity: 1; }
+        100% { transform: translate(115px, -8px) scale(0); opacity: 0; }
+    }
+
+    @media (max-width: 768px) {
+        .zaard-floating-divider {
+            height: 110px;
+        }
+        .zfd-emblem-core {
+            width: 80px;
+            height: 80px;
+        }
+    }
+</style>
 
    <!-- BLOQUE VERIFICACIÓN OFICIAL AVE.AI - ZAARD INNOVATION -->
 <section style="position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: radial-gradient(circle at center, #141a2e 0%, #05070d 85%); overflow: hidden; padding: 60px 20px; border-radius: 28px; border: 1px solid rgba(0, 255, 204, 0.25); box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; box-sizing: border-box; text-align: center; gap: 40px;">
