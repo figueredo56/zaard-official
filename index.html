@@ -293,51 +293,6 @@
         position: relative;
     }
 
-    .splash-floating-logo {
-        width: 150px;
-        height: 150px;
-        object-fit: contain;
-        margin-bottom: 25px;
-        filter: drop-shadow(0 0 20px #00f2fe) drop-shadow(0 0 40px #9b51e5);
-        animation: floatGlowAndBlink 3s ease-in-out infinite;
-    }
-
-    @keyframes floatGlowAndBlink {
-        0% {
-            transform: translateY(0px) scale(1);
-            filter: drop-shadow(0 0 15px #00f2fe) drop-shadow(0 0 30px #9b51e5);
-            opacity: 0.85;
-        }
-        50% {
-            transform: translateY(-12px) scale(1.05);
-            filter: drop-shadow(0 0 35px #00f2fe) drop-shadow(0 0 65px #9b51e5);
-            opacity: 1;
-        }
-        100% {
-            transform: translateY(0px) scale(1);
-            filter: drop-shadow(0 0 15px #00f2fe) drop-shadow(0 0 30px #9b51e5);
-            opacity: 0.85;
-        }
-    }
-
-    .splash-stage h1 {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 1.8rem;
-        font-weight: 800;
-        color: #ffffff;
-        margin-bottom: 12px;
-        text-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
-        letter-spacing: 1px;
-    }
-
-    .splash-stage p {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        color: #cbd5e1;
-        line-height: 1.5;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    }
-
     .splash-skip-btn {
         position: absolute;
         top: -40px;
@@ -384,7 +339,7 @@
     </div>
 
     <!-- Botón de Saltar Arriba a la Derecha -->
-    <button class="skip-btn-quantum" onclick="enterEcosystem()" style="position: absolute; top: 25px; right: 25px; z-index: 10; background: rgba(15, 20, 40, 0.85); border: 1px solid rgba(0, 255, 204, 0.6); color: #00ffcc; padding: 9px 18px; border-radius: 20px; cursor: pointer; font-family: 'Orbitron', sans-serif; font-size: 0.82rem; font-weight: bold; box-shadow: 0 0 15px rgba(0,255,204,0.3); transition: 0.3s;">
+    <button class="skip-btn-quantum splash-skip-btn" onclick="enterEcosystem()" style="position: absolute; top: 25px; right: 25px; z-index: 10; background: rgba(15, 20, 40, 0.85); border: 1px solid rgba(0, 255, 204, 0.6); color: #00ffcc; padding: 9px 18px; border-radius: 20px; cursor: pointer; font-family: 'Orbitron', sans-serif; font-size: 0.82rem; font-weight: bold; box-shadow: 0 0 15px rgba(0,255,204,0.3); transition: 0.3s;">
         Saltar ➔
     </button>
 
@@ -396,7 +351,7 @@
         <div class="splash-orbit-ring ring-beta"></div>
         <div class="splash-orbit-ring ring-gamma"></div>
 
-        <!-- 5 Satélites Orbitando Alrededor (Incluyendo el logo principal anterior) -->
+        <!-- 5 Satélites Orbitando Alrededor -->
         <div class="splash-satellite sat-w1">
             <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791940828941-906fd2a3d85625f79d066e5b033f6011.png" alt="Satellite ZARD Principal">
         </div>
@@ -416,7 +371,7 @@
         <!-- Halo Energético Giratorio -->
         <div class="splash-flare-halo"></div>
 
-        <!-- NÚCLEO CENTRAL MASIVO (NUEVA IMAGEN CENTRAL) -->
+        <!-- NÚCLEO CENTRAL MASIVO -->
         <div class="splash-core-massive">
             <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794808901991-d7772dd7bd65cc57dd125d1eacdea70c.png" alt="ZAARD Epic Core" class="splash-core-img">
         </div>
@@ -437,6 +392,21 @@
     </div>
 
 </div>
+
+<!-- SCRIPT DE CONTROL AUTOMÁTICO DE BIENVENIDA -->
+<script>
+    function enterEcosystem() {
+        const splash = document.getElementById('splashScreen');
+        if (splash) {
+            splash.style.opacity = '0';
+            splash.style.visibility = 'hidden';
+            setTimeout(() => splash.remove(), 800);
+        }
+    }
+    setTimeout(function() {
+        enterEcosystem();
+    }, 4000);
+</script>
 
 <!-- ESTILOS CSS ÉPICOS (5 SATÉLITES ÓRBITA) -->
 <style>
