@@ -318,15 +318,15 @@
     </style>
 
 <!-- ======================================================= -->
-<!-- BLOQUE BIENVENIDA ÉPICA (5 SATÉLITES ÓRBITA + NÚCLEO)  -->
+<!-- PANTALLA DE BIENVENIDA AISLADA (CAPA FLOTANTE TOTAL)     -->
 <!-- ======================================================= -->
-<div class="splash-stage" style="position: relative; overflow: hidden; background: url('https://photos.pinksale.finance/file/pinksale-logo-upload/1790375348672-4de629a77b910ca4b3f245dda1b233f0.png') no-repeat center center / cover; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; box-sizing: border-box; padding: 20px;">
+<div id="splashScreen" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 999999; background: url('https://photos.pinksale.finance/file/pinksale-logo-upload/1790375348672-4de629a77b910ca4b3f245dda1b233f0.png') no-repeat center center / cover; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; padding: 20px; transition: opacity 0.8s ease, visibility 0.8s ease;">
 
-    <!-- Capa oscura semitransparente para dar profundidad al fondo -->
-    <div style="position: absolute; inset: 0; background: rgba(3, 7, 18, 0.82); z-index: 1; pointer-events: none;"></div>
+    <!-- Capa oscura semitransparente -->
+    <div style="position: absolute; inset: 0; background: rgba(3, 7, 18, 0.88); z-index: 1; pointer-events: none;"></div>
 
-    <!-- CAMPO DE CHISPAS Y RAYOS ENERGÉTICOS -->
-    <div class="splash-sparks-field" style="position: absolute; inset: 0; z-index: 2; pointer-events: none; overflow: hidden;">
+    <!-- Chispas y Rayos Energéticos -->
+    <div style="position: absolute; inset: 0; z-index: 2; pointer-events: none; overflow: hidden;">
         <span class="spark sk1"></span>
         <span class="spark sk2"></span>
         <span class="spark sk3"></span>
@@ -339,62 +339,45 @@
         <div class="energy-beam b2"></div>
     </div>
 
-    <!-- Botón de Saltar Arriba a la Derecha -->
-    <button class="skip-btn-quantum splash-skip-btn" onclick="enterEcosystem()" style="position: absolute; top: 25px; right: 25px; z-index: 10; background: rgba(15, 20, 40, 0.85); border: 1px solid rgba(0, 255, 204, 0.6); color: #00ffcc; padding: 9px 18px; border-radius: 20px; cursor: pointer; font-family: 'Orbitron', sans-serif; font-size: 0.82rem; font-weight: bold; box-shadow: 0 0 15px rgba(0,255,204,0.3); transition: 0.3s;">
+    <!-- Botón Saltar -->
+    <button onclick="enterEcosystem()" style="position: absolute; top: 25px; right: 25px; z-index: 10; background: rgba(15, 20, 40, 0.85); border: 1px solid rgba(0, 255, 204, 0.6); color: #00ffcc; padding: 9px 18px; border-radius: 20px; cursor: pointer; font-family: 'Orbitron', sans-serif; font-size: 0.82rem; font-weight: bold; box-shadow: 0 0 15px rgba(0,255,204,0.3); transition: 0.3s;">
         Saltar ➔
     </button>
 
-    <!-- SISTEMA ORBITAL ÉPICO (5 SATÉLITES EN ÓRBITA) -->
-    <div class="splash-orbital-container" style="position: relative; width: 340px; height: 340px; display: flex; align-items: center; justify-content: center; z-index: 5; margin-bottom: 20px;">
+    <!-- Sistema Orbital (5 Satélites + Núcleo Central Épico) -->
+    <div style="position: relative; width: 340px; height: 340px; display: flex; align-items: center; justify-content: center; z-index: 5; margin-bottom: 20px;">
         
-        <!-- Anillos Orbitales Giratorios de Neón -->
         <div class="splash-orbit-ring ring-alpha"></div>
         <div class="splash-orbit-ring ring-beta"></div>
         <div class="splash-orbit-ring ring-gamma"></div>
 
-        <!-- 5 Satélites Orbitando Alrededor -->
-        <div class="splash-satellite sat-w1">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791940828941-906fd2a3d85625f79d066e5b033f6011.png" alt="Satellite ZARD Principal">
-        </div>
-        <div class="splash-satellite sat-w2">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790286307495-7850b9884619f2e0ccb7358994c11b42.png" alt="Satellite">
-        </div>
-        <div class="splash-satellite sat-w3">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790286366724-9003585f30626b9963bd86a5cf26c8ca.png" alt="Satellite">
-        </div>
-        <div class="splash-satellite sat-w4">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790288769685-7d9a89bc13043a812c4889cb55ac4a54.png" alt="Satellite">
-        </div>
-        <div class="splash-satellite sat-w5">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1793917735714-d84b28c0d04f3063f454cbc1d8a062fb.png" alt="Satellite">
-        </div>
+        <div class="splash-satellite sat-w1"><img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791940828941-906fd2a3d85625f79d066e5b033f6011.png" alt="Sat"></div>
+        <div class="splash-satellite sat-w2"><img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790286307495-7850b9884619f2e0ccb7358994c11b42.png" alt="Sat"></div>
+        <div class="splash-satellite sat-w3"><img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790286366724-9003585f30626b9963bd86a5cf26c8ca.png" alt="Sat"></div>
+        <div class="splash-satellite sat-w4"><img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790288769685-7d9a89bc13043a812c4889cb55ac4a54.png" alt="Sat"></div>
+        <div class="splash-satellite sat-w5"><img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1793917735714-d84b28c0d04f3063f454cbc1d8a062fb.png" alt="Sat"></div>
 
-        <!-- Halo Energético Giratorio -->
         <div class="splash-flare-halo"></div>
 
-        <!-- NÚCLEO CENTRAL MASIVO -->
         <div class="splash-core-massive">
-            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794808901991-d7772dd7bd65cc57dd125d1eacdea70c.png" alt="ZAARD Epic Core" class="splash-core-img">
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794808901991-d7772dd7bd65cc57dd125d1eacdea70c.png" alt="ZAARD Core" class="splash-core-img">
         </div>
-
     </div>
 
-    <!-- Títulos y Mensaje de Bienvenida -->
-    <h1 style="position: relative; z-index: 5; font-family: 'Orbitron', sans-serif; font-size: 2rem; color: #ffffff; margin-bottom: 6px; text-shadow: 0 0 20px rgba(0,242,254,0.9), 0 0 35px rgba(155,81,229,0.6);">
+    <h1 style="position: relative; z-index: 5; font-family: 'Orbitron', sans-serif; font-size: 2rem; color: #ffffff; margin-bottom: 6px; text-shadow: 0 0 20px rgba(0,242,254,0.9);">
         ZAARD INNOVATION
     </h1>
-    <p style="position: relative; z-index: 5; font-family: 'Orbitron', sans-serif; color: #00ffcc; font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 25px; text-shadow: 0 0 12px rgba(0,255,204,0.8);">
+    <p style="position: relative; z-index: 5; font-family: 'Orbitron', sans-serif; color: #00ffcc; font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 25px;">
         Iniciando Protocolo • La Nueva Era Web3
     </p>
 
-    <!-- Barra de Carga Automática Épica -->
-    <div class="splash-progress-container" style="position: relative; z-index: 5; width: 240px; height: 5px; background: rgba(255,255,255,0.12); border-radius: 3px; overflow: hidden; box-shadow: 0 0 15px rgba(0,255,204,0.3);">
-        <div class="splash-progress-bar" style="width: 100%; height: 100%; background: linear-gradient(90deg, #00f2fe, #00ffcc, #f3ba2f); animation: progressAnim 4s linear forwards;"></div>
+    <div style="position: relative; z-index: 5; width: 240px; height: 5px; background: rgba(255,255,255,0.12); border-radius: 3px; overflow: hidden;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #00f2fe, #00ffcc, #f3ba2f); animation: progressAnim 4s linear forwards;"></div>
     </div>
 
 </div>
 
-<!-- SCRIPT DE CONTROL AUTOMÁTICO DE BIENVENIDA -->
+<!-- Script de control de transición limpia -->
 <script>
     function enterEcosystem() {
         const splash = document.getElementById('splashScreen');
@@ -408,172 +391,8 @@
         enterEcosystem();
     }, 4000);
 </script>
-
-<!-- ESTILOS CSS ÉPICOS (5 SATÉLITES ÓRBITA) -->
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap');
-
-    .splash-core-massive {
-        position: relative;
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(0,255,204,0.5) 0%, rgba(3,7,18,0.95) 75%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 0 50px #00ffcc, 0 0 90px rgba(0, 242, 254, 0.5), inset 0 0 25px #00f2fe;
-        z-index: 10;
-        animation: coreSplashPulse 2.6s infinite ease-in-out;
-    }
-
-    .splash-core-img {
-        width: 155px;
-        height: 155px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid #00ffcc;
-        box-shadow: 0 0 25px rgba(0,255,204,0.9);
-    }
-
-    .splash-flare-halo {
-        position: absolute;
-        width: 195px;
-        height: 195px;
-        border-radius: 50%;
-        background: conic-gradient(from 0deg, transparent, rgba(0, 255, 204, 0.8), transparent 40%, rgba(243, 186, 47, 0.8), transparent 80%);
-        filter: blur(8px);
-        animation: spinClockwise 4s linear infinite;
-        z-index: 8;
-    }
-
-    .splash-orbit-ring {
-        position: absolute;
-        border-radius: 50%;
-        border: 1px dashed rgba(0, 242, 254, 0.45);
-        pointer-events: none;
-    }
-    .ring-alpha { width: 225px; height: 225px; border-color: rgba(0, 255, 204, 0.5); animation: spinClockwise 14s linear infinite; }
-    .ring-beta { width: 285px; height: 285px; border-color: rgba(243, 186, 47, 0.45); animation: spinCounterClockwise 20s linear infinite; }
-    .ring-gamma { width: 340px; height: 340px; border-color: rgba(155, 81, 229, 0.4); animation: spinClockwise 28s linear infinite; }
-
-    /* 5 Satélites Orbitando */
-    .splash-satellite {
-        position: absolute;
-        width: 42px; height: 42px;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 2px solid #f3ba2f;
-        box-shadow: 0 0 18px #f3ba2f, 0 0 30px rgba(243, 186, 47, 0.7);
-        background: #000;
-        z-index: 9;
-    }
-    .splash-satellite img { width: 100%; height: 100%; object-fit: cover; }
-
-    .sat-w1 { animation: orbitSplash1 10s linear infinite; }
-    .sat-w2 { animation: orbitSplash2 13s linear infinite; }
-    .sat-w3 { animation: orbitSplash3 16s linear infinite; }
-    .sat-w4 { animation: orbitSplash4 19s linear infinite; }
-    .sat-w5 { animation: orbitSplash5 14s linear infinite; }
-
-    @keyframes orbitSplash1 {
-        from { transform: rotate(0deg) translateX(110px) rotate(0deg); }
-        to { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
-    }
-    @keyframes orbitSplash2 {
-        from { transform: rotate(72deg) translateX(140px) rotate(-72deg); }
-        to { transform: rotate(432deg) translateX(140px) rotate(-432deg); }
-    }
-    @keyframes orbitSplash3 {
-        from { transform: rotate(144deg) translateX(125px) rotate(-144deg); }
-        to { transform: rotate(504deg) translateX(125px) rotate(-504deg); }
-    }
-    @keyframes orbitSplash4 {
-        from { transform: rotate(216deg) translateX(160px) rotate(-216deg); }
-        to { transform: rotate(576deg) translateX(160px) rotate(-576deg); }
-    }
-    @keyframes orbitSplash5 {
-        from { transform: rotate(288deg) translateX(150px) rotate(-288deg); }
-        to { transform: rotate(648deg) translateX(150px) rotate(-648deg); }
-    }
-
-    .energy-beam {
-        position: absolute;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #00ffcc, #ffffff, transparent);
-        opacity: 0.7;
-        filter: blur(1px);
-        animation: beamFlash 3s infinite ease-in-out;
-    }
-    .b1 { width: 100%; top: 30%; left: 0; animation-delay: 0.5s; }
-    .b2 { width: 100%; top: 70%; left: 0; animation-delay: 1.8s; }
-
-    @keyframes beamFlash {
-        0%, 100% { transform: scaleX(0.2); opacity: 0.1; }
-        50% { transform: scaleX(1); opacity: 0.9; }
-    }
-
-    .spark {
-        position: absolute;
-        width: 4px; height: 4px;
-        border-radius: 50%;
-        background: #00ffcc;
-        box-shadow: 0 0 12px #00ffcc, 0 0 25px #00f2fe;
-        opacity: 0;
-        animation: splashSparkFly 3s infinite linear;
-    }
-    .spark.sk2, .spark.sk5, .spark.sk8 {
-        background: #f3ba2f;
-        box-shadow: 0 0 12px #f3ba2f, 0 0 25px #ff9900;
-    }
-
-    .sk1 { left: 10%; top: 80%; animation-delay: 0s; }
-    .sk2 { left: 25%; top: 90%; animation-delay: 0.7s; }
-    .sk3 { left: 40%; top: 85%; animation-delay: 1.4s; }
-    .sk4 { left: 55%; top: 95%; animation-delay: 0.3s; }
-    .sk5 { left: 70%; top: 82%; animation-delay: 1.1s; }
-    .sk6 { left: 85%; top: 88%; animation-delay: 0.5s; }
-    .sk7 { left: 20%; top: 40%; animation-delay: 1.9s; }
-    .sk8 { left: 80%; top: 35%; animation-delay: 0.9s; }
-
-    @keyframes splashSparkFly {
-        0% { transform: translateY(0) scale(0.3); opacity: 0; }
-        30% { opacity: 1; transform: translateY(-40px) scale(1.3); }
-        80% { opacity: 0.8; transform: translateY(-130px) scale(0.8); }
-        100% { transform: translateY(-180px) scale(0.1); opacity: 0; }
-    }
-
-    @keyframes coreSplashPulse {
-        0%, 100% { transform: scale(1); box-shadow: 0 0 45px #00ffcc, 0 0 80px rgba(0, 242, 254, 0.4); }
-        50% { transform: scale(1.06); box-shadow: 0 0 70px #00ffcc, 0 0 110px rgba(243, 186, 47, 0.6); }
-    }
-
-    @keyframes spinClockwise {
-        from { transform: rotate(0deg); } to { transform: rotate(360deg); }
-    }
-    @keyframes spinCounterClockwise {
-        from { transform: rotate(360deg); } to { transform: rotate(0deg); }
-    }
-    @keyframes progressAnim {
-        0% { transform: translateX(-100%); }
-        100% { transform: translateX(0%); }
-    }
-
-    .skip-btn-quantum:hover {
-        background: #00ffcc !important;
-        color: #030712 !important;
-        box-shadow: 0 0 20px #00ffcc !important;
-    }
-
-    @media (max-width: 480px) {
-        .splash-orbital-container { width: 290px; height: 290px; }
-        .ring-alpha { width: 190px; height: 190px; }
-        .ring-beta { width: 245px; height: 245px; }
-        .ring-gamma { width: 290px; height: 290px; }
-    }
-</style>
-
-    <div class="container">
+   <script> 
+       
         <!-- CABECERA Y LOGO -->
 <!-- ======================================================= -->
 <!-- BLOQUE PORTADA CUÁNTICA FLUIDA CON CHISPAS Y DESTELLOS  -->
