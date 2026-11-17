@@ -407,7 +407,7 @@
 
     <!-- Botón de Acción / Llamado al Ecosistema -->
     <div style="margin-top: 50px; position: relative; z-index: 5;">
-        <a href="https://pancakeswap.finance/swap?outputCurrency=0xE2879d1172215E728472D7827586bd2796aFA3fB" target="_blank" class="quantum-cta-btn">
+        <a href="https://app.binance.com/uni-qr/cpro/PANGA?l=es-LA&r=KAN4LD16&uc=app_square_share_link&us=copylink" target="_blank" class="quantum-cta-btn">
             🚀 ACCEDER AL MOTOR WEB3 ($ZARD)
         </a>
     </div>
@@ -610,7 +610,7 @@
 
     <!-- Botón de Acción / Llamado al Ecosistema -->
     <div style="margin-top: 50px; position: relative; z-index: 5;">
-        <a href="https://pancakeswap.finance/swap?outputCurrency=0xE2879d1172215E728472D7827586bd2796aFA3fB" target="_blank" class="quantum-cta-btn">
+        <a href="https://app.binance.com/uni-qr/cpro/PANGA?l=es-LA&r=KAN4LD16&uc=app_square_share_link&us=copylink" target="_blank" class="quantum-cta-btn">
             🚀 ACCEDER AL MOTOR WEB3 ($ZARD)
         </a>
     </div>
@@ -762,6 +762,328 @@
     }
 </style> 
 
+    
+<!-- ======================================================= -->
+<!-- SEPARADOR FLOTANTE DE 5 ESFERAS EN OLA CRECIENTE        -->
+<!-- ======================================================= -->
+<div class="zaard-wave-5-divider">
+    <!-- Haz de rayo continuo que conecta las 5 esferas (Azul -> Morado -> Naranja -> Morado -> Azul) -->
+    <div class="zw5-energy-beam"></div>
+
+    <!-- Contenedor alineado de las 5 esferas -->
+    <div class="zw5-nodes-track">
+        
+        <!-- 1. PUNTA IZQUIERDA (Más pequeña - Brillo Azul) -->
+        <div class="zw5-node zw5-edge zw5-blue">
+            <div class="zw5-ring"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1793917735714-d84b28c0d04f3063f454cbc1d8a062fb.png" alt="Nodo Azul Izquierdo">
+        </div>
+
+        <!-- 2. LADO IZQUIERDO (Mediana - Brillo Morado) -->
+        <div class="zw5-node zw5-mid zw5-purple zw5-delay-1">
+            <div class="zw5-ring"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790484633328-559fdd3c13098c92f8a665ac39a838c2.png" alt="Nodo Morado Izquierdo">
+        </div>
+
+        <!-- 3. CENTRO (Más grande - Brillo Anaranjado + Chispas) -->
+        <div class="zw5-node zw5-center zw5-orange zw5-delay-2">
+            <div class="zw5-sparks">
+                <span class="zw5-spark sp1"></span>
+                <span class="zw5-spark sp2"></span>
+                <span class="zw5-spark sp3"></span>
+                <span class="zw5-spark sp4"></span>
+                <span class="zw5-spark sp5"></span>
+                <span class="zw5-spark sp6"></span>
+            </div>
+            <div class="zw5-ring"></div>
+            <div class="zw5-ring-outer"></div>
+            <!-- Nota: Reemplaza este src si tienes otra URL específica para la imagen central -->
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791940828941-906fd2a3d85625f79d066e5b033f6011.png" alt="Núcleo Central Naranja">
+        </div>
+
+        <!-- 4. LADO DERECHO (Mediana - Brillo Morado) -->
+        <div class="zw5-node zw5-mid zw5-purple zw5-delay-3">
+            <div class="zw5-ring"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790288769685-7d9a89bc13043a812c4889cb55ac4a54.png" alt="Nodo Morado Derecho">
+        </div>
+
+        <!-- 5. PUNTA DERECHA (Más pequeña - Brillo Azul) -->
+        <div class="zw5-node zw5-edge zw5-blue zw5-delay-4">
+            <div class="zw5-ring"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790286389131-9ffaade2f1b5bc4c51858adc8fdf4bd4.png" alt="Nodo Azul Derecho">
+        </div>
+
+    </div>
+</div>
+
+<style>
+    /* Contenedor transparente flotando en el aire */
+    .zaard-wave-5-divider {
+        position: relative;
+        width: 100%;
+        height: 155px;
+        margin: 30px 0;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        pointer-events: none;
+    }
+
+    /* Haz de rayo horizontal con degradado sincronizado */
+    .zw5-energy-beam {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, 
+            transparent 0%, 
+            #00b4d8 18%, 
+            #9d4edd 35%, 
+            #ff6d00 50%, 
+            #9d4edd 65%, 
+            #00b4d8 82%, 
+            transparent 100%);
+        box-shadow: 
+            0 0 12px #00b4d8,
+            0 0 22px #9d4edd,
+            0 0 32px #ff6d00;
+        animation: zw5BeamPulse 2.8s infinite ease-in-out;
+        z-index: 1;
+    }
+
+    .zw5-energy-beam::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 8%;
+        width: 84%;
+        height: 7px;
+        background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 14px,
+            rgba(255, 255, 255, 0.7) 16px,
+            transparent 18px
+        );
+        filter: blur(2px);
+        animation: zw5Flicker 0.2s infinite alternate;
+    }
+
+    /* Pista de distribución de las 5 esferas */
+    .zw5-nodes-track {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+        width: 100%;
+        max-width: 780px;
+    }
+
+    /* Estilo base de cada esfera */
+    .zw5-node {
+        position: relative;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        animation: zw5OceanSwell 3.6s infinite ease-in-out;
+    }
+
+    .zw5-node img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+    }
+
+    .zw5-ring {
+        position: absolute;
+        inset: -5px;
+        border-radius: 50%;
+        animation: zw5SpinRight 4.5s linear infinite;
+        z-index: 1;
+    }
+
+    /* --- ESCALA CRECIENTE --- */
+    /* Puntas (Pequeñas) */
+    .zw5-edge {
+        width: 56px;
+        height: 56px;
+    }
+
+    /* Lados (Medianas) */
+    .zw5-mid {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Centro (Grande) */
+    .zw5-center {
+        width: 112px;
+        height: 112px;
+    }
+
+    /* --- COLORES Y DESTELLOS POR POSICIÓN --- */
+    /* 1 y 5: Destello Azul */
+    .zw5-blue {
+        filter: drop-shadow(0 0 12px rgba(0, 180, 216, 0.85)) drop-shadow(0 0 22px rgba(0, 119, 182, 0.7));
+    }
+    .zw5-blue .zw5-ring {
+        border: 2px dashed #00d4ff;
+        border-top-color: #ffffff;
+        box-shadow: 0 0 12px rgba(0, 212, 255, 0.8);
+    }
+
+    /* 2 y 4: Destello Morado */
+    .zw5-purple {
+        filter: drop-shadow(0 0 15px rgba(157, 78, 221, 0.9)) drop-shadow(0 0 26px rgba(199, 125, 255, 0.75));
+    }
+    .zw5-purple .zw5-ring {
+        border: 2px dashed #c77dff;
+        border-bottom-color: #ffffff;
+        box-shadow: 0 0 15px rgba(199, 125, 255, 0.85);
+    }
+
+    /* 3: Destello Anaranjado */
+    .zw5-orange {
+        filter: drop-shadow(0 0 18px rgba(255, 109, 0, 0.95)) drop-shadow(0 0 34px rgba(255, 158, 0, 0.8));
+    }
+    .zw5-orange .zw5-ring {
+        inset: -7px;
+        border: 2.5px dashed #ff8500;
+        border-top-color: #ffd000;
+        border-bottom-color: #ffffff;
+        box-shadow: 0 0 18px rgba(255, 133, 0, 0.9);
+    }
+    .zw5-orange .zw5-ring-outer {
+        position: absolute;
+        inset: -14px;
+        border-radius: 50%;
+        border: 1.5px dotted #ffb703;
+        border-left-color: #ff5400;
+        border-right-color: transparent;
+        animation: zw5SpinLeft 6s linear infinite;
+        z-index: 1;
+    }
+
+    /* --- RETARDOS DE OLA DE MAR (Efecto marea creciente de izquierda a derecha) --- */
+    .zw5-delay-1 { animation-delay: 0.35s; }
+    .zw5-delay-2 { animation-delay: 0.70s; }
+    .zw5-delay-3 { animation-delay: 1.05s; }
+    .zw5-delay-4 { animation-delay: 1.40s; }
+
+    /* Chispas del núcleo naranja */
+    .zw5-sparks {
+        position: absolute;
+        width: 220px;
+        height: 130px;
+        z-index: 4;
+    }
+
+    .zw5-spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #ff9e00;
+        box-shadow: 0 0 8px #ff6d00, 0 0 14px #ffd000;
+        opacity: 0;
+    }
+
+    .zw5-spark.sp1 { animation: zw5Spark1 1.6s infinite ease-out; background: #ff8500; }
+    .zw5-spark.sp2 { animation: zw5Spark2 1.9s infinite ease-out 0.3s; background: #ffd000; }
+    .zw5-spark.sp3 { animation: zw5Spark3 1.5s infinite ease-out 0.5s; background: #ffffff; }
+    .zw5-spark.sp4 { animation: zw5Spark4 2.0s infinite ease-out 0.2s; background: #ff6d00; }
+    .zw5-spark.sp5 { animation: zw5Spark5 1.7s infinite ease-out 0.7s; background: #ffaa00; }
+    .zw5-spark.sp6 { animation: zw5Spark6 1.6s infinite ease-out 0.4s; background: #ffffff; }
+
+    /* Keyframes: Efecto Ola de Mar (sube, crece y baja suavemente) */
+    @keyframes zw5OceanSwell {
+        0%, 100% {
+            transform: translateY(4px) scale(0.92);
+        }
+        50% {
+            transform: translateY(-7px) scale(1.13);
+        }
+    }
+
+    @keyframes zw5SpinRight {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes zw5SpinLeft {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    @keyframes zw5BeamPulse {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; filter: brightness(1.4); }
+    }
+
+    @keyframes zw5Flicker {
+        0% { opacity: 0.25; }
+        100% { opacity: 0.9; }
+    }
+
+    @keyframes zw5Spark1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-80px, -45px) scale(0); opacity: 0; }
+    }
+    @keyframes zw5Spark2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(85px, -40px) scale(0); opacity: 0; }
+    }
+    @keyframes zw5Spark3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-70px, 45px) scale(0); opacity: 0; }
+    }
+    @keyframes zw5Spark4 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(75px, 42px) scale(0); opacity: 0; }
+    }
+    @keyframes zw5Spark5 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(-35px, -55px) scale(0); opacity: 0; }
+    }
+    @keyframes zw5Spark6 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(40px, 52px) scale(0); opacity: 0; }
+    }
+
+    /* Adaptación responsiva para celulares */
+    @media (max-width: 768px) {
+        .zaard-wave-5-divider {
+            height: 120px;
+        }
+        .zw5-nodes-track {
+            gap: 14px;
+        }
+        .zw5-edge {
+            width: 38px;
+            height: 38px;
+        }
+        .zw5-mid {
+            width: 56px;
+            height: 56px;
+        }
+        .zw5-center {
+            width: 82px;
+            height: 82px;
+        }
+    }
+</style>
         
         <!-- SECCIÓN INTRODUCTORIA -->
         <div class="section">
@@ -775,6 +1097,429 @@
                 Diseñado bajo estrictos estándares criptográficos, <strong>ZARD</strong> garantiza la máxima transparencia, liquidez bloqueada y rendimiento inquebrantable en todas sus aplicaciones descentralizadas.
             </p>
         </div>
+
+   <!-- ======================================================= -->
+<!-- SEPARADOR FLOTANTE DE 3 ESFERAS CON RAYOS AZUL POTENTE  -->
+<!-- ======================================================= -->
+<div class="zaard-electric-3-blue-divider">
+    <!-- Haz de energía principal en azul eléctrico intenso -->
+    <div class="ze3b-energy-beam"></div>
+
+    <!-- Rayos eléctricos SVG en azul neón / blanco conectando las 3 esferas -->
+    <svg class="ze3b-lightning-svg" viewBox="0 0 800 160" preserveAspectRatio="none">
+        <defs>
+            <filter id="ze3b-glow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                </feMerge>
+            </filter>
+        </defs>
+        <!-- Rayos izquierdos (Azul eléctrico potente) -->
+        <polyline class="ze3b-bolt bolt-1" points="160,80 205,58 235,98 275,64 315,94 365,80" filter="url(#ze3b-glow)" />
+        <polyline class="ze3b-bolt bolt-2" points="160,80 198,96 242,60 282,98 322,62 365,80" filter="url(#ze3b-glow)" />
+        <polyline class="ze3b-bolt bolt-5" points="160,80 215,74 255,86 305,72 340,85 365,80" filter="url(#ze3b-glow)" />
+        
+        <!-- Rayos derechos (Azul eléctrico potente) -->
+        <polyline class="ze3b-bolt bolt-3" points="435,80 480,60 518,98 558,62 600,94 640,80" filter="url(#ze3b-glow)" />
+        <polyline class="ze3b-bolt bolt-4" points="435,80 475,98 515,62 555,96 598,64 640,80" filter="url(#ze3b-glow)" />
+        <polyline class="ze3b-bolt bolt-6" points="435,80 465,86 505,72 548,88 592,74 640,80" filter="url(#ze3b-glow)" />
+    </svg>
+
+    <!-- Contenedor de las 3 esferas -->
+    <div class="ze3b-nodes-track">
+        
+        <!-- 1. LADO IZQUIERDO (Mediana - Esfera Morada + Electricidad Azul) -->
+        <div class="ze3b-node ze3b-side ze3b-purple">
+            <div class="ze3b-arc-sparks">
+                <span class="ze3b-mini-spark ms1"></span>
+                <span class="ze3b-mini-spark ms2"></span>
+                <span class="ze3b-mini-spark ms3"></span>
+            </div>
+            <div class="ze3b-ring"></div>
+            <div class="ze3b-ring-outer"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790484633328-559fdd3c13098c92f8a665ac39a838c2.png" alt="Nodo Morado Izquierdo">
+        </div>
+
+        <!-- 2. CENTRO (Grande - Esfera Anaranjada + Electricidad Azul Potente) -->
+        <div class="ze3b-node ze3b-center ze3b-orange ze3b-delay-1">
+            <div class="ze3b-sparks">
+                <span class="ze3b-spark sp1"></span>
+                <span class="ze3b-spark sp2"></span>
+                <span class="ze3b-spark sp3"></span>
+                <span class="ze3b-spark sp4"></span>
+                <span class="ze3b-spark sp5"></span>
+                <span class="ze3b-spark sp6"></span>
+                <span class="ze3b-spark sp7"></span>
+                <span class="ze3b-spark sp8"></span>
+            </div>
+            <div class="ze3b-ring"></div>
+            <div class="ze3b-ring-outer"></div>
+            <!-- Reemplaza esta URL si quieres cambiar la imagen del centro -->
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791940828941-906fd2a3d85625f79d066e5b033f6011.png" alt="Núcleo Central Naranja">
+        </div>
+
+        <!-- 3. LADO DERECHO (Mediana - Esfera Morada + Electricidad Azul) -->
+        <div class="ze3b-node ze3b-side ze3b-purple ze3b-delay-2">
+            <div class="ze3b-arc-sparks">
+                <span class="ze3b-mini-spark ms1"></span>
+                <span class="ze3b-mini-spark ms2"></span>
+                <span class="ze3b-mini-spark ms3"></span>
+            </div>
+            <div class="ze3b-ring"></div>
+            <div class="ze3b-ring-outer"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790288769685-7d9a89bc13043a812c4889cb55ac4a54.png" alt="Nodo Morado Derecho">
+        </div>
+
+    </div>
+</div>
+
+<style>
+    /* Contenedor completamente transparente en el aire */
+    .zaard-electric-3-blue-divider {
+        position: relative;
+        width: 100%;
+        height: 165px;
+        margin: 30px 0;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        pointer-events: none;
+    }
+
+    /* Haz horizontal de alto voltaje azul eléctrico */
+    .ze3b-energy-beam {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, 
+            transparent 0%, 
+            rgba(0, 140, 255, 0.25) 12%,
+            #00b4ff 30%, 
+            #ffffff 50%, 
+            #00b4ff 70%, 
+            rgba(0, 140, 255, 0.25) 88%,
+            transparent 100%);
+        box-shadow: 
+            0 0 12px #00e5ff,
+            0 0 26px #0080ff,
+            0 0 45px #0055ff;
+        animation: ze3bBeamSurge 1.6s infinite ease-in-out;
+        z-index: 1;
+    }
+
+    /* Capa SVG con rayos quebrados en azul neón de alto voltaje */
+    .ze3b-lightning-svg {
+        position: absolute;
+        width: 100%;
+        max-width: 720px;
+        height: 155px;
+        z-index: 2;
+        overflow: visible;
+    }
+
+    .ze3b-bolt {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .ze3b-bolt.bolt-1 {
+        stroke: #00e5ff;
+        stroke-width: 2.8;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;
+        animation: ze3bStrike1 1.25s infinite linear;
+    }
+
+    .ze3b-bolt.bolt-2 {
+        stroke: #38b6ff;
+        stroke-width: 2.2;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;
+        animation: ze3bStrike2 1.65s infinite linear 0.35s;
+    }
+
+    .ze3b-bolt.bolt-3 {
+        stroke: #00e5ff;
+        stroke-width: 2.8;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;
+        animation: ze3bStrike1 1.35s infinite linear 0.15s;
+    }
+
+    .ze3b-bolt.bolt-4 {
+        stroke: #38b6ff;
+        stroke-width: 2.2;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;
+        animation: ze3bStrike2 1.75s infinite linear 0.55s;
+    }
+
+    /* Rayo central blanco-azul ultra rápido */
+    .ze3b-bolt.bolt-5,
+    .ze3b-bolt.bolt-6 {
+        stroke: #ffffff;
+        stroke-width: 1.5;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;
+        animation: ze3bStrikeFast 0.95s infinite linear 0.2s;
+    }
+
+    /* Distribución de las 3 esferas */
+    .ze3b-nodes-track {
+        position: relative;
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 65px;
+        width: 100%;
+        max-width: 680px;
+    }
+
+    /* Estilo base de esfera con efecto ola creciente */
+    .ze3b-node {
+        position: relative;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        animation: ze3bOceanSwell 3.4s infinite ease-in-out;
+    }
+
+    .ze3b-node img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: 3;
+    }
+
+    /* Tamaños */
+    .ze3b-side {
+        width: 84px;
+        height: 84px;
+    }
+
+    .ze3b-center {
+        width: 118px;
+        height: 118px;
+    }
+
+    /* Retardos para el movimiento en ola */
+    .ze3b-delay-1 { animation-delay: 0.45s; }
+    .ze3b-delay-2 { animation-delay: 0.90s; }
+
+    /* Anillos eléctricos giratorios en azul eléctrico */
+    .ze3b-ring {
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        border: 2.5px dashed #00e5ff;
+        border-top-color: #ffffff;
+        border-bottom-color: #0077ff;
+        box-shadow: 0 0 18px #00b4ff, inset 0 0 12px #00e5ff;
+        animation: ze3bSpinRight 3.2s linear infinite;
+        z-index: 2;
+    }
+
+    .ze3b-ring-outer {
+        position: absolute;
+        inset: -14px;
+        border-radius: 50%;
+        border: 1.8px dotted #72efdd;
+        border-left-color: #0080ff;
+        border-right-color: transparent;
+        box-shadow: 0 0 14px rgba(0, 180, 255, 0.7);
+        animation: ze3bSpinLeft 4.8s linear infinite;
+        z-index: 1;
+    }
+
+    /* Brillo base Morado en los lados + halo eléctrico azul */
+    .ze3b-purple {
+        filter: drop-shadow(0 0 14px rgba(157, 78, 221, 0.9)) drop-shadow(0 0 26px rgba(0, 180, 255, 0.85));
+    }
+
+    /* Brillo base Anaranjado en el centro + halo eléctrico azul */
+    .ze3b-orange {
+        filter: drop-shadow(0 0 18px rgba(255, 109, 0, 0.95)) drop-shadow(0 0 36px rgba(0, 229, 255, 0.95));
+    }
+    .ze3b-orange .ze3b-ring {
+        inset: -8px;
+        border-width: 3px;
+    }
+    .ze3b-orange .ze3b-ring-outer {
+        inset: -17px;
+    }
+
+    /* Chispas eléctricas azules del núcleo central */
+    .ze3b-sparks {
+        position: absolute;
+        width: 250px;
+        height: 155px;
+        z-index: 5;
+    }
+
+    .ze3b-spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        opacity: 0;
+    }
+
+    .ze3b-spark.sp1 { animation: ze3bSpark1 1.3s infinite ease-out; background: #00e5ff; box-shadow: 0 0 10px #0080ff, 0 0 16px #00e5ff; }
+    .ze3b-spark.sp2 { animation: ze3bSpark2 1.6s infinite ease-out 0.2s; background: #ffffff; box-shadow: 0 0 10px #00e5ff, 0 0 16px #0080ff; }
+    .ze3b-spark.sp3 { animation: ze3bSpark3 1.2s infinite ease-out 0.45s; background: #38b6ff; box-shadow: 0 0 10px #0080ff; }
+    .ze3b-spark.sp4 { animation: ze3bSpark4 1.7s infinite ease-out 0.1s; background: #00e5ff; box-shadow: 0 0 10px #0080ff; }
+    .ze3b-spark.sp5 { animation: ze3bSpark5 1.4s infinite ease-out 0.55s; background: #ffffff; box-shadow: 0 0 12px #00e5ff; }
+    .ze3b-spark.sp6 { animation: ze3bSpark6 1.35s infinite ease-out 0.3s; background: #00b4ff; box-shadow: 0 0 10px #0080ff; }
+    .ze3b-spark.sp7 { animation: ze3bSpark7 1.5s infinite ease-out 0.75s; background: #00e5ff; box-shadow: 0 0 10px #ffffff; }
+    .ze3b-spark.sp8 { animation: ze3bSpark8 1.45s infinite ease-out 0.4s; background: #38b6ff; box-shadow: 0 0 10px #00e5ff; }
+
+    /* Chispas eléctricas azules en las esferas laterales */
+    .ze3b-arc-sparks {
+        position: absolute;
+        width: 145px;
+        height: 115px;
+        z-index: 5;
+    }
+    .ze3b-mini-spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #00e5ff;
+        box-shadow: 0 0 8px #0080ff, 0 0 14px #ffffff;
+        opacity: 0;
+    }
+    .ze3b-mini-spark.ms1 { animation: ze3bMini1 1.4s infinite ease-out; }
+    .ze3b-mini-spark.ms2 { animation: ze3bMini2 1.7s infinite ease-out 0.35s; }
+    .ze3b-mini-spark.ms3 { animation: ze3bMini3 1.25s infinite ease-out 0.7s; }
+
+    /* Animaciones */
+    @keyframes ze3bOceanSwell {
+        0%, 100% { transform: translateY(4px) scale(0.93); }
+        50% { transform: translateY(-7px) scale(1.13); }
+    }
+
+    @keyframes ze3bSpinRight {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes ze3bSpinLeft {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    @keyframes ze3bBeamSurge {
+        0%, 100% { opacity: 0.7; }
+        46% { opacity: 1; filter: brightness(1.6); }
+        49% { opacity: 0.25; }
+        52% { opacity: 1; filter: brightness(2); }
+    }
+
+    @keyframes ze3bStrike1 {
+        0% { stroke-dashoffset: 260; opacity: 0; }
+        12% { opacity: 1; }
+        42% { stroke-dashoffset: 0; opacity: 1; }
+        58% { opacity: 0; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+
+    @keyframes ze3bStrike2 {
+        0% { stroke-dashoffset: -260; opacity: 0; }
+        18% { opacity: 0.95; }
+        48% { stroke-dashoffset: 0; opacity: 1; }
+        62% { opacity: 0; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+
+    @keyframes ze3bStrikeFast {
+        0%, 60%, 100% { stroke-dashoffset: 260; opacity: 0; }
+        15% { opacity: 1; }
+        35% { stroke-dashoffset: 0; opacity: 1; }
+        45% { opacity: 0; }
+    }
+
+    @keyframes ze3bSpark1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-95px, -50px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3bSpark2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(100px, -46px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3bSpark3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-85px, 52px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3bSpark4 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(90px, 48px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3bSpark5 {
+        0% { transform: translate(0, 0) scale(1.25); opacity: 1; }
+        100% { transform: translate(-120px, 8px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3bSpark6 {
+        0% { transform: translate(0, 0) scale(1.25); opacity: 1; }
+        100% { transform: translate(120px, -10px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3bSpark7 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-40px, -62px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3bSpark8 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(45px, 60px) scale(0); opacity: 0; }
+    }
+
+    @keyframes ze3bMini1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-55px, -34px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3bMini2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(52px, 36px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3bMini3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-48px, 38px) scale(0); opacity: 0; }
+    }
+
+    /* Adaptación móvil */
+    @media (max-width: 768px) {
+        .zaard-electric-3-blue-divider {
+            height: 130px;
+        }
+        .ze3b-nodes-track {
+            gap: 28px;
+        }
+        .ze3b-side {
+            width: 64px;
+            height: 64px;
+        }
+        .ze3b-center {
+            width: 92px;
+            height: 92px;
+        }
+    }
+</style> 
 
         <!-- BANNER DE BIENVENIDA Y AVISO - ZAARD INNOVATION -->
 <div style="background: linear-gradient(145deg, #040b14 0%, #071921 50%, #031411 100%); border: 2px solid #00f0ff; border-radius: 16px; padding: 25px 20px; text-align: center; font-family: 'Rajdhani', sans-serif; box-shadow: 0 0 25px rgba(0, 240, 255, 0.3); margin: 20px auto; max-width: 850px;">
@@ -799,6 +1544,237 @@
     </div>
 
 </div>
+
+   <!-- ======================================================= -->
+<!-- SEPARADOR FLOTANTE CON RAYOS Y CHISPAS (LISTO PARA PEGAR) -->
+<!-- ======================================================= -->
+<div class="zaard-floating-divider">
+    <div class="zfd-energy-beam"></div>
+    <div class="zfd-sparks-field">
+        <span class="zfd-spark s1"></span>
+        <span class="zfd-spark s2"></span>
+        <span class="zfd-spark s3"></span>
+        <span class="zfd-spark s4"></span>
+        <span class="zfd-spark s5"></span>
+        <span class="zfd-spark s6"></span>
+        <span class="zfd-spark s7"></span>
+        <span class="zfd-spark s8"></span>
+    </div>
+    <div class="zfd-emblem-core">
+        <div class="zfd-lightning-ring"></div>
+        <div class="zfd-lightning-ring-outer"></div>
+        <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794808968190-a28e53b200afbc6335bfa84503c3504b.png" alt="Separador ZAARD">
+    </div>
+</div>
+
+<style>
+    /* Contenedor completamente transparente, sin fondos ni bordes */
+    .zaard-floating-divider {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        margin: 25px 0;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        pointer-events: none;
+    }
+
+    /* Haz de rayo horizontal flotante */
+    .zfd-energy-beam {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, 
+            transparent 0%, 
+            rgba(0, 255, 204, 0.2) 12%,
+            #00ffcc 28%, 
+            #ffffff 50%, 
+            #f3ba2f 72%, 
+            rgba(243, 186, 47, 0.2) 88%,
+            transparent 100%);
+        box-shadow: 
+            0 0 12px #00ffcc,
+            0 0 25px #f3ba2f,
+            0 0 40px rgba(255, 255, 255, 0.85);
+        animation: zfdLightningSurge 2.2s infinite ease-in-out;
+    }
+
+    /* Descarga eléctrica secundaria */
+    .zfd-energy-beam::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 10%;
+        width: 80%;
+        height: 7px;
+        background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 16px,
+            rgba(0, 255, 204, 0.9) 18px,
+            rgba(243, 186, 47, 0.9) 20px
+        );
+        filter: blur(2px);
+        animation: zfdArcFlicker 0.16s infinite alternate;
+    }
+
+    /* Núcleo flotante sin cuadro alrededor */
+    .zfd-emblem-core {
+        position: relative;
+        z-index: 3;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0 0 16px rgba(0, 255, 204, 0.75)) drop-shadow(0 0 26px rgba(243, 186, 47, 0.65));
+        animation: zfdCoreFloat 3.2s infinite ease-in-out;
+    }
+
+    /* Imagen limpia flotando en el aire */
+    .zfd-emblem-core img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Anillo interno de rayos */
+    .zfd-lightning-ring {
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        border: 2px dashed #00ffcc;
+        border-top-color: #f3ba2f;
+        border-bottom-color: #ffffff;
+        box-shadow: 0 0 15px rgba(0, 255, 204, 0.8), inset 0 0 10px rgba(243, 186, 47, 0.6);
+        animation: zfdSpinRight 4s linear infinite;
+        z-index: 1;
+    }
+
+    /* Segundo halo eléctrico girando en sentido contrario */
+    .zfd-lightning-ring-outer {
+        position: absolute;
+        inset: -13px;
+        border-radius: 50%;
+        border: 1.5px dotted rgba(243, 186, 47, 0.85);
+        border-left-color: #00ffcc;
+        border-right-color: transparent;
+        animation: zfdSpinLeft 6s linear infinite;
+        z-index: 1;
+    }
+
+    /* Campo de chispas */
+    .zfd-sparks-field {
+        position: absolute;
+        width: 260px;
+        height: 120px;
+        z-index: 4;
+    }
+
+    .zfd-spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: 0 0 8px #00ffcc, 0 0 14px #f3ba2f;
+        opacity: 0;
+    }
+
+    .zfd-spark.s1 { animation: zfdSpark1 1.5s infinite ease-out; background: #00ffcc; }
+    .zfd-spark.s2 { animation: zfdSpark2 1.8s infinite ease-out 0.25s; background: #f3ba2f; }
+    .zfd-spark.s3 { animation: zfdSpark3 1.4s infinite ease-out 0.5s; background: #ffffff; }
+    .zfd-spark.s4 { animation: zfdSpark4 2.0s infinite ease-out 0.15s; background: #00ffcc; }
+    .zfd-spark.s5 { animation: zfdSpark5 1.6s infinite ease-out 0.7s; background: #f3ba2f; }
+    .zfd-spark.s6 { animation: zfdSpark6 1.5s infinite ease-out 0.4s; background: #ffffff; }
+    .zfd-spark.s7 { animation: zfdSpark7 1.9s infinite ease-out 0.9s; background: #00ffcc; }
+    .zfd-spark.s8 { animation: zfdSpark8 1.7s infinite ease-out 0.6s; background: #f3ba2f; }
+
+    /* Animaciones */
+    @keyframes zfdSpinRight {
+        0% { transform: rotate(0deg) scale(1); }
+        50% { transform: rotate(180deg) scale(1.05); }
+        100% { transform: rotate(360deg) scale(1); }
+    }
+
+    @keyframes zfdSpinLeft {
+        0% { transform: rotate(360deg) scale(1.03); }
+        50% { transform: rotate(180deg) scale(0.98); }
+        100% { transform: rotate(0deg) scale(1.03); }
+    }
+
+    @keyframes zfdLightningSurge {
+        0%, 100% { opacity: 0.65; transform: scaleX(0.96); }
+        48% { opacity: 1; transform: scaleX(1); }
+        50% { opacity: 0.25; }
+        52% { opacity: 1; filter: brightness(1.7); }
+    }
+
+    @keyframes zfdArcFlicker {
+        0% { opacity: 0.2; transform: translateY(-1.5px); }
+        100% { opacity: 0.95; transform: translateY(1.5px); }
+    }
+
+    @keyframes zfdCoreFloat {
+        0%, 100% { transform: translateY(0px) scale(1); }
+        50% { transform: translateY(-5px) scale(1.04); }
+    }
+
+    @keyframes zfdSpark1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-95px, -38px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(100px, -32px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-80px, 40px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark4 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(88px, 38px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark5 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(-48px, -48px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark6 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(52px, 46px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark7 {
+        0% { transform: translate(0, 0) scale(0.9); opacity: 1; }
+        100% { transform: translate(-115px, 6px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark8 {
+        0% { transform: translate(0, 0) scale(0.9); opacity: 1; }
+        100% { transform: translate(115px, -8px) scale(0); opacity: 0; }
+    }
+
+    @media (max-width: 768px) {
+        .zaard-floating-divider {
+            height: 110px;
+        }
+        .zfd-emblem-core {
+            width: 80px;
+            height: 80px;
+        }
+    }
+</style> 
 
     <!-- VIDEO / MULTIMEDIA INFORMATIVA (VERTICALES ARRIBA Y CUADRADO ABAJO) -->
         <div class="section" style="text-align: center;">
@@ -2427,6 +3403,631 @@
   </div>
 </section>
 
+<!-- ======================================================= -->
+<!-- BLOQUE ULTRA WOW: VERIFICACIÓN OFICIAL ZARED EN DEXVIEW -->
+<!-- ======================================================= -->
+<div class="zared-dexview-ultra-box">
+    <!-- Partículas / Chispas de energía flotando en el fondo -->
+    <div class="zdv-particles">
+        <span class="zdv-p p1"></span>
+        <span class="zdv-p p2"></span>
+        <span class="zdv-p p3"></span>
+        <span class="zdv-p p4"></span>
+        <span class="zdv-p p5"></span>
+        <span class="zdv-p p6"></span>
+    </div>
+
+    <!-- Rayo superior e inferior decorativo -->
+    <div class="zdv-top-laser"></div>
+
+    <div class="zdv-inner-grid">
+        
+        <!-- COLUMNA IZQUIERDA: NÚCLEO VISUAL + ESCUDO HOLOGRÁFICO -->
+        <div class="zdv-visual-hub">
+            <div class="zdv-halo-outer"></div>
+            <div class="zdv-halo-inner"></div>
+            <div class="zdv-scanner-line"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794875018357-08894aaabf0276f5107840516cb6f43f.png" alt="ZARED Verificado en DexView" class="zdv-main-logo">
+            <div class="zdv-verified-pill">
+                <span class="zdv-pulse-dot"></span> AUDIT & VERIFIED
+            </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: INFORMACIÓN, CONTRATO Y BOTÓN SUPREMO -->
+        <div class="zdv-info-hub">
+            <div class="zdv-kicker">🛡️ PROTOCOLO DE SEGURIDAD Y TRANSPARENCIA BSC</div>
+            <h2 class="zdv-title">ZARED VERIFICADO EN <span>DEXVIEW</span></h2>
+            <p class="zdv-desc">
+                Inspecciona en tiempo real el gráfico oficial, la liquidez bloqueada, los titulares y la puntuación de seguridad del contrato inteligente de <strong>ZARED</strong> directamente en el terminal auditado de DexView.
+            </p>
+
+            <!-- Caja del Contrato con efecto cristal -->
+            <div class="zdv-contract-bar">
+                <span class="zdv-ca-label">SMART CONTRACT (BEP-20):</span>
+                <code class="zdv-ca-code">0xFC2aCa08fc64e51793C32e9088fC43A57d39690E</code>
+            </div>
+
+            <!-- Botón de acción principal con destello láser -->
+            <a href="https://www.dexview.com/bsc/0xFC2aCa08fc64e51793C32e9088fC43A57d39690E" target="_blank" rel="noopener noreferrer" class="zdv-cta-btn">
+                <span class="zdv-btn-shine"></span>
+                <span class="zdv-btn-text">⚡ VERIFICAR ZARED EN DEXVIEW AHORA ↗</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    /* Contenedor Principal con Borde Energético Animado */
+    .zared-dexview-ultra-box {
+        position: relative;
+        width: 100%;
+        margin: 35px 0;
+        padding: 32px 28px;
+        border-radius: 20px;
+        background: radial-gradient(circle at 18% 50%, rgba(0, 229, 255, 0.14) 0%, rgba(12, 18, 32, 0.96) 45%, rgba(8, 12, 22, 0.98) 100%);
+        border: 2px solid rgba(0, 229, 255, 0.45);
+        box-shadow: 
+            0 0 35px rgba(0, 229, 255, 0.22),
+            0 0 65px rgba(212, 175, 55, 0.14),
+            inset 0 0 25px rgba(0, 229, 255, 0.1);
+        overflow: hidden;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .zared-dexview-ultra-box:hover {
+        transform: translateY(-4px);
+        box-shadow: 
+            0 0 45px rgba(0, 229, 255, 0.38),
+            0 0 80px rgba(212, 175, 55, 0.22),
+            inset 0 0 30px rgba(0, 229, 255, 0.16);
+    }
+
+    /* Láser superior recorriendo el borde */
+    .zdv-top-laser {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #00e5ff, #ffffff, #f3ba2f, transparent);
+        animation: zdvLaserSweep 3.5s infinite linear;
+        z-index: 5;
+    }
+
+    /* Grid interno */
+    .zdv-inner-grid {
+        position: relative;
+        z-index: 3;
+        display: grid;
+        grid-template-columns: 210px 1fr;
+        gap: 30px;
+        align-items: center;
+    }
+
+    /* --- HUB VISUAL IZQUIERDO --- */
+    .zdv-visual-hub {
+        position: relative;
+        width: 185px;
+        height: 185px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .zdv-main-logo {
+        width: 142px;
+        height: 142px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: 3;
+        border: 3px solid #00e5ff;
+        box-shadow: 
+            0 0 25px rgba(0, 229, 255, 0.8),
+            0 0 45px rgba(0, 128, 255, 0.5);
+        animation: zdvFloatLogo 3.5s infinite ease-in-out;
+    }
+
+    /* Doble anillo holográfico giratorio */
+    .zdv-halo-outer {
+        position: absolute;
+        inset: 2px;
+        border-radius: 50%;
+        border: 2.5px dashed #00e5ff;
+        border-top-color: #f3ba2f;
+        border-bottom-color: #ffffff;
+        box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+        animation: zdvSpinRight 7s linear infinite;
+        z-index: 1;
+    }
+
+    .zdv-halo-inner {
+        position: absolute;
+        inset: 12px;
+        border-radius: 50%;
+        border: 2px dotted #f3ba2f;
+        border-left-color: #00e5ff;
+        border-right-color: transparent;
+        animation: zdvSpinLeft 5s linear infinite;
+        z-index: 2;
+    }
+
+    /* Escáner láser vertical sobre el emblema */
+    .zdv-scanner-line {
+        position: absolute;
+        width: 150px;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #00ffcc, #ffffff, #00ffcc, transparent);
+        box-shadow: 0 0 12px #00ffcc;
+        z-index: 4;
+        border-radius: 50%;
+        animation: zdvScanVertical 2.8s infinite ease-in-out;
+        pointer-events: none;
+    }
+
+    /* Etiqueta flotante de Verificado */
+    .zdv-verified-pill {
+        position: absolute;
+        bottom: 2px;
+        z-index: 5;
+        background: linear-gradient(90deg, #06283d, #0a192f);
+        border: 1px solid #00ffcc;
+        color: #00ffcc;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.68em;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        padding: 5px 12px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        box-shadow: 0 0 15px rgba(0, 255, 204, 0.45);
+    }
+
+    .zdv-pulse-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #00ffcc;
+        box-shadow: 0 0 8px #00ffcc;
+        animation: zdvDotPulse 1.2s infinite alternate;
+    }
+
+    /* --- HUB DE INFORMACIÓN DERECHO --- */
+    .zdv-info-hub {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .zdv-kicker {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.78em;
+        letter-spacing: 2px;
+        color: #f3ba2f;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .zdv-title {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.65em;
+        color: #ffffff;
+        margin: 0;
+        line-height: 1.2;
+        text-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+    }
+
+    .zdv-title span {
+        background: linear-gradient(90deg, #00e5ff, #00ffcc, #f3ba2f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.5));
+    }
+
+    .zdv-desc {
+        color: #cbd5e1;
+        font-size: 0.94em;
+        line-height: 1.55;
+        margin: 0;
+    }
+
+    /* Barra del contrato */
+    .zdv-contract-bar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        background: rgba(15, 23, 42, 0.85);
+        border: 1px solid rgba(0, 229, 255, 0.3);
+        padding: 10px 14px;
+        border-radius: 10px;
+        margin: 4px 0;
+    }
+
+    .zdv-ca-label {
+        font-size: 0.75em;
+        font-weight: 700;
+        color: #94a3b8;
+        letter-spacing: 1px;
+    }
+
+    .zdv-ca-code {
+        font-family: monospace;
+        font-size: 0.88em;
+        color: #00ffcc;
+        word-break: break-all;
+        text-shadow: 0 0 8px rgba(0, 255, 204, 0.35);
+    }
+
+    /* Botón Supremo con destello deslizante */
+    .zdv-cta-btn {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6px;
+        padding: 15px 28px;
+        border-radius: 12px;
+        background: linear-gradient(90deg, #0077ff 0%, #00e5ff 50%, #00ffcc 100%);
+        color: #040b16 !important;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.95em;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-decoration: none !important;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 
+            0 0 20px rgba(0, 229, 255, 0.65),
+            0 0 40px rgba(0, 119, 255, 0.4);
+        transition: all 0.3s ease;
+    }
+
+    .zdv-cta-btn:hover {
+        transform: scale(1.02);
+        box-shadow: 
+            0 0 30px rgba(0, 255, 204, 0.9),
+            0 0 55px rgba(0, 229, 255, 0.7);
+        filter: brightness(1.1);
+    }
+
+    .zdv-btn-shine {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+        transform: skewX(-25deg);
+        animation: zdvBtnShine 2.6s infinite ease-in-out;
+    }
+
+    /* Partículas flotantes de fondo */
+    .zdv-particles {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .zdv-p {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #00e5ff;
+        box-shadow: 0 0 10px #00e5ff, 0 0 18px #f3ba2f;
+        opacity: 0;
+    }
+
+    .zdv-p.p1 { top: 20%; left: 12%; animation: zdvParticleFloat 3.2s infinite ease-out; }
+    .zdv-p.p2 { top: 75%; left: 25%; animation: zdvParticleFloat 4.0s infinite ease-out 0.8s; background: #f3ba2f; }
+    .zdv-p.p3 { top: 30%; left: 65%; animation: zdvParticleFloat 3.6s infinite ease-out 1.4s; }
+    .zdv-p.p4 { top: 80%; left: 82%; animation: zdvParticleFloat 3.0s infinite ease-out 0.4s; background: #00ffcc; }
+    .zdv-p.p5 { top: 18%; left: 88%; animation: zdvParticleFloat 4.2s infinite ease-out 1.9s; background: #f3ba2f; }
+    .zdv-p.p6 { top: 60%; left: 48%; animation: zdvParticleFloat 3.5s infinite ease-out 1.1s; }
+
+    /* Keyframes */
+    @keyframes zdvLaserSweep {
+        0% { left: -100%; }
+        100% { left: 100%; }
+    }
+
+    @keyframes zdvSpinRight {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes zdvSpinLeft {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    @keyframes zdvFloatLogo {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+    }
+
+    @keyframes zdvScanVertical {
+        0%, 100% { transform: translateY(-55px); opacity: 0.2; }
+        50% { transform: translateY(55px); opacity: 1; }
+    }
+
+    @keyframes zdvDotPulse {
+        0% { transform: scale(0.8); opacity: 0.6; }
+        100% { transform: scale(1.25); opacity: 1; }
+    }
+
+    @keyframes zdvBtnShine {
+        0% { left: -100%; }
+        45%, 100% { left: 150%; }
+    }
+
+    @keyframes zdvParticleFloat {
+        0% { transform: translateY(0) scale(0.5); opacity: 0; }
+        40% { opacity: 0.9; }
+        100% { transform: translateY(-45px) scale(1.2); opacity: 0; }
+    }
+
+    /* Responsivo para celulares */
+    @media (max-width: 768px) {
+        .zared-dexview-ultra-box {
+            padding: 24px 18px;
+        }
+        .zdv-inner-grid {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 20px;
+        }
+        .zdv-contract-bar {
+            justify-content: center;
+        }
+        .zdv-title {
+            font-size: 1.35em;
+        }
+        .zdv-cta-btn {
+            width: 100%;
+            font-size: 0.85em;
+            padding: 14px 16px;
+        }
+    }
+</style>
+
+   <!-- ======================================================= -->
+<!-- SEPARADOR FLOTANTE CON RAYOS Y CHISPAS (LISTO PARA PEGAR) -->
+<!-- ======================================================= -->
+<div class="zaard-floating-divider">
+    <div class="zfd-energy-beam"></div>
+    <div class="zfd-sparks-field">
+        <span class="zfd-spark s1"></span>
+        <span class="zfd-spark s2"></span>
+        <span class="zfd-spark s3"></span>
+        <span class="zfd-spark s4"></span>
+        <span class="zfd-spark s5"></span>
+        <span class="zfd-spark s6"></span>
+        <span class="zfd-spark s7"></span>
+        <span class="zfd-spark s8"></span>
+    </div>
+    <div class="zfd-emblem-core">
+        <div class="zfd-lightning-ring"></div>
+        <div class="zfd-lightning-ring-outer"></div>
+        <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794808968190-a28e53b200afbc6335bfa84503c3504b.png" alt="Separador ZAARD">
+    </div>
+</div>
+
+<style>
+    /* Contenedor completamente transparente, sin fondos ni bordes */
+    .zaard-floating-divider {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        margin: 25px 0;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        pointer-events: none;
+    }
+
+    /* Haz de rayo horizontal flotante */
+    .zfd-energy-beam {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, 
+            transparent 0%, 
+            rgba(0, 255, 204, 0.2) 12%,
+            #00ffcc 28%, 
+            #ffffff 50%, 
+            #f3ba2f 72%, 
+            rgba(243, 186, 47, 0.2) 88%,
+            transparent 100%);
+        box-shadow: 
+            0 0 12px #00ffcc,
+            0 0 25px #f3ba2f,
+            0 0 40px rgba(255, 255, 255, 0.85);
+        animation: zfdLightningSurge 2.2s infinite ease-in-out;
+    }
+
+    /* Descarga eléctrica secundaria */
+    .zfd-energy-beam::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 10%;
+        width: 80%;
+        height: 7px;
+        background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 16px,
+            rgba(0, 255, 204, 0.9) 18px,
+            rgba(243, 186, 47, 0.9) 20px
+        );
+        filter: blur(2px);
+        animation: zfdArcFlicker 0.16s infinite alternate;
+    }
+
+    /* Núcleo flotante sin cuadro alrededor */
+    .zfd-emblem-core {
+        position: relative;
+        z-index: 3;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0 0 16px rgba(0, 255, 204, 0.75)) drop-shadow(0 0 26px rgba(243, 186, 47, 0.65));
+        animation: zfdCoreFloat 3.2s infinite ease-in-out;
+    }
+
+    /* Imagen limpia flotando en el aire */
+    .zfd-emblem-core img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Anillo interno de rayos */
+    .zfd-lightning-ring {
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        border: 2px dashed #00ffcc;
+        border-top-color: #f3ba2f;
+        border-bottom-color: #ffffff;
+        box-shadow: 0 0 15px rgba(0, 255, 204, 0.8), inset 0 0 10px rgba(243, 186, 47, 0.6);
+        animation: zfdSpinRight 4s linear infinite;
+        z-index: 1;
+    }
+
+    /* Segundo halo eléctrico girando en sentido contrario */
+    .zfd-lightning-ring-outer {
+        position: absolute;
+        inset: -13px;
+        border-radius: 50%;
+        border: 1.5px dotted rgba(243, 186, 47, 0.85);
+        border-left-color: #00ffcc;
+        border-right-color: transparent;
+        animation: zfdSpinLeft 6s linear infinite;
+        z-index: 1;
+    }
+
+    /* Campo de chispas */
+    .zfd-sparks-field {
+        position: absolute;
+        width: 260px;
+        height: 120px;
+        z-index: 4;
+    }
+
+    .zfd-spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: 0 0 8px #00ffcc, 0 0 14px #f3ba2f;
+        opacity: 0;
+    }
+
+    .zfd-spark.s1 { animation: zfdSpark1 1.5s infinite ease-out; background: #00ffcc; }
+    .zfd-spark.s2 { animation: zfdSpark2 1.8s infinite ease-out 0.25s; background: #f3ba2f; }
+    .zfd-spark.s3 { animation: zfdSpark3 1.4s infinite ease-out 0.5s; background: #ffffff; }
+    .zfd-spark.s4 { animation: zfdSpark4 2.0s infinite ease-out 0.15s; background: #00ffcc; }
+    .zfd-spark.s5 { animation: zfdSpark5 1.6s infinite ease-out 0.7s; background: #f3ba2f; }
+    .zfd-spark.s6 { animation: zfdSpark6 1.5s infinite ease-out 0.4s; background: #ffffff; }
+    .zfd-spark.s7 { animation: zfdSpark7 1.9s infinite ease-out 0.9s; background: #00ffcc; }
+    .zfd-spark.s8 { animation: zfdSpark8 1.7s infinite ease-out 0.6s; background: #f3ba2f; }
+
+    /* Animaciones */
+    @keyframes zfdSpinRight {
+        0% { transform: rotate(0deg) scale(1); }
+        50% { transform: rotate(180deg) scale(1.05); }
+        100% { transform: rotate(360deg) scale(1); }
+    }
+
+    @keyframes zfdSpinLeft {
+        0% { transform: rotate(360deg) scale(1.03); }
+        50% { transform: rotate(180deg) scale(0.98); }
+        100% { transform: rotate(0deg) scale(1.03); }
+    }
+
+    @keyframes zfdLightningSurge {
+        0%, 100% { opacity: 0.65; transform: scaleX(0.96); }
+        48% { opacity: 1; transform: scaleX(1); }
+        50% { opacity: 0.25; }
+        52% { opacity: 1; filter: brightness(1.7); }
+    }
+
+    @keyframes zfdArcFlicker {
+        0% { opacity: 0.2; transform: translateY(-1.5px); }
+        100% { opacity: 0.95; transform: translateY(1.5px); }
+    }
+
+    @keyframes zfdCoreFloat {
+        0%, 100% { transform: translateY(0px) scale(1); }
+        50% { transform: translateY(-5px) scale(1.04); }
+    }
+
+    @keyframes zfdSpark1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-95px, -38px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(100px, -32px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-80px, 40px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark4 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(88px, 38px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark5 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(-48px, -48px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark6 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(52px, 46px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark7 {
+        0% { transform: translate(0, 0) scale(0.9); opacity: 1; }
+        100% { transform: translate(-115px, 6px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdSpark8 {
+        0% { transform: translate(0, 0) scale(0.9); opacity: 1; }
+        100% { transform: translate(115px, -8px) scale(0); opacity: 0; }
+    }
+
+    @media (max-width: 768px) {
+        .zaard-floating-divider {
+            height: 110px;
+        }
+        .zfd-emblem-core {
+            width: 80px;
+            height: 80px;
+        }
+    }
+</style> 
+
   <!-- ======================================================= -->
 <!-- BLOQUE: AUDITORÍA Y SEGURIDAD - TOKEN SNIFFER (PANGA)    -->
 <!-- ======================================================= -->
@@ -2877,6 +4478,328 @@
 
 </div>  
 
+<!-- ======================================================= -->
+<!-- SEPARADOR FLOTANTE DE 5 ESFERAS EN OLA CRECIENTE        -->
+<!-- ======================================================= -->
+<div class="zaard-wave-5-divider">
+    <!-- Haz de rayo continuo que conecta las 5 esferas (Azul -> Morado -> Naranja -> Morado -> Azul) -->
+    <div class="zw5-energy-beam"></div>
+
+    <!-- Contenedor alineado de las 5 esferas -->
+    <div class="zw5-nodes-track">
+        
+        <!-- 1. PUNTA IZQUIERDA (Más pequeña - Brillo Azul) -->
+        <div class="zw5-node zw5-edge zw5-blue">
+            <div class="zw5-ring"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1793917735714-d84b28c0d04f3063f454cbc1d8a062fb.png" alt="Nodo Azul Izquierdo">
+        </div>
+
+        <!-- 2. LADO IZQUIERDO (Mediana - Brillo Morado) -->
+        <div class="zw5-node zw5-mid zw5-purple zw5-delay-1">
+            <div class="zw5-ring"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790484633328-559fdd3c13098c92f8a665ac39a838c2.png" alt="Nodo Morado Izquierdo">
+        </div>
+
+        <!-- 3. CENTRO (Más grande - Brillo Anaranjado + Chispas) -->
+        <div class="zw5-node zw5-center zw5-orange zw5-delay-2">
+            <div class="zw5-sparks">
+                <span class="zw5-spark sp1"></span>
+                <span class="zw5-spark sp2"></span>
+                <span class="zw5-spark sp3"></span>
+                <span class="zw5-spark sp4"></span>
+                <span class="zw5-spark sp5"></span>
+                <span class="zw5-spark sp6"></span>
+            </div>
+            <div class="zw5-ring"></div>
+            <div class="zw5-ring-outer"></div>
+            <!-- Nota: Reemplaza este src si tienes otra URL específica para la imagen central -->
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791940828941-906fd2a3d85625f79d066e5b033f6011.png" alt="Núcleo Central Naranja">
+        </div>
+
+        <!-- 4. LADO DERECHO (Mediana - Brillo Morado) -->
+        <div class="zw5-node zw5-mid zw5-purple zw5-delay-3">
+            <div class="zw5-ring"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790288769685-7d9a89bc13043a812c4889cb55ac4a54.png" alt="Nodo Morado Derecho">
+        </div>
+
+        <!-- 5. PUNTA DERECHA (Más pequeña - Brillo Azul) -->
+        <div class="zw5-node zw5-edge zw5-blue zw5-delay-4">
+            <div class="zw5-ring"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790286389131-9ffaade2f1b5bc4c51858adc8fdf4bd4.png" alt="Nodo Azul Derecho">
+        </div>
+
+    </div>
+</div>
+
+<style>
+    /* Contenedor transparente flotando en el aire */
+    .zaard-wave-5-divider {
+        position: relative;
+        width: 100%;
+        height: 155px;
+        margin: 30px 0;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        pointer-events: none;
+    }
+
+    /* Haz de rayo horizontal con degradado sincronizado */
+    .zw5-energy-beam {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, 
+            transparent 0%, 
+            #00b4d8 18%, 
+            #9d4edd 35%, 
+            #ff6d00 50%, 
+            #9d4edd 65%, 
+            #00b4d8 82%, 
+            transparent 100%);
+        box-shadow: 
+            0 0 12px #00b4d8,
+            0 0 22px #9d4edd,
+            0 0 32px #ff6d00;
+        animation: zw5BeamPulse 2.8s infinite ease-in-out;
+        z-index: 1;
+    }
+
+    .zw5-energy-beam::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 8%;
+        width: 84%;
+        height: 7px;
+        background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 14px,
+            rgba(255, 255, 255, 0.7) 16px,
+            transparent 18px
+        );
+        filter: blur(2px);
+        animation: zw5Flicker 0.2s infinite alternate;
+    }
+
+    /* Pista de distribución de las 5 esferas */
+    .zw5-nodes-track {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+        width: 100%;
+        max-width: 780px;
+    }
+
+    /* Estilo base de cada esfera */
+    .zw5-node {
+        position: relative;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        animation: zw5OceanSwell 3.6s infinite ease-in-out;
+    }
+
+    .zw5-node img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+    }
+
+    .zw5-ring {
+        position: absolute;
+        inset: -5px;
+        border-radius: 50%;
+        animation: zw5SpinRight 4.5s linear infinite;
+        z-index: 1;
+    }
+
+    /* --- ESCALA CRECIENTE --- */
+    /* Puntas (Pequeñas) */
+    .zw5-edge {
+        width: 56px;
+        height: 56px;
+    }
+
+    /* Lados (Medianas) */
+    .zw5-mid {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Centro (Grande) */
+    .zw5-center {
+        width: 112px;
+        height: 112px;
+    }
+
+    /* --- COLORES Y DESTELLOS POR POSICIÓN --- */
+    /* 1 y 5: Destello Azul */
+    .zw5-blue {
+        filter: drop-shadow(0 0 12px rgba(0, 180, 216, 0.85)) drop-shadow(0 0 22px rgba(0, 119, 182, 0.7));
+    }
+    .zw5-blue .zw5-ring {
+        border: 2px dashed #00d4ff;
+        border-top-color: #ffffff;
+        box-shadow: 0 0 12px rgba(0, 212, 255, 0.8);
+    }
+
+    /* 2 y 4: Destello Morado */
+    .zw5-purple {
+        filter: drop-shadow(0 0 15px rgba(157, 78, 221, 0.9)) drop-shadow(0 0 26px rgba(199, 125, 255, 0.75));
+    }
+    .zw5-purple .zw5-ring {
+        border: 2px dashed #c77dff;
+        border-bottom-color: #ffffff;
+        box-shadow: 0 0 15px rgba(199, 125, 255, 0.85);
+    }
+
+    /* 3: Destello Anaranjado */
+    .zw5-orange {
+        filter: drop-shadow(0 0 18px rgba(255, 109, 0, 0.95)) drop-shadow(0 0 34px rgba(255, 158, 0, 0.8));
+    }
+    .zw5-orange .zw5-ring {
+        inset: -7px;
+        border: 2.5px dashed #ff8500;
+        border-top-color: #ffd000;
+        border-bottom-color: #ffffff;
+        box-shadow: 0 0 18px rgba(255, 133, 0, 0.9);
+    }
+    .zw5-orange .zw5-ring-outer {
+        position: absolute;
+        inset: -14px;
+        border-radius: 50%;
+        border: 1.5px dotted #ffb703;
+        border-left-color: #ff5400;
+        border-right-color: transparent;
+        animation: zw5SpinLeft 6s linear infinite;
+        z-index: 1;
+    }
+
+    /* --- RETARDOS DE OLA DE MAR (Efecto marea creciente de izquierda a derecha) --- */
+    .zw5-delay-1 { animation-delay: 0.35s; }
+    .zw5-delay-2 { animation-delay: 0.70s; }
+    .zw5-delay-3 { animation-delay: 1.05s; }
+    .zw5-delay-4 { animation-delay: 1.40s; }
+
+    /* Chispas del núcleo naranja */
+    .zw5-sparks {
+        position: absolute;
+        width: 220px;
+        height: 130px;
+        z-index: 4;
+    }
+
+    .zw5-spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #ff9e00;
+        box-shadow: 0 0 8px #ff6d00, 0 0 14px #ffd000;
+        opacity: 0;
+    }
+
+    .zw5-spark.sp1 { animation: zw5Spark1 1.6s infinite ease-out; background: #ff8500; }
+    .zw5-spark.sp2 { animation: zw5Spark2 1.9s infinite ease-out 0.3s; background: #ffd000; }
+    .zw5-spark.sp3 { animation: zw5Spark3 1.5s infinite ease-out 0.5s; background: #ffffff; }
+    .zw5-spark.sp4 { animation: zw5Spark4 2.0s infinite ease-out 0.2s; background: #ff6d00; }
+    .zw5-spark.sp5 { animation: zw5Spark5 1.7s infinite ease-out 0.7s; background: #ffaa00; }
+    .zw5-spark.sp6 { animation: zw5Spark6 1.6s infinite ease-out 0.4s; background: #ffffff; }
+
+    /* Keyframes: Efecto Ola de Mar (sube, crece y baja suavemente) */
+    @keyframes zw5OceanSwell {
+        0%, 100% {
+            transform: translateY(4px) scale(0.92);
+        }
+        50% {
+            transform: translateY(-7px) scale(1.13);
+        }
+    }
+
+    @keyframes zw5SpinRight {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes zw5SpinLeft {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    @keyframes zw5BeamPulse {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; filter: brightness(1.4); }
+    }
+
+    @keyframes zw5Flicker {
+        0% { opacity: 0.25; }
+        100% { opacity: 0.9; }
+    }
+
+    @keyframes zw5Spark1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-80px, -45px) scale(0); opacity: 0; }
+    }
+    @keyframes zw5Spark2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(85px, -40px) scale(0); opacity: 0; }
+    }
+    @keyframes zw5Spark3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-70px, 45px) scale(0); opacity: 0; }
+    }
+    @keyframes zw5Spark4 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(75px, 42px) scale(0); opacity: 0; }
+    }
+    @keyframes zw5Spark5 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(-35px, -55px) scale(0); opacity: 0; }
+    }
+    @keyframes zw5Spark6 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(40px, 52px) scale(0); opacity: 0; }
+    }
+
+    /* Adaptación responsiva para celulares */
+    @media (max-width: 768px) {
+        .zaard-wave-5-divider {
+            height: 120px;
+        }
+        .zw5-nodes-track {
+            gap: 14px;
+        }
+        .zw5-edge {
+            width: 38px;
+            height: 38px;
+        }
+        .zw5-mid {
+            width: 56px;
+            height: 56px;
+        }
+        .zw5-center {
+            width: 82px;
+            height: 82px;
+        }
+    }
+</style>
+
         <!-- ======================================================== -->
 <!-- BLOQUE WEB3: ZAARD_ALX - ZAARD INNOVATION XENOCRYPT      -->
 <!-- ======================================================== -->
@@ -3279,7 +5202,238 @@
         box-shadow: 0 0 40px rgba(128,0,128,0.6), inset 0 0 20px rgba(0,0,0,0.9);
     }
 }
-</style>     
+</style>  
+
+   <!-- ======================================================= -->
+<!-- SEPARADOR FLOTANTE ROJO & MORADO (LISTO PARA PEGAR)     -->
+<!-- ======================================================= -->
+<div class="zaard-floating-divider-rm">
+    <div class="zfd-rm-energy-beam"></div>
+    <div class="zfd-rm-sparks-field">
+        <span class="zfd-rm-spark s1"></span>
+        <span class="zfd-rm-spark s2"></span>
+        <span class="zfd-rm-spark s3"></span>
+        <span class="zfd-rm-spark s4"></span>
+        <span class="zfd-rm-spark s5"></span>
+        <span class="zfd-rm-spark s6"></span>
+        <span class="zfd-rm-spark s7"></span>
+        <span class="zfd-rm-spark s8"></span>
+    </div>
+    <div class="zfd-rm-emblem-core">
+        <div class="zfd-rm-lightning-ring"></div>
+        <div class="zfd-rm-lightning-ring-outer"></div>
+        <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794605349763-3b36fe22e2048e05bbf50f8bdf231392.png" alt="Separador Rojo y Morado">
+    </div>
+</div>
+
+<style>
+    /* Contenedor completamente transparente, flotando en el aire */
+    .zaard-floating-divider-rm {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        margin: 25px 0;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        pointer-events: none;
+    }
+
+    /* Haz de rayo horizontal rojo neón y morado */
+    .zfd-rm-energy-beam {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, 
+            transparent 0%, 
+            rgba(255, 23, 68, 0.25) 12%,
+            #ff1744 28%, 
+            #ffffff 50%, 
+            #b5179e 72%, 
+            rgba(157, 78, 221, 0.25) 88%,
+            transparent 100%);
+        box-shadow: 
+            0 0 12px #ff1744,
+            0 0 25px #9d4edd,
+            0 0 40px rgba(255, 42, 109, 0.85);
+        animation: zfdRmLightningSurge 2.2s infinite ease-in-out;
+    }
+
+    /* Descarga eléctrica secundaria */
+    .zfd-rm-energy-beam::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 10%;
+        width: 80%;
+        height: 7px;
+        background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 16px,
+            rgba(255, 23, 68, 0.9) 18px,
+            rgba(181, 23, 158, 0.9) 20px
+        );
+        filter: blur(2px);
+        animation: zfdRmArcFlicker 0.16s infinite alternate;
+    }
+
+    /* Núcleo flotante sin cuadro alrededor */
+    .zfd-rm-emblem-core {
+        position: relative;
+        z-index: 3;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0 0 16px rgba(255, 23, 68, 0.8)) drop-shadow(0 0 28px rgba(157, 78, 221, 0.75));
+        animation: zfdRmCoreFloat 3.2s infinite ease-in-out;
+    }
+
+    /* Imagen limpia flotando */
+    .zfd-rm-emblem-core img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Anillo interno de rayos rojo y morado */
+    .zfd-rm-lightning-ring {
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        border: 2px dashed #ff1744;
+        border-top-color: #c77dff;
+        border-bottom-color: #ff758f;
+        box-shadow: 0 0 15px rgba(255, 23, 68, 0.85), inset 0 0 10px rgba(157, 78, 221, 0.7);
+        animation: zfdRmSpinRight 4s linear infinite;
+        z-index: 1;
+    }
+
+    /* Segundo halo eléctrico girando en sentido contrario */
+    .zfd-rm-lightning-ring-outer {
+        position: absolute;
+        inset: -13px;
+        border-radius: 50%;
+        border: 1.5px dotted rgba(199, 125, 255, 0.9);
+        border-left-color: #ff1744;
+        border-right-color: transparent;
+        animation: zfdRmSpinLeft 6s linear infinite;
+        z-index: 1;
+    }
+
+    /* Campo de chispas */
+    .zfd-rm-sparks-field {
+        position: absolute;
+        width: 260px;
+        height: 120px;
+        z-index: 4;
+    }
+
+    .zfd-rm-spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: 0 0 8px #ff1744, 0 0 14px #9d4edd;
+        opacity: 0;
+    }
+
+    .zfd-rm-spark.s1 { animation: zfdRmSpark1 1.5s infinite ease-out; background: #ff1744; }
+    .zfd-rm-spark.s2 { animation: zfdRmSpark2 1.8s infinite ease-out 0.25s; background: #c77dff; }
+    .zfd-rm-spark.s3 { animation: zfdRmSpark3 1.4s infinite ease-out 0.5s; background: #ff8fa3; }
+    .zfd-rm-spark.s4 { animation: zfdRmSpark4 2.0s infinite ease-out 0.15s; background: #ff1744; }
+    .zfd-rm-spark.s5 { animation: zfdRmSpark5 1.6s infinite ease-out 0.7s; background: #9d4edd; }
+    .zfd-rm-spark.s6 { animation: zfdRmSpark6 1.5s infinite ease-out 0.4s; background: #ffffff; }
+    .zfd-rm-spark.s7 { animation: zfdRmSpark7 1.9s infinite ease-out 0.9s; background: #ff1744; }
+    .zfd-rm-spark.s8 { animation: zfdRmSpark8 1.7s infinite ease-out 0.6s; background: #c77dff; }
+
+    /* Animaciones */
+    @keyframes zfdRmSpinRight {
+        0% { transform: rotate(0deg) scale(1); }
+        50% { transform: rotate(180deg) scale(1.05); }
+        100% { transform: rotate(360deg) scale(1); }
+    }
+
+    @keyframes zfdRmSpinLeft {
+        0% { transform: rotate(360deg) scale(1.03); }
+        50% { transform: rotate(180deg) scale(0.98); }
+        100% { transform: rotate(0deg) scale(1.03); }
+    }
+
+    @keyframes zfdRmLightningSurge {
+        0%, 100% { opacity: 0.65; transform: scaleX(0.96); }
+        48% { opacity: 1; transform: scaleX(1); }
+        50% { opacity: 0.25; }
+        52% { opacity: 1; filter: brightness(1.7); }
+    }
+
+    @keyframes zfdRmArcFlicker {
+        0% { opacity: 0.2; transform: translateY(-1.5px); }
+        100% { opacity: 0.95; transform: translateY(1.5px); }
+    }
+
+    @keyframes zfdRmCoreFloat {
+        0%, 100% { transform: translateY(0px) scale(1); }
+        50% { transform: translateY(-5px) scale(1.04); }
+    }
+
+    @keyframes zfdRmSpark1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-95px, -38px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdRmSpark2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(100px, -32px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdRmSpark3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-80px, 40px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdRmSpark4 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(88px, 38px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdRmSpark5 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(-48px, -48px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdRmSpark6 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(52px, 46px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdRmSpark7 {
+        0% { transform: translate(0, 0) scale(0.9); opacity: 1; }
+        100% { transform: translate(-115px, 6px) scale(0); opacity: 0; }
+    }
+    @keyframes zfdRmSpark8 {
+        0% { transform: translate(0, 0) scale(0.9); opacity: 1; }
+        100% { transform: translate(115px, -8px) scale(0); opacity: 0; }
+    }
+
+    @media (max-width: 768px) {
+        .zaard-floating-divider-rm {
+            height: 110px;
+        }
+        .zfd-rm-emblem-core {
+            width: 80px;
+            height: 80px;
+        }
+    }
+</style> 
 
     <!-- BLOQUE ZARED / PROTOCOLO PANGA & ZAARD INNOVATION -->
 <div class="fin-card" style="background: linear-gradient(135deg, rgba(18, 10, 35, 0.95), rgba(12, 6, 26, 0.98)); border: 2px solid rgba(168, 85, 247, 0.6); border-radius: 20px; padding: 25px; box-shadow: 0 0 35px rgba(168, 85, 247, 0.25); margin-bottom: 25px;">
@@ -3338,23 +5492,42 @@
     })();
 </script>
 
-    <!-- ======================================================= -->
-<!-- BLOQUE 2: MONITOREO EN DIRECTO - DEXVIEW                -->
 <!-- ======================================================= -->
-<div class="section" style="position: relative; overflow: hidden; border: 2px solid #3b82f6; box-shadow: 0 0 35px rgba(59, 130, 246, 0.3); background: linear-gradient(135deg, rgba(15,15,15,0.95), rgba(10,20,35,0.9)); padding: 30px; border-radius: 16px; margin-bottom: 40px; text-align: center;">
-    
+<!-- BLOQUE 2 ULTRA WOW: MONITOREO EN DIRECTO - DEXVIEW      -->
+<!-- ======================================================= -->
+<div class="section dexview-ultra-section">
+    <!-- Láser superior animado -->
+    <div class="dv-ultra-laser"></div>
+
+    <!-- Chispas y partículas flotantes de energía -->
+    <div class="dv-ultra-sparks">
+        <span class="dv-sp s1"></span>
+        <span class="dv-sp s2"></span>
+        <span class="dv-sp s3"></span>
+        <span class="dv-sp s4"></span>
+        <span class="dv-sp s5"></span>
+        <span class="dv-sp s6"></span>
+    </div>
+
     <!-- Encabezado del Bloque -->
-    <h2 style="font-family: 'Orbitron', sans-serif; color: #60a5fa; font-size: 1.7em; margin-bottom: 8px; text-shadow: 0 0 10px rgba(96,165,250,0.5);">
-        📊 GRÁFICO Y MERCADO EN DEXVIEW
+    <div class="dv-ultra-badge">
+        <span class="dv-live-dot"></span> LIVE BSC MARKET TERMINAL
+    </div>
+
+    <h2 class="dv-ultra-title">
+        📊 GRÁFICO Y MERCADO EN <span>DEXVIEW</span>
     </h2>
-    <p style="color: #94a3b8; font-size: 0.95em; max-width: 600px; margin: 0 auto 25px auto; line-height: 1.5;">
-        Sigue la cotización en tiempo real, el volumen de operaciones y la liquidez oficial del token en <span style="color: #60a5fa; font-weight: bold;">DexView</span>.
+    <p class="dv-ultra-subtitle">
+        Sigue la cotización en tiempo real, el volumen de operaciones y la liquidez oficial del token <strong>ZARD</strong> en <span style="color: #00e5ff; font-weight: bold;">DexView</span>.
     </p>
 
-    <!-- Contenedor con el Slider de las 2 Imágenes que alternan cada 2 segundos -->
-    <div style="margin-bottom: 25px; display: flex; justify-content: center;">
-        <a href="https://www.dexview.com/bsc/0x973ba2C1dCCD0820F1e026d6B1f01c55c4085d38" target="_blank" style="display: inline-block;">
+    <!-- Contenedor Central con Doble Aro Holográfico + Slider de 2 Imágenes (2 seg) -->
+    <div class="dv-ultra-showcase">
+        <a href="https://www.dexview.com/bsc/0xE2879d1172215E728472D7827586bd2796aFA3fB" target="_blank" rel="noopener noreferrer" class="dv-slider-link">
+            <div class="dv-halo-outer"></div>
+            <div class="dv-halo-inner"></div>
             <div class="dexview-slider-wrapper">
+                <div class="dv-scanner-beam"></div>
                 <!-- Imagen 1 (Activa por defecto) -->
                 <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790994526793-ec7655dffbb918f15d7acd5806095eaf.png" 
                      alt="ZARD DexView 1" 
@@ -3367,36 +5540,196 @@
         </a>
     </div>
 
-    <!-- Botón de Enlace Directo -->
-    <div>
-        <a href="https://www.dexview.com/bsc/0x973ba2C1dCCD0820F1e026d6B1f01c55c4085d38" 
+    <!-- Etiqueta del Contrato Actualizado -->
+    <div class="dv-contract-pill">
+        <span>CA ZARD:</span>
+        <code>0xE2879d1172215E728472D7827586bd2796aFA3fB</code>
+    </div>
+
+    <!-- Botón de Enlace Directo Ultra Llamativo -->
+    <div style="margin-top: 22px; position: relative; z-index: 4;">
+        <a href="https://www.dexview.com/bsc/0xE2879d1172215E728472D7827586bd2796aFA3fB" 
            target="_blank" 
-           class="card-link"
-           style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(0,255,204,0.1)); border: 2px solid #3b82f6; border-radius: 10px; color: #60a5fa; font-family: 'Orbitron', sans-serif; font-size: 0.9em; font-weight: bold; text-decoration: none; box-shadow: 0 0 15px rgba(59,130,246,0.25); transition: all 0.3s ease;">
+           rel="noopener noreferrer"
+           class="dv-ultra-btn">
+            <span class="dv-btn-glint"></span>
             📈 VER MERCADO EN DEXVIEW ↗
         </a>
     </div>
 
 </div>
 
-<!-- Estilos y Script específicos para el efecto visual de DexView -->
+<!-- Estilos y Script específicos para el efecto visual Ultra WOW de DexView -->
 <style>
-    .dexview-slider-wrapper {
+    .dexview-ultra-section {
         position: relative;
-        width: 170px;
-        height: 170px;
-        margin: 0 auto;
-        border-radius: 16px;
         overflow: hidden;
-        border: 2px solid rgba(59, 130, 246, 0.6);
-        box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
-        background: rgba(0,0,0,0.3);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 2px solid rgba(0, 229, 255, 0.55);
+        box-shadow: 
+            0 0 35px rgba(59, 130, 246, 0.35),
+            0 0 70px rgba(0, 229, 255, 0.18),
+            inset 0 0 28px rgba(0, 229, 255, 0.12);
+        background: radial-gradient(circle at 50% 45%, rgba(14, 32, 62, 0.96) 0%, rgba(10, 15, 28, 0.98) 70%);
+        padding: 36px 25px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
     }
 
-    .dexview-slider-wrapper:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 35px rgba(59, 130, 246, 0.8);
+    .dexview-ultra-section:hover {
+        transform: translateY(-4px);
+        box-shadow: 
+            0 0 45px rgba(0, 229, 255, 0.5),
+            0 0 85px rgba(59, 130, 246, 0.3),
+            inset 0 0 35px rgba(0, 255, 204, 0.18);
+    }
+
+    /* Láser recorriendo el borde superior */
+    .dv-ultra-laser {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #3b82f6, #00e5ff, #ffffff, #00ffcc, transparent);
+        animation: dvLaserMove 3.2s infinite linear;
+        z-index: 5;
+    }
+
+    /* Badge superior */
+    .dv-ultra-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 14px;
+        border-radius: 20px;
+        background: rgba(0, 229, 255, 0.1);
+        border: 1px solid rgba(0, 229, 255, 0.4);
+        color: #00e5ff;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.72em;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .dv-live-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #00ffcc;
+        box-shadow: 0 0 10px #00ffcc;
+        animation: dvPulseDot 1.1s infinite alternate;
+    }
+
+    /* Título y subtítulo */
+    .dv-ultra-title {
+        font-family: 'Orbitron', sans-serif;
+        color: #ffffff;
+        font-size: 1.75em;
+        margin: 0 0 10px 0;
+        text-shadow: 0 0 14px rgba(0, 229, 255, 0.45);
+        position: relative;
+        z-index: 3;
+    }
+
+    .dv-ultra-title span {
+        background: linear-gradient(90deg, #3b82f6, #00e5ff, #00ffcc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.5));
+    }
+
+    .dv-ultra-subtitle {
+        color: #cbd5e1;
+        font-size: 0.95em;
+        max-width: 600px;
+        margin: 0 auto 28px auto;
+        line-height: 1.55;
+        position: relative;
+        z-index: 3;
+    }
+
+    /* Escaparate central con halos giratorios */
+    .dv-ultra-showcase {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+        z-index: 4;
+    }
+
+    .dv-slider-link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 215px;
+        height: 215px;
+        text-decoration: none;
+    }
+
+    .dv-halo-outer {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        border: 2px dashed #00e5ff;
+        border-top-color: #3b82f6;
+        border-bottom-color: #00ffcc;
+        box-shadow: 0 0 22px rgba(0, 229, 255, 0.45);
+        animation: dvSpinRight 8s linear infinite;
+        pointer-events: none;
+    }
+
+    .dv-halo-inner {
+        position: absolute;
+        inset: 11px;
+        border-radius: 50%;
+        border: 2px dotted #60a5fa;
+        border-left-color: #ffffff;
+        border-right-color: transparent;
+        animation: dvSpinLeft 5.5s linear infinite;
+        pointer-events: none;
+    }
+
+    /* Slider cuadrado-redondeado con brillo neón */
+    .dexview-slider-wrapper {
+        position: relative;
+        width: 172px;
+        height: 172px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 2.5px solid #00e5ff;
+        box-shadow: 
+            0 0 28px rgba(0, 229, 255, 0.65),
+            0 0 50px rgba(59, 130, 246, 0.45);
+        background: rgba(5, 10, 20, 0.8);
+        animation: dvFloatBox 3.4s infinite ease-in-out;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .dv-slider-link:hover .dexview-slider-wrapper {
+        transform: scale(1.06);
+        box-shadow: 
+            0 0 38px rgba(0, 255, 204, 0.9),
+            0 0 65px rgba(0, 229, 255, 0.7);
+    }
+
+    /* Haz escáner vertical sobre las imágenes */
+    .dv-scanner-beam {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #00ffcc, #ffffff, #00ffcc, transparent);
+        box-shadow: 0 0 12px #00ffcc;
+        z-index: 4;
+        animation: dvScanBox 2.6s infinite ease-in-out;
+        pointer-events: none;
     }
 
     .dexview-img-slide {
@@ -3412,7 +5745,152 @@
 
     .dexview-img-slide.active {
         opacity: 1;
-        transform: scale(1.02);
+        transform: scale(1.03);
+    }
+
+    /* Píldora del contrato */
+    .dv-contract-pill {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: rgba(15, 23, 42, 0.85);
+        border: 1px solid rgba(0, 229, 255, 0.35);
+        padding: 8px 16px;
+        border-radius: 10px;
+        font-size: 0.82em;
+        position: relative;
+        z-index: 3;
+    }
+
+    .dv-contract-pill span {
+        color: #94a3b8;
+        font-weight: 700;
+    }
+
+    .dv-contract-pill code {
+        color: #00ffcc;
+        font-family: monospace;
+        font-size: 1.02em;
+        word-break: break-all;
+    }
+
+    /* Botón Principal con destello */
+    .dv-ultra-btn {
+        position: relative;
+        display: inline-block;
+        padding: 15px 34px;
+        background: linear-gradient(90deg, #2563eb 0%, #00b4ff 50%, #00ffcc 100%);
+        border-radius: 12px;
+        color: #040b16 !important;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.95em;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-decoration: none !important;
+        overflow: hidden;
+        box-shadow: 
+            0 0 22px rgba(0, 229, 255, 0.65),
+            0 0 42px rgba(37, 99, 235, 0.45);
+        transition: all 0.3s ease;
+    }
+
+    .dv-ultra-btn:hover {
+        transform: scale(1.04);
+        box-shadow: 
+            0 0 32px rgba(0, 255, 204, 0.9),
+            0 0 58px rgba(0, 229, 255, 0.75);
+        filter: brightness(1.1);
+    }
+
+    .dv-btn-glint {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 55%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+        transform: skewX(-25deg);
+        animation: dvBtnSweep 2.6s infinite ease-in-out;
+    }
+
+    /* Chispas flotantes */
+    .dv-ultra-sparks {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .dv-sp {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #00e5ff;
+        box-shadow: 0 0 10px #00e5ff, 0 0 18px #3b82f6;
+        opacity: 0;
+    }
+
+    .dv-sp.s1 { top: 22%; left: 15%; animation: dvSparkRise 3.2s infinite ease-out; }
+    .dv-sp.s2 { top: 76%; left: 22%; animation: dvSparkRise 3.8s infinite ease-out 0.7s; background: #00ffcc; }
+    .dv-sp.s3 { top: 28%; left: 82%; animation: dvSparkRise 3.5s infinite ease-out 1.3s; }
+    .dv-sp.s4 { top: 78%; left: 78%; animation: dvSparkRise 2.9s infinite ease-out 0.4s; background: #60a5fa; }
+    .dv-sp.s5 { top: 50%; left: 10%; animation: dvSparkRise 4.1s infinite ease-out 1.8s; background: #00ffcc; }
+    .dv-sp.s6 { top: 48%; left: 90%; animation: dvSparkRise 3.4s infinite ease-out 1.0s; }
+
+    /* Keyframes */
+    @keyframes dvLaserMove {
+        0% { left: -100%; }
+        100% { left: 100%; }
+    }
+
+    @keyframes dvPulseDot {
+        0% { transform: scale(0.8); opacity: 0.5; }
+        100% { transform: scale(1.3); opacity: 1; }
+    }
+
+    @keyframes dvSpinRight {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes dvSpinLeft {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    @keyframes dvFloatBox {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+    }
+
+    @keyframes dvScanBox {
+        0%, 100% { top: 6%; opacity: 0.25; }
+        50% { top: 92%; opacity: 1; }
+    }
+
+    @keyframes dvBtnSweep {
+        0% { left: -100%; }
+        45%, 100% { left: 150%; }
+    }
+
+    @keyframes dvSparkRise {
+        0% { transform: translateY(0) scale(0.5); opacity: 0; }
+        40% { opacity: 0.9; }
+        100% { transform: translateY(-45px) scale(1.2); opacity: 0; }
+    }
+
+    @media (max-width: 768px) {
+        .dv-ultra-title {
+            font-size: 1.4em;
+        }
+        .dv-ultra-btn {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 0.85em;
+        }
     }
 </style>
 
@@ -3420,7 +5898,7 @@
     // Rotación automática de las dos imágenes de DexView exactamente cada 2 segundos
     document.addEventListener("DOMContentLoaded", function() {
         const dexviewImages = document.querySelectorAll('.dexview-img-slide');
-        if(dexviewImages.length >= 2) {
+        if (dexviewImages.length >= 2) {
             let dexIndex = 0;
             setInterval(() => {
                 dexviewImages[dexIndex].classList.remove('active');
@@ -3431,68 +5909,669 @@
     });
 </script>
 
-   <!-- ======================================================= -->
-<!-- BLOQUE 2: MONITOREO EN DIRECTO - DEXVIEW                -->
 <!-- ======================================================= -->
-<div class="section" style="position: relative; overflow: hidden; border: 2px solid #3b82f6; box-shadow: 0 0 35px rgba(59, 130, 246, 0.3); background: linear-gradient(135deg, rgba(15,15,15,0.95), rgba(10,20,35,0.9)); padding: 30px; border-radius: 16px; margin-bottom: 40px; text-align: center;">
-    
+<!-- BLOQUE ULTRA WOW: MONITOREO EN DIRECTO - PANGA (DEXVIEW)-->
+<!-- ======================================================= -->
+<div class="section panga-ultra-section">
+    <!-- Láser superior animado en azul neón y morado -->
+    <div class="pg-ultra-laser"></div>
+
+    <!-- Chispas y partículas flotantes de energía -->
+    <div class="pg-ultra-sparks">
+        <span class="pg-sp s1"></span>
+        <span class="pg-sp s2"></span>
+        <span class="pg-sp s3"></span>
+        <span class="pg-sp s4"></span>
+        <span class="pg-sp s5"></span>
+        <span class="pg-sp s6"></span>
+    </div>
+
     <!-- Encabezado del Bloque -->
-    <h2 style="font-family: 'Orbitron', sans-serif; color: #60a5fa; font-size: 1.7em; margin-bottom: 8px; text-shadow: 0 0 10px rgba(96,165,250,0.5);">
-        📊 GRÁFICO Y MERCADO EN DEXVIEW
+    <div class="pg-ultra-badge">
+        <span class="pg-live-dot"></span> LIVE BSC MARKET TERMINAL
+    </div>
+
+    <h2 class="pg-ultra-title">
+        🔥 GRÁFICO Y MERCADO EN <span>DEXVIEW - PANGA</span>
     </h2>
-    <p style="color: #94a3b8; font-size: 0.95em; max-width: 600px; margin: 0 auto 25px auto; line-height: 1.5;">
-        Sigue la cotización en tiempo real, el volumen de operaciones y la liquidez oficial del token en <span style="color: #60a5fa; font-weight: bold;">DexView</span>.
+    <p class="pg-ultra-subtitle">
+        Sigue la cotización en tiempo real, el volumen de operaciones y la liquidez oficial del token <strong>PANGA</strong> en <span style="color: #c77dff; font-weight: bold;">DexView</span>.
     </p>
 
-    <!-- Contenedor con el Slider de las 2 Imágenes que alternan cada 2 segundos -->
-    <div style="margin-bottom: 25px; display: flex; justify-content: center;">
-        <a href="https://www.dexview.com/bsc/0x4a6c3ea9e7132ad217c31f8252119f08c801366e" target="_blank" style="display: inline-block;">
-            <div class="dexview-slider-wrapper">
-                <!-- Imagen 1 (Activa por defecto) -->
-                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1792787595908-7813fbe0af75f68a2aea48ebb70d5f98.png" 
-                     alt="ZARD & PANGA DexView 1" 
-                     class="dexview-img-slide active">
+    <!-- Contenedor Central con Doble Aro Holográfico + Slider de tus 2 Imágenes (2 seg) -->
+    <div class="pg-ultra-showcase">
+        <a href="https://www.dexview.com/bsc/0x4A6C3Ea9e7132AD217C31f8252119f08c801366e" target="_blank" rel="noopener noreferrer" class="pg-slider-link">
+            <div class="pg-halo-outer"></div>
+            <div class="pg-halo-inner"></div>
+            <div class="panga-slider-wrapper">
+                <div class="pg-scanner-beam"></div>
+                <!-- Imagen 1 -->
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794880170564-ace6d241853857e4b9a57032a9736961.png" 
+                     alt="PANGA DexView 1" 
+                     class="panga-img-slide active">
                 <!-- Imagen 2 -->
-                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1792787614084-ac5dfcf499f4cbe7c3365055f6e34db2.png" 
-                     alt="ZARD & PANGA DexView 2" 
-                     class="dexview-img-slide">
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794880149229-9f908837c81c322e41e396a748f9e385.png" 
+                     alt="PANGA DexView 2" 
+                     class="panga-img-slide">
             </div>
         </a>
     </div>
 
-    <!-- Botón de Enlace Directo -->
-    <div>
-        <a href="https://www.dexview.com/bsc/0x4a6c3ea9e7132ad217c31f8252119f08c801366e" 
+    <!-- Etiqueta del Contrato de PANGA -->
+    <div class="pg-contract-pill">
+        <span>CA PANGA:</span>
+        <code>0x4A6C3Ea9e7132AD217C31f8252119f08c801366e</code>
+    </div>
+
+    <!-- Botón de Enlace Directo Ultra Llamativo -->
+    <div style="margin-top: 22px; position: relative; z-index: 4;">
+        <a href="https://www.dexview.com/bsc/0x4A6C3Ea9e7132AD217C31f8252119f08c801366e" 
            target="_blank" 
-           class="card-link"
-           style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(0,255,204,0.1)); border: 2px solid #3b82f6; border-radius: 10px; color: #60a5fa; font-family: 'Orbitron', sans-serif; font-size: 0.9em; font-weight: bold; text-decoration: none; box-shadow: 0 0 15px rgba(59,130,246,0.25); transition: all 0.3s ease;">
-            📈 VER MERCADO EN DEXVIEW ↗
+           rel="noopener noreferrer"
+           class="pg-ultra-btn">
+            <span class="pg-btn-glint"></span>
+            📈 VER MERCADO DE PANGA EN DEXVIEW ↗
         </a>
     </div>
 
 </div>
 
-<!-- Estilos y Script específicos para el efecto visual de DexView -->
+<!-- Estilos y Script específicos para PANGA (Azul Neón y Moradito) -->
 <style>
-    .dexview-slider-wrapper {
+    .panga-ultra-section {
         position: relative;
-        width: 170px;
-        height: 170px;
-        margin: 0 auto;
-        border-radius: 16px;
         overflow: hidden;
-        border: 2px solid rgba(59, 130, 246, 0.6);
-        box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
-        background: rgba(0,0,0,0.3);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 2px solid rgba(157, 78, 221, 0.65);
+        box-shadow: 
+            0 0 35px rgba(0, 229, 255, 0.3),
+            0 0 70px rgba(157, 78, 221, 0.25),
+            inset 0 0 28px rgba(157, 78, 221, 0.14);
+        background: radial-gradient(circle at 50% 45%, rgba(36, 16, 68, 0.96) 0%, rgba(10, 15, 28, 0.98) 70%);
+        padding: 36px 25px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
     }
 
-    .dexview-slider-wrapper:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 35px rgba(59, 130, 246, 0.8);
+    .panga-ultra-section:hover {
+        transform: translateY(-4px);
+        box-shadow: 
+            0 0 45px rgba(0, 229, 255, 0.48),
+            0 0 85px rgba(199, 125, 255, 0.38),
+            inset 0 0 35px rgba(0, 229, 255, 0.18);
     }
 
-    .dexview-img-slide {
+    /* Láser recorriendo el borde superior */
+    .pg-ultra-laser {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #00e5ff, #c77dff, #ffffff, #9d4edd, transparent);
+        animation: pgLaserMove 3.2s infinite linear;
+        z-index: 5;
+    }
+
+    /* Badge superior */
+    .pg-ultra-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 14px;
+        border-radius: 20px;
+        background: rgba(157, 78, 221, 0.15);
+        border: 1px solid rgba(199, 125, 255, 0.5);
+        color: #e0aaff;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.72em;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .pg-live-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #00e5ff;
+        box-shadow: 0 0 10px #00e5ff, 0 0 14px #c77dff;
+        animation: pgPulseDot 1.1s infinite alternate;
+    }
+
+    /* Título y subtítulo */
+    .pg-ultra-title {
+        font-family: 'Orbitron', sans-serif;
+        color: #ffffff;
+        font-size: 1.75em;
+        margin: 0 0 10px 0;
+        text-shadow: 0 0 14px rgba(157, 78, 221, 0.55);
+        position: relative;
+        z-index: 3;
+    }
+
+    .pg-ultra-title span {
+        background: linear-gradient(90deg, #00e5ff, #c77dff, #9d4edd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 10px rgba(199, 125, 255, 0.6));
+    }
+
+    .pg-ultra-subtitle {
+        color: #cbd5e1;
+        font-size: 0.95em;
+        max-width: 600px;
+        margin: 0 auto 28px auto;
+        line-height: 1.55;
+        position: relative;
+        z-index: 3;
+    }
+
+    /* Escaparate central con halos giratorios */
+    .pg-ultra-showcase {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+        z-index: 4;
+    }
+
+    .pg-slider-link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 215px;
+        height: 215px;
+        text-decoration: none;
+    }
+
+    .pg-halo-outer {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        border: 2px dashed #c77dff;
+        border-top-color: #00e5ff;
+        border-bottom-color: #9d4edd;
+        box-shadow: 0 0 22px rgba(199, 125, 255, 0.5);
+        animation: pgSpinRight 8s linear infinite;
+        pointer-events: none;
+    }
+
+    .pg-halo-inner {
+        position: absolute;
+        inset: 11px;
+        border-radius: 50%;
+        border: 2px dotted #00e5ff;
+        border-left-color: #ffffff;
+        border-right-color: transparent;
+        animation: pgSpinLeft 5.5s linear infinite;
+        pointer-events: none;
+    }
+
+    /* Slider cuadrado-redondeado con brillo azul neón y morado */
+    .panga-slider-wrapper {
+        position: relative;
+        width: 172px;
+        height: 172px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 2.5px solid #c77dff;
+        box-shadow: 
+            0 0 28px rgba(157, 78, 221, 0.7),
+            0 0 50px rgba(0, 229, 255, 0.45);
+        background: rgba(10, 8, 24, 0.85);
+        animation: pgFloatBox 3.4s infinite ease-in-out;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .pg-slider-link:hover .panga-slider-wrapper {
+        transform: scale(1.06);
+        box-shadow: 
+            0 0 38px rgba(0, 229, 255, 0.9),
+            0 0 65px rgba(199, 125, 255, 0.75);
+    }
+
+    /* Haz escáner vertical sobre las imágenes */
+    .pg-scanner-beam {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #00e5ff, #e0aaff, #00e5ff, transparent);
+        box-shadow: 0 0 12px #00e5ff, 0 0 16px #c77dff;
+        z-index: 4;
+        animation: pgScanBox 2.6s infinite ease-in-out;
+        pointer-events: none;
+    }
+
+    /* Efecto de transición de cambio con destello y zoom suave */
+    .panga-img-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transform: scale(0.92) rotate(-2deg);
+        filter: blur(4px) brightness(1.4);
+        transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out, filter 0.75s ease-in-out;
+    }
+
+    .panga-img-slide.active {
+        opacity: 1;
+        transform: scale(1.03) rotate(0deg);
+        filter: blur(0px) brightness(1);
+    }
+
+    /* Píldora del contrato */
+    .pg-contract-pill {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: rgba(18, 14, 38, 0.88);
+        border: 1px solid rgba(199, 125, 255, 0.45);
+        padding: 8px 16px;
+        border-radius: 10px;
+        font-size: 0.82em;
+        position: relative;
+        z-index: 3;
+    }
+
+    .pg-contract-pill span {
+        color: #c4b5fd;
+        font-weight: 700;
+    }
+
+    .pg-contract-pill code {
+        color: #00e5ff;
+        font-family: monospace;
+        font-size: 1.02em;
+        word-break: break-all;
+    }
+
+    /* Botón Principal con degradado azul neón -> morado */
+    .pg-ultra-btn {
+        position: relative;
+        display: inline-block;
+        padding: 15px 34px;
+        background: linear-gradient(90deg, #00b4ff 0%, #7b2cbf 50%, #c77dff 100%);
+        border-radius: 12px;
+        color: #ffffff !important;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.95em;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-decoration: none !important;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+        overflow: hidden;
+        box-shadow: 
+            0 0 22px rgba(157, 78, 221, 0.7),
+            0 0 42px rgba(0, 229, 255, 0.45);
+        transition: all 0.3s ease;
+    }
+
+    .pg-ultra-btn:hover {
+        transform: scale(1.04);
+        box-shadow: 
+            0 0 32px rgba(0, 229, 255, 0.9),
+            0 0 58px rgba(199, 125, 255, 0.85);
+        filter: brightness(1.12);
+    }
+
+    .pg-btn-glint {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 55%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+        transform: skewX(-25deg);
+        animation: pgBtnSweep 2.6s infinite ease-in-out;
+    }
+
+    /* Chispas flotantes en azul neón y moradito */
+    .pg-ultra-sparks {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .pg-sp {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #00e5ff;
+        box-shadow: 0 0 10px #00e5ff, 0 0 18px #9d4edd;
+        opacity: 0;
+    }
+
+    .pg-sp.s1 { top: 22%; left: 15%; animation: pgSparkRise 3.2s infinite ease-out; background: #00e5ff; }
+    .pg-sp.s2 { top: 76%; left: 22%; animation: pgSparkRise 3.8s infinite ease-out 0.7s; background: #c77dff; }
+    .pg-sp.s3 { top: 28%; left: 82%; animation: pgSparkRise 3.5s infinite ease-out 1.3s; background: #9d4edd; }
+    .pg-sp.s4 { top: 78%; left: 78%; animation: pgSparkRise 2.9s infinite ease-out 0.4s; background: #00e5ff; }
+    .pg-sp.s5 { top: 50%; left: 10%; animation: pgSparkRise 4.1s infinite ease-out 1.8s; background: #e0aaff; }
+    .pg-sp.s6 { top: 48%; left: 90%; animation: pgSparkRise 3.4s infinite ease-out 1.0s; background: #00e5ff; }
+
+    /* Keyframes */
+    @keyframes pgLaserMove {
+        0% { left: -100%; }
+        100% { left: 100%; }
+    }
+
+    @keyframes pgPulseDot {
+        0% { transform: scale(0.8); opacity: 0.5; }
+        100% { transform: scale(1.3); opacity: 1; }
+    }
+
+    @keyframes pgSpinRight {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes pgSpinLeft {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    @keyframes pgFloatBox {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+    }
+
+    @keyframes pgScanBox {
+        0%, 100% { top: 6%; opacity: 0.25; }
+        50% { top: 92%; opacity: 1; }
+    }
+
+    @keyframes pgBtnSweep {
+        0% { left: -100%; }
+        45%, 100% { left: 150%; }
+    }
+
+    @keyframes pgSparkRise {
+        0% { transform: translateY(0) scale(0.5); opacity: 0; }
+        40% { opacity: 0.9; }
+        100% { transform: translateY(-45px) scale(1.2); opacity: 0; }
+    }
+
+    @media (max-width: 768px) {
+        .pg-ultra-title {
+            font-size: 1.4em;
+        }
+        .pg-ultra-btn {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 0.85em;
+        }
+    }
+</style>
+
+<script>
+    // Rotación automática de las dos imágenes de PANGA cada 2 segundos
+    document.addEventListener("DOMContentLoaded", function() {
+        const pangaImages = document.querySelectorAll('.panga-img-slide');
+        if (pangaImages.length >= 2) {
+            let pangaIndex = 0;
+            setInterval(() => {
+                pangaImages[pangaIndex].classList.remove('active');
+                pangaIndex = (pangaIndex + 1) % pangaImages.length;
+                pangaImages[pangaIndex].classList.add('active');
+            }, 2000);
+        }
+    });
+</script>
+
+<!-- ======================================================= -->
+<!-- BLOQUE ULTRA WOW: MONITOREO EN DIRECTO - PANGA (DEXVIEW)-->
+<!-- ======================================================= -->
+<div class="section panga-ultra-section">
+    <!-- Láser superior animado en azul neón y morado -->
+    <div class="pg-ultra-laser"></div>
+
+    <!-- Chispas y partículas flotantes de energía -->
+    <div class="pg-ultra-sparks">
+        <span class="pg-sp s1"></span>
+        <span class="pg-sp s2"></span>
+        <span class="pg-sp s3"></span>
+        <span class="pg-sp s4"></span>
+        <span class="pg-sp s5"></span>
+        <span class="pg-sp s6"></span>
+    </div>
+
+    <!-- Encabezado del Bloque -->
+    <div class="pg-ultra-badge">
+        <span class="pg-live-dot"></span> LIVE BSC MARKET TERMINAL
+    </div>
+
+    <h2 class="pg-ultra-title">
+        🔥 GRÁFICO Y MERCADO DE <span>PANGA</span>
+    </h2>
+    <p class="pg-ultra-subtitle">
+        Sigue la cotización en tiempo real, el volumen de operaciones y la liquidez oficial del token <strong>PANGA</strong> en <span style="color: #c77dff; font-weight: bold;">DexView / Binance Web3</span>.
+    </p>
+
+    <!-- Contenedor Central con Doble Aro Holográfico + Slider de 2 Imágenes (2 seg) -->
+    <div class="pg-ultra-showcase">
+        <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x4a6c3ea9e7132ad217c31f8252119f08c801366e&binanceChainId=56&chain=bsc" target="_blank" rel="noopener noreferrer" class="pg-slider-link">
+            <div class="pg-halo-outer"></div>
+            <div class="pg-halo-inner"></div>
+            <div class="panga-slider-wrapper">
+                <div class="pg-scanner-beam"></div>
+                <!-- Imagen 1 (Activa por defecto - Reemplaza el src si usas las dos de PANGA) -->
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790484633328-559fdd3c13098c92f8a665ac39a838c2.png" 
+                     alt="PANGA Mercado 1" 
+                     class="panga-img-slide active">
+                <!-- Imagen 2 -->
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790288769685-7d9a89bc13043a812c4889cb55ac4a54.png" 
+                     alt="PANGA Mercado 2" 
+                     class="panga-img-slide">
+            </div>
+        </a>
+    </div>
+
+    <!-- Etiqueta del Contrato de PANGA -->
+    <div class="pg-contract-pill">
+        <span>CA PANGA:</span>
+        <code>0x4a6c3ea9e7132ad217c31f8252119f08c801366e</code>
+    </div>
+
+    <!-- Botón de Enlace Directo Ultra Llamativo -->
+    <div style="margin-top: 22px; position: relative; z-index: 4;">
+        <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x4a6c3ea9e7132ad217c31f8252119f08c801366e&binanceChainId=56&chain=bsc" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="pg-ultra-btn">
+            <span class="pg-btn-glint"></span>
+            🚀 VER MERCADO DE PANGA EN VIVO ↗
+        </a>
+    </div>
+
+</div>
+
+<!-- Estilos y Script específicos para PANGA (Azul Neón y Moradito) -->
+<style>
+    .panga-ultra-section {
+        position: relative;
+        overflow: hidden;
+        border: 2px solid rgba(157, 78, 221, 0.65);
+        box-shadow: 
+            0 0 35px rgba(0, 229, 255, 0.3),
+            0 0 70px rgba(157, 78, 221, 0.25),
+            inset 0 0 28px rgba(157, 78, 221, 0.14);
+        background: radial-gradient(circle at 50% 45%, rgba(36, 16, 68, 0.96) 0%, rgba(10, 15, 28, 0.98) 70%);
+        padding: 36px 25px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .panga-ultra-section:hover {
+        transform: translateY(-4px);
+        box-shadow: 
+            0 0 45px rgba(0, 229, 255, 0.48),
+            0 0 85px rgba(199, 125, 255, 0.38),
+            inset 0 0 35px rgba(0, 229, 255, 0.18);
+    }
+
+    /* Láser recorriendo el borde superior */
+    .pg-ultra-laser {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #00e5ff, #c77dff, #ffffff, #9d4edd, transparent);
+        animation: pgLaserMove 3.2s infinite linear;
+        z-index: 5;
+    }
+
+    /* Badge superior */
+    .pg-ultra-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 14px;
+        border-radius: 20px;
+        background: rgba(157, 78, 221, 0.15);
+        border: 1px solid rgba(199, 125, 255, 0.5);
+        color: #e0aaff;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.72em;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .pg-live-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #00e5ff;
+        box-shadow: 0 0 10px #00e5ff, 0 0 14px #c77dff;
+        animation: pgPulseDot 1.1s infinite alternate;
+    }
+
+    /* Título y subtítulo */
+    .pg-ultra-title {
+        font-family: 'Orbitron', sans-serif;
+        color: #ffffff;
+        font-size: 1.75em;
+        margin: 0 0 10px 0;
+        text-shadow: 0 0 14px rgba(157, 78, 221, 0.55);
+        position: relative;
+        z-index: 3;
+    }
+
+    .pg-ultra-title span {
+        background: linear-gradient(90deg, #00e5ff, #c77dff, #9d4edd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 10px rgba(199, 125, 255, 0.6));
+    }
+
+    .pg-ultra-subtitle {
+        color: #cbd5e1;
+        font-size: 0.95em;
+        max-width: 600px;
+        margin: 0 auto 28px auto;
+        line-height: 1.55;
+        position: relative;
+        z-index: 3;
+    }
+
+    /* Escaparate central con halos giratorios */
+    .pg-ultra-showcase {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+        z-index: 4;
+    }
+
+    .pg-slider-link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 215px;
+        height: 215px;
+        text-decoration: none;
+    }
+
+    .pg-halo-outer {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        border: 2px dashed #c77dff;
+        border-top-color: #00e5ff;
+        border-bottom-color: #9d4edd;
+        box-shadow: 0 0 22px rgba(199, 125, 255, 0.5);
+        animation: pgSpinRight 8s linear infinite;
+        pointer-events: none;
+    }
+
+    .pg-halo-inner {
+        position: absolute;
+        inset: 11px;
+        border-radius: 50%;
+        border: 2px dotted #00e5ff;
+        border-left-color: #ffffff;
+        border-right-color: transparent;
+        animation: pgSpinLeft 5.5s linear infinite;
+        pointer-events: none;
+    }
+
+    /* Slider cuadrado-redondeado con brillo azul neón y morado */
+    .panga-slider-wrapper {
+        position: relative;
+        width: 172px;
+        height: 172px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 2.5px solid #c77dff;
+        box-shadow: 
+            0 0 28px rgba(157, 78, 221, 0.7),
+            0 0 50px rgba(0, 229, 255, 0.45);
+        background: rgba(10, 8, 24, 0.85);
+        animation: pgFloatBox 3.4s infinite ease-in-out;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .pg-slider-link:hover .panga-slider-wrapper {
+        transform: scale(1.06);
+        box-shadow: 
+            0 0 38px rgba(0, 229, 255, 0.9),
+            0 0 65px rgba(199, 125, 255, 0.75);
+    }
+
+    /* Haz escáner vertical sobre las imágenes */
+    .pg-scanner-beam {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #00e5ff, #e0aaff, #00e5ff, transparent);
+        box-shadow: 0 0 12px #00e5ff, 0 0 16px #c77dff;
+        z-index: 4;
+        animation: pgScanBox 2.6s infinite ease-in-out;
+        pointer-events: none;
+    }
+
+    .panga-img-slide {
         position: absolute;
         top: 0;
         left: 0;
@@ -3503,26 +6582,173 @@
         transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     }
 
-    .dexview-img-slide.active {
+    .panga-img-slide.active {
         opacity: 1;
-        transform: scale(1.02);
+        transform: scale(1.03);
+    }
+
+    /* Píldora del contrato */
+    .pg-contract-pill {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: rgba(18, 14, 38, 0.88);
+        border: 1px solid rgba(199, 125, 255, 0.45);
+        padding: 8px 16px;
+        border-radius: 10px;
+        font-size: 0.82em;
+        position: relative;
+        z-index: 3;
+    }
+
+    .pg-contract-pill span {
+        color: #c4b5fd;
+        font-weight: 700;
+    }
+
+    .pg-contract-pill code {
+        color: #00e5ff;
+        font-family: monospace;
+        font-size: 1.02em;
+        word-break: break-all;
+    }
+
+    /* Botón Principal con degradado azul neón -> morado */
+    .pg-ultra-btn {
+        position: relative;
+        display: inline-block;
+        padding: 15px 34px;
+        background: linear-gradient(90deg, #00b4ff 0%, #7b2cbf 50%, #c77dff 100%);
+        border-radius: 12px;
+        color: #ffffff !important;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.95em;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-decoration: none !important;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+        overflow: hidden;
+        box-shadow: 
+            0 0 22px rgba(157, 78, 221, 0.7),
+            0 0 42px rgba(0, 229, 255, 0.45);
+        transition: all 0.3s ease;
+    }
+
+    .pg-ultra-btn:hover {
+        transform: scale(1.04);
+        box-shadow: 
+            0 0 32px rgba(0, 229, 255, 0.9),
+            0 0 58px rgba(199, 125, 255, 0.85);
+        filter: brightness(1.12);
+    }
+
+    .pg-btn-glint {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 55%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+        transform: skewX(-25deg);
+        animation: pgBtnSweep 2.6s infinite ease-in-out;
+    }
+
+    /* Chispas flotantes en azul neón y moradito */
+    .pg-ultra-sparks {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .pg-sp {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #00e5ff;
+        box-shadow: 0 0 10px #00e5ff, 0 0 18px #9d4edd;
+        opacity: 0;
+    }
+
+    .pg-sp.s1 { top: 22%; left: 15%; animation: pgSparkRise 3.2s infinite ease-out; background: #00e5ff; }
+    .pg-sp.s2 { top: 76%; left: 22%; animation: pgSparkRise 3.8s infinite ease-out 0.7s; background: #c77dff; }
+    .pg-sp.s3 { top: 28%; left: 82%; animation: pgSparkRise 3.5s infinite ease-out 1.3s; background: #9d4edd; }
+    .pg-sp.s4 { top: 78%; left: 78%; animation: pgSparkRise 2.9s infinite ease-out 0.4s; background: #00e5ff; }
+    .pg-sp.s5 { top: 50%; left: 10%; animation: pgSparkRise 4.1s infinite ease-out 1.8s; background: #e0aaff; }
+    .pg-sp.s6 { top: 48%; left: 90%; animation: pgSparkRise 3.4s infinite ease-out 1.0s; background: #00e5ff; }
+
+    /* Keyframes */
+    @keyframes pgLaserMove {
+        0% { left: -100%; }
+        100% { left: 100%; }
+    }
+
+    @keyframes pgPulseDot {
+        0% { transform: scale(0.8); opacity: 0.5; }
+        100% { transform: scale(1.3); opacity: 1; }
+    }
+
+    @keyframes pgSpinRight {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes pgSpinLeft {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    @keyframes pgFloatBox {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+    }
+
+    @keyframes pgScanBox {
+        0%, 100% { top: 6%; opacity: 0.25; }
+        50% { top: 92%; opacity: 1; }
+    }
+
+    @keyframes pgBtnSweep {
+        0% { left: -100%; }
+        45%, 100% { left: 150%; }
+    }
+
+    @keyframes pgSparkRise {
+        0% { transform: translateY(0) scale(0.5); opacity: 0; }
+        40% { opacity: 0.9; }
+        100% { transform: translateY(-45px) scale(1.2); opacity: 0; }
+    }
+
+    @media (max-width: 768px) {
+        .pg-ultra-title {
+            font-size: 1.4em;
+        }
+        .pg-ultra-btn {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 0.85em;
+        }
     }
 </style>
 
 <script>
-    // Rotación automática de las dos imágenes de DexView exactamente cada 2 segundos
+    // Rotación automática de las dos imágenes de PANGA cada 2 segundos (independiente del de ZARD)
     document.addEventListener("DOMContentLoaded", function() {
-        const dexviewImages = document.querySelectorAll('.dexview-img-slide');
-        if(dexviewImages.length >= 2) {
-            let dexIndex = 0;
+        const pangaImages = document.querySelectorAll('.panga-img-slide');
+        if (pangaImages.length >= 2) {
+            let pangaIndex = 0;
             setInterval(() => {
-                dexviewImages[dexIndex].classList.remove('active');
-                dexIndex = (dexIndex + 1) % dexviewImages.length;
-                dexviewImages[dexIndex].classList.add('active');
-            }, 2000); // 2000 ms = 2 segundos
+                pangaImages[pangaIndex].classList.remove('active');
+                pangaIndex = (pangaIndex + 1) % pangaImages.length;
+                pangaImages[pangaIndex].classList.add('active');
+            }, 2000);
         }
     });
 </script>
+        
 
 <!-- MÓDULO INFRAESTRUCTURA & PROTOCOLO: ZARED (PRO EDITION) -->
 <div class="token-protocol-box" style="background: linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(8, 12, 20, 0.99)); border: 1px solid rgba(168, 85, 247, 0.5); border-radius: 18px; padding: 25px; box-shadow: 0 0 35px rgba(168,85,247,0.22); margin-bottom: 30px; position: relative; overflow: hidden;">
@@ -3947,6 +7173,417 @@
         }
     }
 </style>
+
+ <!-- ======================================================= -->
+<!-- SEPARADOR FLOTANTE DE 3 ESFERAS CON RAYOS Y ELECTRICIDAD -->
+<!-- ======================================================= -->
+<div class="zaard-electric-3-divider">
+    <!-- Haz de energía principal -->
+    <div class="ze3-energy-beam"></div>
+
+    <!-- Rayos eléctricos SVG animando la conexión entre las 3 esferas -->
+    <svg class="ze3-lightning-svg" viewBox="0 0 800 160" preserveAspectRatio="none">
+        <defs>
+            <filter id="ze3-glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="3.5" result="blur" />
+                <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                </feMerge>
+            </filter>
+        </defs>
+        <!-- Rayo izquierdo (Morado -> Naranja) -->
+        <polyline class="ze3-bolt bolt-1" points="160,80 205,62 235,96 275,68 315,92 365,80" filter="url(#ze3-glow)" />
+        <polyline class="ze3-bolt bolt-2" points="160,80 198,94 242,64 282,95 322,66 365,80" filter="url(#ze3-glow)" />
+        <!-- Rayo derecho (Naranja -> Morado) -->
+        <polyline class="ze3-bolt bolt-3" points="435,80 480,64 518,95 558,66 600,92 640,80" filter="url(#ze3-glow)" />
+        <polyline class="ze3-bolt bolt-4" points="435,80 475,96 515,65 555,94 598,68 640,80" filter="url(#ze3-glow)" />
+    </svg>
+
+    <!-- Contenedor de las 3 esferas -->
+    <div class="ze3-nodes-track">
+        
+        <!-- 1. LADO IZQUIERDO (Mediana - Brillo Morado Eléctrico) -->
+        <div class="ze3-node ze3-side ze3-purple">
+            <div class="ze3-arc-sparks">
+                <span class="ze3-mini-spark ms1"></span>
+                <span class="ze3-mini-spark ms2"></span>
+                <span class="ze3-mini-spark ms3"></span>
+            </div>
+            <div class="ze3-ring"></div>
+            <div class="ze3-ring-outer"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790484633328-559fdd3c13098c92f8a665ac39a838c2.png" alt="Nodo Morado Izquierdo">
+        </div>
+
+        <!-- 2. CENTRO (Grande - Brillo Anaranjado Intenso + Chispas) -->
+        <div class="ze3-node ze3-center ze3-orange ze3-delay-1">
+            <div class="ze3-sparks">
+                <span class="ze3-spark sp1"></span>
+                <span class="ze3-spark sp2"></span>
+                <span class="ze3-spark sp3"></span>
+                <span class="ze3-spark sp4"></span>
+                <span class="ze3-spark sp5"></span>
+                <span class="ze3-spark sp6"></span>
+                <span class="ze3-spark sp7"></span>
+                <span class="ze3-spark sp8"></span>
+            </div>
+            <div class="ze3-ring"></div>
+            <div class="ze3-ring-outer"></div>
+            <!-- Reemplaza esta URL si quieres cambiar la imagen del centro -->
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791940828941-906fd2a3d85625f79d066e5b033f6011.png" alt="Núcleo Central Naranja">
+        </div>
+
+        <!-- 3. LADO DERECHO (Mediana - Brillo Morado Eléctrico) -->
+        <div class="ze3-node ze3-side ze3-purple ze3-delay-2">
+            <div class="ze3-arc-sparks">
+                <span class="ze3-mini-spark ms1"></span>
+                <span class="ze3-mini-spark ms2"></span>
+                <span class="ze3-mini-spark ms3"></span>
+            </div>
+            <div class="ze3-ring"></div>
+            <div class="ze3-ring-outer"></div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790288769685-7d9a89bc13043a812c4889cb55ac4a54.png" alt="Nodo Morado Derecho">
+        </div>
+
+    </div>
+</div>
+
+<style>
+    /* Contenedor completamente transparente en el aire */
+    .zaard-electric-3-divider {
+        position: relative;
+        width: 100%;
+        height: 165px;
+        margin: 30px 0;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        pointer-events: none;
+    }
+
+    /* Haz horizontal de energía eléctrica */
+    .ze3-energy-beam {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, 
+            transparent 0%, 
+            rgba(157, 78, 221, 0.25) 15%,
+            #9d4edd 32%, 
+            #ff6d00 50%, 
+            #9d4edd 68%, 
+            rgba(157, 78, 221, 0.25) 85%,
+            transparent 100%);
+        box-shadow: 
+            0 0 14px #9d4edd,
+            0 0 28px #ff6d00,
+            0 0 42px rgba(255, 255, 255, 0.75);
+        animation: ze3BeamSurge 1.8s infinite ease-in-out;
+        z-index: 1;
+    }
+
+    /* Capa SVG con rayos quebrados reales entre los nodos */
+    .ze3-lightning-svg {
+        position: absolute;
+        width: 100%;
+        max-width: 720px;
+        height: 150px;
+        z-index: 2;
+        overflow: visible;
+    }
+
+    .ze3-bolt {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .ze3-bolt.bolt-1 {
+        stroke: #e0aaff;
+        stroke-width: 2.4;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;
+        animation: ze3Strike1 1.4s infinite linear;
+    }
+
+    .ze3-bolt.bolt-2 {
+        stroke: #ff9e00;
+        stroke-width: 1.8;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;
+        animation: ze3Strike2 1.9s infinite linear 0.4s;
+    }
+
+    .ze3-bolt.bolt-3 {
+        stroke: #ff9e00;
+        stroke-width: 2.4;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;
+        animation: ze3Strike1 1.6s infinite linear 0.2s;
+    }
+
+    .ze3-bolt.bolt-4 {
+        stroke: #e0aaff;
+        stroke-width: 1.8;
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;
+        animation: ze3Strike2 2.1s infinite linear 0.7s;
+    }
+
+    /* Distribución de las 3 esferas */
+    .ze3-nodes-track {
+        position: relative;
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 65px;
+        width: 100%;
+        max-width: 680px;
+    }
+
+    /* Estilo base de esfera con efecto ola creciente */
+    .ze3-node {
+        position: relative;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        animation: ze3OceanSwell 3.4s infinite ease-in-out;
+    }
+
+    .ze3-node img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: 3;
+    }
+
+    /* Tamaños */
+    .ze3-side {
+        width: 84px;
+        height: 84px;
+    }
+
+    .ze3-center {
+        width: 118px;
+        height: 118px;
+    }
+
+    /* Retardos para el movimiento en ola */
+    .ze3-delay-1 { animation-delay: 0.45s; }
+    .ze3-delay-2 { animation-delay: 0.90s; }
+
+    /* Anillos eléctricos giratorios */
+    .ze3-ring {
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        animation: ze3SpinRight 3.5s linear infinite;
+        z-index: 2;
+    }
+
+    .ze3-ring-outer {
+        position: absolute;
+        inset: -13px;
+        border-radius: 50%;
+        animation: ze3SpinLeft 5s linear infinite;
+        z-index: 1;
+    }
+
+    /* Brillo Morado Eléctrico (Lados) */
+    .ze3-purple {
+        filter: drop-shadow(0 0 15px rgba(157, 78, 221, 0.95)) drop-shadow(0 0 28px rgba(199, 125, 255, 0.8));
+    }
+    .ze3-purple .ze3-ring {
+        border: 2.5px dashed #c77dff;
+        border-top-color: #ffffff;
+        border-bottom-color: #7b2cbf;
+        box-shadow: 0 0 16px #9d4edd;
+    }
+    .ze3-purple .ze3-ring-outer {
+        border: 1.5px dotted #e0aaff;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+
+    /* Brillo Anaranjado Eléctrico (Centro) */
+    .ze3-orange {
+        filter: drop-shadow(0 0 20px rgba(255, 109, 0, 1)) drop-shadow(0 0 38px rgba(255, 170, 0, 0.85));
+    }
+    .ze3-orange .ze3-ring {
+        inset: -8px;
+        border: 3px dashed #ff8500;
+        border-top-color: #ffffff;
+        border-bottom-color: #ffd000;
+        box-shadow: 0 0 22px #ff6d00;
+    }
+    .ze3-orange .ze3-ring-outer {
+        inset: -16px;
+        border: 2px dotted #ffd000;
+        border-left-color: #ff5400;
+        border-right-color: transparent;
+    }
+
+    /* Chispas del núcleo central */
+    .ze3-sparks {
+        position: absolute;
+        width: 240px;
+        height: 150px;
+        z-index: 5;
+    }
+
+    .ze3-spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        opacity: 0;
+    }
+
+    .ze3-spark.sp1 { animation: ze3Spark1 1.4s infinite ease-out; background: #ff8500; box-shadow: 0 0 10px #ff6d00; }
+    .ze3-spark.sp2 { animation: ze3Spark2 1.7s infinite ease-out 0.2s; background: #ffd000; box-shadow: 0 0 10px #ffd000; }
+    .ze3-spark.sp3 { animation: ze3Spark3 1.3s infinite ease-out 0.5s; background: #ffffff; box-shadow: 0 0 10px #ffffff; }
+    .ze3-spark.sp4 { animation: ze3Spark4 1.8s infinite ease-out 0.1s; background: #ff6d00; box-shadow: 0 0 10px #ff6d00; }
+    .ze3-spark.sp5 { animation: ze3Spark5 1.5s infinite ease-out 0.6s; background: #c77dff; box-shadow: 0 0 10px #9d4edd; }
+    .ze3-spark.sp6 { animation: ze3Spark6 1.4s infinite ease-out 0.3s; background: #c77dff; box-shadow: 0 0 10px #9d4edd; }
+    .ze3-spark.sp7 { animation: ze3Spark7 1.6s infinite ease-out 0.8s; background: #ffffff; box-shadow: 0 0 10px #ffaa00; }
+    .ze3-spark.sp8 { animation: ze3Spark8 1.5s infinite ease-out 0.4s; background: #ffaa00; box-shadow: 0 0 10px #ff6d00; }
+
+    /* Chispas moradas en las esferas laterales */
+    .ze3-arc-sparks {
+        position: absolute;
+        width: 140px;
+        height: 110px;
+        z-index: 5;
+    }
+    .ze3-mini-spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #e0aaff;
+        box-shadow: 0 0 8px #9d4edd, 0 0 12px #ffffff;
+        opacity: 0;
+    }
+    .ze3-mini-spark.ms1 { animation: ze3Mini1 1.5s infinite ease-out; }
+    .ze3-mini-spark.ms2 { animation: ze3Mini2 1.8s infinite ease-out 0.4s; }
+    .ze3-mini-spark.ms3 { animation: ze3Mini3 1.3s infinite ease-out 0.8s; }
+
+    /* Animaciones */
+    @keyframes ze3OceanSwell {
+        0%, 100% { transform: translateY(4px) scale(0.93); }
+        50% { transform: translateY(-7px) scale(1.13); }
+    }
+
+    @keyframes ze3SpinRight {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes ze3SpinLeft {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    @keyframes ze3BeamSurge {
+        0%, 100% { opacity: 0.65; }
+        48% { opacity: 1; filter: brightness(1.5); }
+        50% { opacity: 0.3; }
+        52% { opacity: 1; filter: brightness(1.8); }
+    }
+
+    @keyframes ze3Strike1 {
+        0% { stroke-dashoffset: 260; opacity: 0; }
+        15% { opacity: 1; }
+        45% { stroke-dashoffset: 0; opacity: 1; }
+        60% { opacity: 0; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+
+    @keyframes ze3Strike2 {
+        0% { stroke-dashoffset: -260; opacity: 0; }
+        20% { opacity: 0.9; }
+        50% { stroke-dashoffset: 0; opacity: 1; }
+        65% { opacity: 0; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+
+    @keyframes ze3Spark1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-90px, -48px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3Spark2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(95px, -44px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3Spark3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-80px, 50px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3Spark4 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(85px, 46px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3Spark5 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(-115px, 8px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3Spark6 {
+        0% { transform: translate(0, 0) scale(1.2); opacity: 1; }
+        100% { transform: translate(115px, -10px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3Spark7 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-38px, -60px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3Spark8 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(42px, 58px) scale(0); opacity: 0; }
+    }
+
+    @keyframes ze3Mini1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-52px, -32px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3Mini2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(50px, 34px) scale(0); opacity: 0; }
+    }
+    @keyframes ze3Mini3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+        100% { transform: translate(-45px, 36px) scale(0); opacity: 0; }
+    }
+
+    /* Adaptación móvil */
+    @media (max-width: 768px) {
+        .zaard-electric-3-divider {
+            height: 130px;
+        }
+        .ze3-nodes-track {
+            gap: 28px;
+        }
+        .ze3-side {
+            width: 64px;
+            height: 64px;
+        }
+        .ze3-center {
+            width: 92px;
+            height: 92px;
+        }
+    }
+</style>       
         
 
      <!-- AUDITORÍA DE SEGURIDAD GOPLUS LABS -->
